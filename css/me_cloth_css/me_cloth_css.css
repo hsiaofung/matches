@@ -1,0 +1,639 @@
+.me_cloth_clearfix{
+	clear: both;
+}
+.me_cloth_row{
+	margin: 0 -10px;
+	clear: both;
+}
+.me_cloth_LightBox{
+	background-color: #fcf2e2;
+	font-family:文鼎圓體,Gotham Rounded;
+	text-align: center;
+}
+:focus{
+	outline: none;
+}
+
+/*光箱背景*/
+.me_cloth_LB_bg{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	display:none;
+}
+/*光箱範圍*/
+.me_cloth_content{
+	width: 98%;
+	height: 98vh;
+	background-color: #fcf2e2;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	border-radius: 10px;
+}
+/*光箱標題列*/
+.me_cloth_LB_head{
+	background-color: #b2daed;
+	width: 100%;
+	height: 50px;
+	border-radius: 10px 10px 0 0;
+	position: relative;
+	/*margin-bottom: 20px; */
+}
+.me_cloth_LB_head h3{
+	color:#8a7676;
+	font-size: 20px;
+	padding: 15px;
+}
+/*光箱XX*/
+/*.me_cloth_LB_close{
+	width:20px;
+	height:20px;
+	background-color: red;
+	display:block;
+}
+*/
+.me_cloth_x{
+	width:30px;
+	height:30px;
+	/*background-color: blue;*/
+	position: absolute;
+	top: 0;
+	right: 0;
+	/*bottom: 0;*/
+	/*left: 0;*/
+	margin: auto;
+}
+
+.me_cloth_LB_close:before{
+	content: "";
+	display: block;
+	width: 30px;
+	height: 5px;
+	border-radius: 5px;
+	background-color: #fff;
+	transform: rotateZ(45deg);
+	position: absolute;
+	right: 20px;
+	top: 25px;
+}
+.me_cloth_LB_close:after{
+	content: "";
+	display: block;
+	width: 30px;
+	height: 5px;
+	border-radius: 5px;
+	background-color: #fff;
+	transform: rotateZ(-45deg);
+	position: absolute;
+	right: 20px;
+	top: 25px;
+}
+
+.me_cloth_left{
+	/*margin: 100px 30px 15px;*/
+	position: relative;
+}
+
+/*紅利*/
+.me_cloth_point{
+	background-color: transparent;
+	padding: 5px 10px;
+	border-radius: 10px;
+	position: absolute;
+	color:#666;
+	font-size: 16px;
+	top: 2%;
+	left: 7%;
+	z-index: 1;
+}
+.me_cloth_point img{
+	position: absolute;
+	top: -10%;
+	left: -13%;
+}
+.me_cloth_myPoint{
+	color:red;
+	font-family:  Gotham Rounded;
+}
+
+/*角色*/
+/*人物*/
+/*.me_cloth_clothBox {
+	width: 198px;
+	height: 385px;
+
+}*/
+
+.me_cloth_clothBox{
+	background-color: #fff;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding-bottom: 5px;
+}
+
+.me_cloth_clothBox .me_cloth_cloth_people{
+	background-color: #FFF;
+	text-align:center;
+	/*margin: 10px 0 0;*/
+	border-radius:10px;
+	position: relative;
+	width: 158.4px;
+    height: 308px;
+    margin: auto;
+}
+
+.me_cloth_clothHead{
+	width: 158.4px;
+	height: 196px;
+	/*outline:1px solid red;	*/
+	position: absolute;
+	top:0px;
+	right: 0;
+	left:0;
+	margin:auto;
+}
+
+.me_cloth_clothBody{
+	width: 158.4px;
+	height: 196px;
+	/*outline:1px solid blue;*/
+	position: absolute;
+	top:197px;	
+	right: 0;
+	left:0;
+	margin:auto;
+	z-index: 1;
+}
+.me_cloth_clothBotton{
+	width: 158.4px;
+	height: 196px;
+	/*outline:1px solid green;*/
+	position: absolute;
+	top:230px;
+	right: 0;
+	left:0;
+	margin:auto;	
+}
+
+
+.me_cloth_clothBox .me_cloth_cloth_people img{
+	width: 100%;
+}
+.me_cloth_cloth_people .me_cloth_clothHead img{
+	width: 100%;
+}
+.me_cloth_cloth_people .me_cloth_clothBody img{
+	width: 100%;
+}
+
+.me_cloth_cloth_people .me_cloth_clothBotton img{
+	width: 100%;
+}
+
+
+/*保存按鈕*/
+.me_cloth_save{
+	/*position: relative;*/
+	/*margin: 20px 0;*/
+}
+.me_cloth_save input{
+	background-color: #66dbff;
+	padding: 5px 15px;
+	margin:5px;
+	border:none; 
+	border-radius:30px;
+	font-family: 文鼎圓體;
+	color:#fff;
+	font-size: 16px;
+	position: absolute;
+	top: 2%;
+	right: 2%;
+	cursor:pointer ;
+	box-shadow:0 2px 0 #13bbe2;
+}
+.me_cloth_save a{
+	background-color: #f29c66;
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+	padding: 6px 15px;
+	margin: 5px;
+	border-radius: 30px;
+	position: absolute;
+	top: 14%;
+	right: 2%;
+	box-shadow:0 2px 0 #f97838;
+}
+
+/*衣櫃*/
+.me_cloth_wardrobe{
+	position: relative;
+}
+/*選擇類別*/
+.me_cloth_select{
+	/*margin: 15px;*/
+	text-align: right;
+	position: absolute;
+	right: 2%;
+	top: -22%;
+}
+.me_cloth_select select{
+	padding: 10px 15px;
+	border:1px solid #d0d9de; 
+	border-radius: 10px;
+	-webkit-appearance: button;
+	background-image: url(../../images/me_cloth_img/select.png);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+	background-size: 12%;
+	font-size: 15px;
+	font-family: 文鼎圓體;
+	color: #666;
+	letter-spacing: 2px;
+
+}
+
+
+.me_cloth_myCloth{
+	background-color: #653c1c;
+	/*margin-top:35px; */
+	/*margin-right: 15px;*/
+	margin: 0 5px 5px;
+	box-sizing: border-box;
+	padding: 10px;
+	border:5px solid  #8e5f37;
+	border-radius: 10px; 
+	height: 40vh;
+	overflow: auto;
+}
+/*衣櫥scroll bar*/
+.me_cloth_myCloth::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.2);
+	border-radius: 10px;
+	background-color:  #f9eee4;
+}
+.me_cloth_myCloth::-webkit-scrollbar{
+	width: 10px;
+	background-color: #F5F5F5;
+	height: 0;
+	border-radius: 10px;
+}
+.me_cloth_myCloth::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 2px rgba(0,0,0,.2);
+	background-color: #d8a279;
+}
+
+
+/*借上面的來蓋衣櫥頭頂*/
+.me_cloth_select:before{
+	content: "";
+	display: block;
+	width: 109%;
+	height: 20px;
+	background-color: #653c1c;
+	position: absolute;
+	top: 90px;
+	left: -35px;
+	border-radius: 20px;
+}
+
+/*商品外框*/
+.me_cloth_item{
+	background-color: #FFF;
+	margin: 10px 0;
+	float:left;
+	vertical-align:middle;
+	border-radius: 10px;
+	position: relative;
+	/*width: 100%;*/
+}
+
+/*商品圖片*/
+.me_cloth_itemImg{
+	background-color: #ffddea;
+	padding:20px 0;
+	margin:8px 8px 0;	
+	height: 70px;
+	line-height: 70px;
+}
+.me_cloth_itemImg img{
+	vertical-align:middle;
+	width: 100%;
+}
+.me_cloth_itemButton input{
+	background-color: #df638b;
+	color: #fff;
+	font-family: 文鼎圓體;
+	font-size: 15px;
+	padding: 6px;
+	/*width: 45%;*/
+	border:none;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	margin: 5px 0;
+	cursor: pointer;
+}
+.me_cloth_itemButton input:hover:first-child{
+	background-color: #db316e;
+	transition: 0.5s;
+}
+.me_cloth_itemButton input:last-child{
+	background-color: #f29c66;
+}
+
+.me_cloth_itemButton input:hover:last-child{
+	background-color: #fc7d35;
+	transition: 0.5s;
+}
+
+@media screen and (min-width: 768px){
+	/*光箱範圍*/
+	.me_cloth_content{
+		width: 1124px;
+		height: 850px;
+	}
+	/*光箱標題列*/
+	.me_cloth_LB_head{
+		margin-bottom: 20px; 
+	}
+	.me_cloth_left{
+		margin: 100px 30px 15px;
+	}
+	/*紅利*/
+	.me_cloth_point{
+		background-color: #fff;
+		padding: 15px;
+		position: relative;
+		left: 0;
+		font-size: 18px;
+	}
+	.me_cloth_point img{
+		top: 18%;
+		left: 13%;
+	}
+	/*角色*/
+	.me_cloth_clothBox .me_cloth_cloth_people{
+		padding: 50px 0;
+		margin: 20px 0 0;
+		width: auto;
+	    height: auto;
+	    margin: auto;
+	}
+	.me_cloth_clothHead{		
+		width: 198px;
+		height: 245px;
+		top:50px;
+	}
+	.me_cloth_clothBody{
+		width: 198px;
+		height: 56px;
+		top:296px;
+	}
+	.me_cloth_clothBotton{
+		width: 198px;
+		height: 100px;
+		top:335px;
+	}
+	.me_cloth_clothBox .me_cloth_cloth_people img{
+		width: auto;
+	}
+	.me_cloth_cloth_people .me_cloth_clothHead img{
+		width: auto;
+	}
+	.me_cloth_cloth_people .me_cloth_clothBody img{
+		width: auto;
+	}
+	.me_cloth_cloth_people .me_cloth_clothBotton img{
+		width: auto;
+	}
+	/*保存按鈕*/
+	.me_cloth_save{
+		margin: 20px 0;
+	}
+	.me_cloth_save input{
+		padding: 9px 30px;
+		margin:5px;
+		position: relative;
+		font-size: 18px;
+		right: 0;
+	}
+	.me_cloth_save input:hover{
+		background-color: #84dbff;
+	}
+	.me_cloth_save input:active{
+		top: 2px;
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+	.me_cloth_save a{
+		font-size: 18px;
+		padding: 10px 30px;
+		position: relative;
+		margin:5px;
+		right: 0;
+	}
+	.me_cloth_save a:hover{
+	background-color: #FFA87D;
+	}
+	.me_cloth_save a:active{
+		top: 2px;
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+	/*衣櫃*/
+	.me_cloth_wardrobe{
+		margin: 15px;
+		position: relative;
+	}
+
+	.me_cloth_select{
+		margin: 15px;
+		text-align: right;
+		position: relative;
+		right: 0;
+		top: -10px;
+	}
+	.me_cloth_select select{
+		padding: 10px 50px;
+	}
+	.me_cloth_myCloth{		
+		margin: 35px 15px 0 0;
+		box-sizing: border-box;
+		padding: 10px;
+		border:20px solid  #8e5f37;
+		height: 600px;
+		overflow: auto;
+	}
+	.me_cloth_item{
+		background-color: #FFF;
+		margin: 10px 5px;
+	}
+	.me_cloth_itemImg{
+		height: 90px;
+		line-height: 90px;
+	}
+	.me_cloth_itemButton input{
+		margin: 5px 0;
+		width: 45%;
+	}
+}
+
+
+
+/*刪除確認視窗*/
+
+
+.me_cloth_LB_delete{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 10000;
+	background-color: rgba(0,0,0,.3);
+	top: 0;
+	right: 0;
+	margin: auto;
+}
+.me_cloth_delete_bg{
+	width: 70%;
+	height: 30vh;
+	background-color: #fff;
+	border-radius: 10px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	vertical-align: middle;
+}
+.me_cloth_delete_bg:before{
+	content: '';
+	height: 100%;
+	display: inline-block;
+	background-color: #f00;
+	vertical-align:middle; 
+	/*width: 2px;*/
+}
+.me_cloth_delete_content{
+	vertical-align: middle;
+	display: inline-block;
+}
+.me_cloth_delete_content p{
+	margin: 40px 20px;
+	color: #666;
+	/*font-family: 文鼎圓體;*/
+	font-size:16px; 
+}
+.me_cloth_delete_content input{
+	background-color: #66dbff;
+	border:none;
+	padding: 6px 30px;
+	font-size: 15px;
+	color: #fff; 
+	/*font-family: 文鼎圓體;*/
+	border-radius: 33px;
+	/*margin: 0 10px;*/
+	cursor:pointer ;
+}
+.me_cloth_delete_content input:last-child{
+	background-color: #ffa266;
+}
+
+@media screen and (min-width: 768px){
+	.me_cloth_delete_bg{
+		width: 20%;
+		height: 25%;
+		display: flex;
+    	align-items: center;
+    	justify-content: center;
+	}
+	.me_cloth_delete_content p{
+		font-size: 18px;
+	}
+	.me_cloth_delete_content input{
+		padding: 8px 30px;
+		margin: 0 10px;
+	}
+}
+
+
+
+/*保存確認視窗*/
+
+
+.me_cloth_LB_save{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 10000;
+	background-color: rgba(0,0,0,.3);
+	top: 0;
+	right: 0;
+	margin: auto;
+}
+.me_cloth_save_bg{
+	width: 70%;
+	height: 30vh;
+	background-color: #fff;
+	border-radius: 10px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	vertical-align: middle;
+}
+.me_cloth_save_bg:before{
+	content: '';
+	height: 100%;
+	display: inline-block;
+	background-color: #f00;
+	vertical-align:middle; 
+	font-size: 0;
+}
+.me_cloth_save_content{
+	vertical-align: middle;
+	display: inline-block;
+}
+.me_cloth_save_content p{
+	margin: 40px 20px;
+	color: #666;
+	font-size:16px; 
+}
+.me_cloth_save_content input{
+	background-color:#ffa266 ;
+	border:none;
+	padding: 6px 30px;
+	font-size: 15px;
+	color: #fff; 
+	border-radius: 33px;
+	cursor:pointer ;
+	
+}
+
+@media screen and (min-width: 768px){
+	.me_cloth_save_bg{
+		width: 20%;
+		height: 25%;
+
+	}
+	.me_cloth_save_content p{
+		font-size: 18px;
+	}
+	.me_cloth_save_content input{
+		padding: 8px 30px;
+		margin: 0 10px;
+	}
+}

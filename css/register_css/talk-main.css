@@ -1,0 +1,2672 @@
+/* ====== grid ================*/
+/*==== initial========*/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+@media all and (max-width: 767px) {
+  .lightbox {
+    width: 100vw;
+    height: 100vh;
+    background: #E0F0F8;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    display: none;
+    z-index: 555; }
+
+  .talk-05 {
+    display: none; }
+
+  .talk .container {
+    width: 100%;
+    max-width: 100vw;
+    margin: auto;
+    margin-top: 52px;
+    background: #C2E4EC; }
+  .talk .content {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0px;
+    padding-left: 0px; }
+  .talk .row {
+    text-align: center; }
+  .talk p {
+    font-size: 15px; }
+  .talk h1 {
+    font-size: 36px;
+    padding: 20px 0; }
+  .talk h2 {
+    font-size: 21px; }
+  .talk h3 {
+    font-size: 19.9995px; }
+  .talk h4 {
+    font-size: 15.9999px; }
+  .talk .btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #FFA266;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 1px solid #FFA266;
+    text-align: center;
+    transition: all 0.3s ease-out; }
+    .talk .btn:hover {
+      background-color: #fff;
+      color: #FFA266; }
+    .talk .btn:hover i {
+      color: #FFA266; }
+  .talk .btn-f {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #70C8E9;
+    border-radius: 20px;
+    padding: 0px 16px;
+    font-size: 20px;
+    border: 1px solid #70C8E9;
+    text-align: center;
+    transition: all 0.3s ease-out;
+    font-size: 15px;
+    padding: 0px 16px;
+    margin-top: 7px; }
+    .talk .btn-f:hover {
+      background-color: #fff;
+      color: #70C8E9; }
+  .talk .col-xs-1 {
+    width: 5%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk .col-xs-2 {
+    width: 10%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk .col-xs-3 {
+    width: 15%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk .col-xs-4 {
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk .col-xs-5 {
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk .col-xs-6 {
+    width: 30%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk .col-xs-7 {
+    width: 35%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk .col-xs-8 {
+    width: 40%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk .col-xs-9 {
+    width: 45%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk .col-xs-10 {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk .col-xs-11 {
+    width: 55%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk .col-xs-12 {
+    width: 60%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk .col-xs-13 {
+    width: 65%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk .col-xs-14 {
+    width: 70%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk .col-xs-15 {
+    width: 75%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk .col-xs-16 {
+    width: 80%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk .col-xs-17 {
+    width: 85%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk .col-xs-18 {
+    width: 90%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk .col-xs-19 {
+    width: 95%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk .col-xs-20 {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk .col-xs-20 {
+    position: relative; }
+    .talk .col-xs-20 .content {
+      width: 100%;
+      max-width: 240px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 0;
+      padding-left: 0;
+      border: 15px solid #fff;
+      border-radius: 10px;
+      background: #fff; }
+    .talk .col-xs-20 a {
+      text-decoration: none; }
+    .talk .col-xs-20 .type {
+      background-color: #4CBCC2;
+      color: #fff;
+      padding: 2px 10px;
+      position: absolute;
+      top: 39px;
+      left: 0;
+      z-index: 2; }
+    .talk .col-xs-20 .type:after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: -13px;
+      top: 0;
+      border-top: 13px solid #4CBCC2;
+      border-right: 13px solid transparent;
+      border-bottom: 13px solid #4CBCC2; }
+    .talk .col-xs-20:nth-of-type(4n+1) .imgBox {
+      height: 330px;
+      overflow: hidden; }
+    .talk .col-xs-20:nth-of-type(4n+1) .type {
+      background-color: #4CBCC2; }
+    .talk .col-xs-20:nth-of-type(4n+1) .type:after {
+      border-top-color: #4CBCC2;
+      border-bottom-color: #4CBCC2; }
+    .talk .col-xs-20:nth-of-type(4n+2) .imgBox {
+      height: 200px;
+      overflow: hidden; }
+    .talk .col-xs-20:nth-of-type(4n+2) .type {
+      background-color: #D566A0; }
+    .talk .col-xs-20:nth-of-type(4n+2) .type:after {
+      border-top-color: #D566A0;
+      border-bottom-color: #D566A0; }
+    .talk .col-xs-20:nth-of-type(4n+3) .imgBox {
+      height: 162px;
+      overflow: hidden; }
+    .talk .col-xs-20:nth-of-type(4n+3) .type {
+      background-color: #FFA266; }
+    .talk .col-xs-20:nth-of-type(4n+3) .type:after {
+      border-top-color: #FFA266;
+      border-bottom-color: #FFA266; }
+    .talk .col-xs-20:nth-of-type(4n) .imgBox {
+      height: 265px;
+      overflow: hidden; }
+    .talk .col-xs-20:nth-of-type(4n) .type {
+      background-color: #7FC597; }
+    .talk .col-xs-20:nth-of-type(4n) .type:after {
+      border-top-color: #7FC597;
+      border-bottom-color: #7FC597; }
+    .talk .col-xs-20 h2 {
+      color: #8A7676;
+      text-align: left;
+      padding: 15px 0; }
+    .talk .col-xs-20 .content a p {
+      color: #888888;
+      text-align: justify;
+      margin-bottom: 40px;
+      border-bottom: none; }
+    .talk .col-xs-20 .content p {
+      color: #676767;
+      text-align: justify;
+      border-bottom: 1px solid #A8A7A7; }
+    .talk .col-xs-20 .content .type p {
+      color: #676767;
+      text-align: justify;
+      color: #fff; }
+    .talk .col-xs-20 i {
+      color: #676767; }
+      .talk .col-xs-20 i:nth-child(1) {
+        margin-left: 0px;
+        margin-left: 0px; }
+  .talk img {
+    width: 100%; }
+  .talk nav {
+    display: none; }
+  .talk #select-xs {
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 0;
+    width: 100%;
+    max-width: 277.868px;
+    border: none;
+    display: "";
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    color: #888; }
+    .talk #select-xs:focus {
+      outline: none; }
+  .talk .r2 .text-type {
+    box-shadow: 1px 5px 5px rgba(64, 64, 64, 0.3);
+    position: fixed;
+    top: 0px;
+    padding-top: 73px;
+    left: 0;
+    z-index: 3; }
+  .talk .r2 .btn-text {
+    box-shadow: 1px -5px 5px rgba(64, 64, 64, 0.3);
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    z-index: 100; }
+    .talk .r2 .btn-text .btn {
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      padding: 5px 20px;
+      color: #fff; }
+      .talk .r2 .btn-text .btn i {
+        color: #fff; }
+
+  .talk-01 .content {
+    top: -1%; }
+  .talk-01 .col-xs-1 {
+    width: 5%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0; }
+  .talk-01 .col-xs-2 {
+    width: 10%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0; }
+  .talk-01 .col-xs-3 {
+    width: 15%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0; }
+  .talk-01 .col-xs-4 {
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0; }
+  .talk-01 .col-xs-5 {
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0; }
+  .talk-01 .col-xs-6 {
+    width: 30%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0; }
+  .talk-01 .col-xs-7 {
+    width: 35%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0; }
+  .talk-01 .col-xs-8 {
+    width: 40%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0; }
+  .talk-01 .col-xs-9 {
+    width: 45%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0; }
+  .talk-01 .col-xs-10 {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0; }
+  .talk-01 .col-xs-11 {
+    width: 55%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0; }
+  .talk-01 .col-xs-12 {
+    width: 60%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0; }
+  .talk-01 .col-xs-13 {
+    width: 65%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0; }
+  .talk-01 .col-xs-14 {
+    width: 70%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0; }
+  .talk-01 .col-xs-15 {
+    width: 75%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0; }
+  .talk-01 .col-xs-16 {
+    width: 80%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0; }
+  .talk-01 .col-xs-17 {
+    width: 85%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0; }
+  .talk-01 .col-xs-18 {
+    width: 90%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0; }
+  .talk-01 .col-xs-19 {
+    width: 95%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0; }
+  .talk-01 .col-xs-20 {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0; }
+  .talk-01 .row {
+    width: 100%;
+    max-width: 767px;
+    font-size: 1em;
+    border: 0.1875em solid #fff;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+    line-height: 1.5em; }
+    .talk-01 .row:after {
+      content: '';
+      display: block;
+      clear: both; }
+  .talk-01 .btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #66DBFF;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 1px solid #66DBFF;
+    text-align: center;
+    transition: all 0.3s ease-out; }
+    .talk-01 .btn:hover {
+      background-color: #fff;
+      color: #66DBFF; }
+  .talk-01 #imgUpLoad,
+  .talk-01 #img-01 {
+    width: 90%; }
+  .talk-01 .row {
+    line-height: 84px;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.3);
+    border: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+    background: #DFEDF5; }
+  .talk-01 .col-xs-6, .talk-01 .col-xs-14 {
+    background: none; }
+  .talk-01 h2 {
+    font-size: 16px;
+    color: #8A7675; }
+  .talk-01 .r1 {
+    text-align: center;
+    border: none;
+    margin-bottom: 0px;
+    line-height: 60px; }
+    .talk-01 .r1 h1 {
+      padding: 0;
+      font-size: 21px;
+      background: #B2DAED;
+      color: #8A7675; }
+  .talk-01 .r2 input {
+    box-shadow: -1px -1px rgba(136, 136, 136, 0.3);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 277.868px;
+    font-size: 18px;
+    padding: 0;
+    border: none;
+    width: 75%;
+    font-size: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px; }
+    .talk-01 .r2 input:focus {
+      outline: none; }
+  .talk-01 .r3 select {
+    box-shadow: -1px -1px rgba(136, 136, 136, 0.3);
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 0;
+    width: 100%;
+    max-width: 277.868px;
+    border: none;
+    width: 75%;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    box-sizing: border-box; }
+    .talk-01 .r3 select:focus {
+      outline: none; }
+  .talk-01 .r4 .rr1 {
+    text-align: left;
+    padding-left: 24px;
+    border-radius: 10px 10px 0 0;
+    border: none;
+    box-shadow: none;
+    background: #E0F0F8;
+    margin-bottom: 0; }
+  .talk-01 .r4 .rr2 {
+    border-radius: 0px 0px 10px 10px;
+    border: none;
+    text-align: center;
+    background: #E0F0F8;
+    box-shadow: none;
+    padding-left: 35px; }
+    .talk-01 .r4 .rr2 img {
+      width: 40%; }
+  .talk-01 .r5 {
+    line-height: 80px;
+    padding: 15px 0; }
+    .talk-01 .r5 textarea {
+      box-shadow: -1px -1px rgba(136, 136, 136, 0.3);
+      height: 100px;
+      font-size: 20px;
+      border-radius: 10px;
+      width: 100%;
+      border: none;
+      height: 120px;
+      vertical-align: middle;
+      width: 75%; }
+      .talk-01 .r5 textarea:focus {
+        outline: none; }
+  .talk-01 .r6 {
+    padding: 10px 0;
+    line-height: 60px; }
+    .talk-01 .r6 .btn {
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      background-color: #66DBFF;
+      border-radius: 20px;
+      padding: 5px 20px;
+      font-size: 20px;
+      border: 1px solid #66DBFF;
+      text-align: center;
+      transition: all 0.3s ease-out;
+      width: 80px; }
+      .talk-01 .r6 .btn:hover {
+        background-color: #fff;
+        color: #66DBFF; }
+    .talk-01 .r6 li {
+      display: inline-block;
+      margin-left: 9.933%;
+      line-height: 35px;
+      padding: 0 10px; }
+      .talk-01 .r6 li a {
+        padding: 0 10px; }
+  .talk-01 .btn-close {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    line-height: 73px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center; }
+
+  .talk-04 h1 {
+    font-size: 21px;
+    color: #8A7675; }
+  .talk-04 .fa-star:nth-child(1) {
+    text-shadow: 2px 2px 2px rgba(64, 64, 64, 0.3); }
+  .talk-04 .fa-star:nth-child(2) {
+    text-shadow: 2px 2px 2px rgba(64, 64, 64, 0.3); }
+  .talk-04 .fa-star:nth-child(3) {
+    text-shadow: 2px 2px 2px rgba(64, 64, 64, 0.3); }
+  .talk-04 h1 {
+    text-align: center;
+    padding: 10px 0; }
+  .talk-04 .col-xs-1 {
+    width: 5%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px; }
+  .talk-04 .col-xs-2 {
+    width: 10%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px; }
+  .talk-04 .col-xs-3 {
+    width: 15%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px; }
+  .talk-04 .col-xs-4 {
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px; }
+  .talk-04 .col-xs-5 {
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px; }
+  .talk-04 .col-xs-6 {
+    width: 30%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px; }
+  .talk-04 .col-xs-7 {
+    width: 35%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px; }
+  .talk-04 .col-xs-8 {
+    width: 40%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px; }
+  .talk-04 .col-xs-9 {
+    width: 45%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px; }
+  .talk-04 .col-xs-10 {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px; }
+  .talk-04 .col-xs-11 {
+    width: 55%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px; }
+  .talk-04 .col-xs-12 {
+    width: 60%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px; }
+  .talk-04 .col-xs-13 {
+    width: 65%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px; }
+  .talk-04 .col-xs-14 {
+    width: 70%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px; }
+  .talk-04 .col-xs-15 {
+    width: 75%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px; }
+  .talk-04 .col-xs-16 {
+    width: 80%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px; }
+  .talk-04 .col-xs-17 {
+    width: 85%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px; }
+  .talk-04 .col-xs-18 {
+    width: 90%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px; }
+  .talk-04 .col-xs-19 {
+    width: 95%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px; }
+  .talk-04 .col-xs-20 {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px; }
+  .talk-04 .container {
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    margin-top: -90px;
+    background: #C2E4EC;
+    background: #FCF2E2;
+    padding-bottom: 80px;
+    padding-top: 60px; }
+  .talk-04 .content {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 773.213px;
+    padding-top: 0px;
+    padding-right: 0px;
+    border: 10px solid #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 10px solid #DAEABE;
+    box-shadow: 1px 1px 5px rgba(136, 136, 136, 0.3); }
+  .talk-04 .btn {
+    display: none; }
+  .talk-04 #pic-top {
+    width: 169.557px;
+    height: 53.27px;
+    margin: auto;
+    position: relative;
+    top: 21px;
+    left: 0px;
+    z-index: 2; }
+  .talk-04 img {
+    width: 100%; }
+  .talk-04 .row {
+    width: 100%;
+    max-width: 767px;
+    font-size: 1em;
+    padding-left: 0;
+    padding-right: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    line-height: 1.5em;
+    text-align: center;
+    margin: auto; }
+    .talk-04 .row:after {
+      content: '';
+      display: block;
+      clear: both; }
+  .talk-04 .r1 {
+    text-align: left;
+    background: #fff; }
+    .talk-04 .r1 .pic-head {
+      border: 6px solid #fff;
+      border-radius: 10px;
+      box-shadow: 3px 3px 5px rgba(128, 128, 128, 0.3);
+      transform: rotate(25deg);
+      position: relative;
+      top: -9px;
+      left: 82px; }
+    .talk-04 .r1 h2 {
+      background: #fff;
+      padding-bottom: 10px;
+      padding-top: 5px;
+      color: #666;
+      font-size: 15px;
+      text-align: center; }
+  .talk-04 .memInfo {
+    padding-left: 0px;
+    line-height: 2em; }
+    .talk-04 .memInfo li {
+      color: #666;
+      border-bottom: 1px solid rgba(128, 128, 128, 0.3); }
+    .talk-04 .memInfo li:nth-child(5) {
+      border: none; }
+    .talk-04 .memInfo li:nth-child(6) {
+      background: #FFEDDB;
+      border-radius: 10px;
+      border: none;
+      font-size: 16px;
+      padding: 0px 0px;
+      line-height: 2em;
+      box-shadow: 3px 3px 5px rgba(128, 128, 128, 0.3); }
+  .talk-04 .col-xs-15 {
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: left; }
+  .talk-04 .col-xs-1 {
+    padding-left: 0px;
+    padding-right: 22px; }
+  .talk-04 .col-xs-12 {
+    padding-bottom: 6px; }
+  .talk-04 .r2 .col-xs-4 {
+    display: none; }
+  .talk-04 .r2 .col-xs-20 {
+    background: #fff;
+    border-radius: 10px;
+    box-sizing: border-box; }
+    .talk-04 .r2 .col-xs-20 .rr1 {
+      width: 100%;
+      background: #B2DAED;
+      border-radius: 10px 10px 0 0;
+      padding: 10px; }
+      .talk-04 .r2 .col-xs-20 .rr1 h2 {
+        color: #666;
+        font-size: 18px; }
+    .talk-04 .r2 .col-xs-20 .content {
+      background: #DFEDF5; }
+    .talk-04 .r2 .col-xs-20 .content {
+      width: 100%;
+      margin: auto;
+      border: none;
+      border-radius: 0px 0px 10px 10px;
+      padding: 10px 10px;
+      box-shadow: none;
+      color: #666; }
+      .talk-04 .r2 .col-xs-20 .content .rr2 {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        box-shadow: 3px 3px 5px rgba(128, 128, 128, 0.3); }
+        .talk-04 .r2 .col-xs-20 .content .rr2 .col-xs-3 {
+          padding-left: 5px;
+          padding-right: 0; }
+        .talk-04 .r2 .col-xs-20 .content .rr2 .col-xs-4 {
+          display: none; }
+        .talk-04 .r2 .col-xs-20 .content .rr2 .col-xs-16 {
+          padding-left: 0;
+          padding-right: 0; }
+      .talk-04 .r2 .col-xs-20 .content .rr3 {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        box-shadow: 3px 3px 5px rgba(128, 128, 128, 0.3); }
+        .talk-04 .r2 .col-xs-20 .content .rr3 .col-xs-3 {
+          padding-left: 5px;
+          padding-right: 0; }
+        .talk-04 .r2 .col-xs-20 .content .rr3 .col-xs-4 {
+          display: none; }
+        .talk-04 .r2 .col-xs-20 .content .rr3 .col-xs-16 {
+          padding-left: 0;
+          padding-right: 0; }
+      .talk-04 .r2 .col-xs-20 .content .rr4 {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        box-shadow: 3px 3px 5px rgba(128, 128, 128, 0.3); }
+        .talk-04 .r2 .col-xs-20 .content .rr4 .col-xs-3 {
+          padding-left: 5px;
+          padding-right: 0; }
+        .talk-04 .r2 .col-xs-20 .content .rr4 .col-xs-4 {
+          display: none; }
+        .talk-04 .r2 .col-xs-20 .content .rr4 .col-xs-16 {
+          padding-left: 0;
+          padding-right: 0; }
+      .talk-04 .r2 .col-xs-20 .content .row {
+        background: #fff;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        line-height: 1.5em; }
+        .talk-04 .r2 .col-xs-20 .content .row img {
+          width: 100%;
+          vertical-align: middle; }
+  .talk-04 img {
+    width: 100%; }
+  .talk-04 .content {
+    padding-right: 0px; }
+
+  .talk-02 .fa-star:nth-child(1) {
+    text-shadow: 2px 2px 2px rgba(64, 64, 64, 0.3); }
+  .talk-02 .fa-star:nth-child(2) {
+    text-shadow: 2px 2px 2px rgba(64, 64, 64, 0.3); }
+  .talk-02 .fa-star:nth-child(3) {
+    text-shadow: 2px 2px 2px rgba(64, 64, 64, 0.3); }
+  .talk-02 .lightbox {
+    display: none; }
+  .talk-02 .container {
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    margin-top: 25px;
+    background: #C2E4EC; }
+  .talk-02 .content {
+    width: 100%;
+    max-width: 1095.84px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0px;
+    padding-left: 0px; }
+  .talk-02 .row {
+    text-align: center; }
+  .talk-02 .row {
+    width: 100%;
+    max-width: 1095.84px;
+    font-size: 1em;
+    border: 0.1875em solid #fff;
+    padding-left: 47.333px;
+    padding-right: 0px;
+    padding-top: 35.334px;
+    padding-bottom: 35.334px;
+    box-sizing: border-box;
+    line-height: 1.5em;
+    padding: 20px 10px; }
+    .talk-02 .row:after {
+      content: '';
+      display: block;
+      clear: both; }
+  .talk-02 .col-xs-1 {
+    width: 5%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk-02 .col-xs-2 {
+    width: 10%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk-02 .col-xs-3 {
+    width: 15%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk-02 .col-xs-4 {
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk-02 .col-xs-5 {
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk-02 .col-xs-6 {
+    width: 30%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk-02 .col-xs-7 {
+    width: 35%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk-02 .col-xs-8 {
+    width: 40%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk-02 .col-xs-9 {
+    width: 45%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk-02 .col-xs-10 {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk-02 .col-xs-11 {
+    width: 55%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk-02 .col-xs-12 {
+    width: 60%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk-02 .col-xs-13 {
+    width: 65%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk-02 .col-xs-14 {
+    width: 70%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk-02 .col-xs-15 {
+    width: 75%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk-02 .col-xs-16 {
+    width: 80%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk-02 .col-xs-17 {
+    width: 85%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk-02 .col-xs-18 {
+    width: 90%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk-02 .col-xs-19 {
+    width: 95%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk-02 .col-xs-20 {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    background: #C2E4EC; }
+  .talk-02 p {
+    font-size: 15px; }
+  .talk-02 h1 {
+    font-size: 36px;
+    padding: 20px 0; }
+  .talk-02 h2 {
+    font-size: 21px; }
+  .talk-02 h3 {
+    font-size: 19.9995px; }
+  .talk-02 h4 {
+    font-size: 15.9999px; }
+  .talk-02 #select-xs {
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 0;
+    width: 100%;
+    max-width: 277.868px;
+    border: none;
+    display: "";
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    color: #888; }
+    .talk-02 #select-xs:focus {
+      outline: none; }
+  .talk-02 .r2 .text-type {
+    box-shadow: 1px 5px 5px rgba(64, 64, 64, 0.3);
+    position: fixed;
+    top: 0px;
+    padding-top: 73px;
+    left: 0;
+    z-index: 3; }
+  .talk-02 .r2 .btn-text {
+    box-shadow: 1px -5px 5px rgba(64, 64, 64, 0.3);
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    z-index: 100; }
+    .talk-02 .r2 .btn-text .btn {
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      padding: 5px 20px;
+      color: #fff; }
+      .talk-02 .r2 .btn-text .btn i {
+        color: #fff; }
+  .talk-02 nav {
+    display: none; }
+  .talk-02 .memInfo {
+    display: inline-block;
+    text-align: left;
+    padding-left: 10px;
+    vertical-align: top; }
+  .talk-02 .r3 .col-13 {
+    padding-left: 87px;
+    border-left: 1px solid #A8A7A7; }
+  .talk-02 .r3 .rr1 {
+    margin-bottom: 24px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #FFEDDB;
+    color: #8A7676; }
+  .talk-02 .r3 .rr2 {
+    background: #FFEDDB;
+    border: none;
+    border-radius: 10px 10px 0px 0px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 0px;
+    color: #888888; }
+  .talk-02 .r3 .rr3 {
+    background: #FFEDDB;
+    border: none;
+    padding: 34px; }
+  .talk-02 .r3 .rr4 {
+    background: #FFD7BA;
+    border: none;
+    border-radius: 0px 0px 10px 10px;
+    padding: 3px 0px;
+    text-align: right; }
+  .talk-02 .r3 .col-xs-20 {
+    padding-left: 10px;
+    padding-right: 10px; }
+    .talk-02 .r3 .col-xs-20 .rr4 {
+      box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.3); }
+  .talk-02 .r3 .col-13 {
+    border: none; }
+  .talk-02 a {
+    text-decoration: none;
+    color: #898989; }
+  .talk-02 .r4 .col-13, .talk-02 .r5 .col-13 {
+    padding-left: 49px; }
+  .talk-02 .r4 .cc2, .talk-02 .r5 .cc2 {
+    text-align: right; }
+  .talk-02 .r4 .rr1, .talk-02 .r5 .rr1 {
+    padding: 0;
+    background: #fff;
+    color: #888888;
+    margin-bottom: 30px; }
+  .talk-02 .r4 .rr2, .talk-02 .r5 .rr2 {
+    padding: 0;
+    background: #fff;
+    color: #888888;
+    margin-bottom: 0px; }
+  .talk-02 .r4 .time, .talk-02 .r4 .date, .talk-02 .r5 .time, .talk-02 .r5 .date {
+    font-weight: bold;
+    margin-right: 0px; }
+  .talk-02 .r4 img, .talk-02 .r5 img {
+    width: 100%; }
+  .talk-02 .r4 .col-xs-14, .talk-02 .r5 .col-xs-14 {
+    padding: 0px; }
+    .talk-02 .r4 .col-xs-14 .date, .talk-02 .r5 .col-xs-14 .date {
+      font-size: 13px; }
+    .talk-02 .r4 .col-xs-14 .time, .talk-02 .r5 .col-xs-14 .time {
+      font-size: 13px; }
+  .talk-02 .r4 .col-xs-6, .talk-02 .r5 .col-xs-6 {
+    padding: 0px; }
+  .talk-02 .r4 .col-xs-20, .talk-02 .r5 .col-xs-20 {
+    padding: 0;
+    background: #fff; }
+  .talk-02 .r1 {
+    border-radius: 0px;
+    background-color: #C2E4EC;
+    border: none;
+    max-width: 1280px;
+    text-align: center;
+    margin: auto; }
+  .talk-02 .r2 {
+    border-radius: 0px;
+    background-color: #B2DEEB;
+    border: none;
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+    padding-left: 41px;
+    padding-bottom: 10px; }
+  .talk-02 .r3 {
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px #ccc;
+    border: none;
+    margin-bottom: 38px; }
+  .talk-02 .r4 {
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px #ccc;
+    border: none;
+    margin-bottom: 38px;
+    padding-bottom: 0px; }
+  .talk-02 .r5 {
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px #ccc;
+    border: none;
+    padding-bottom: 0px; }
+  .talk-02 .r6 {
+    background-color: #C2E4EC;
+    border: none;
+    margin-bottom: 38px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    text-align: center;
+    color: #AAA9A9; }
+  .talk-02 .r7 {
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px #ccc;
+    border: none;
+    margin-bottom: 38px;
+    padding-bottom: 0px; }
+  .talk-02 .r8 {
+    background-color: #C2E4EC;
+    text-align: center;
+    padding-top: 0px;
+    border: none; }
+  .talk-02 .container {
+    padding-bottom: 80px; }
+  .talk-02 textarea {
+    border: none;
+    color: gray;
+    font-size: 15px; }
+    .talk-02 textarea:focus {
+      outline: none; }
+  .talk-02 .r3 .rr1 {
+    border: none;
+    box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.3); }
+  .talk-02 .r3 .rr2 {
+    text-align: left;
+    line-height: 1.8em; }
+  .talk-02 .r3 .rr4 a {
+    margin-right: 23px; }
+  .talk-02 .r4 .rr1, .talk-02 .r4 .rr2 {
+    text-align: left; }
+  .talk-02 .r5 .rr1, .talk-02 .r5 .rr2 {
+    text-align: left; }
+  .talk-02 .content {
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box; }
+  .talk-02 .col-xs-6,
+  .talk-02 .col-xs-14,
+  .talk-02 .col-xs-15,
+  .talk-02 .col-xs-5 {
+    background: #fff; }
+  .talk-02 .rr1 {
+    background: #fff; }
+  .talk-02 .btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #FFA266;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 1px solid #FFA266;
+    text-align: center;
+    transition: all 0.3s ease-out; }
+    .talk-02 .btn:hover {
+      background-color: #fff;
+      color: #FFA266; }
+    .talk-02 .btn:hover i {
+      color: #FFA266; }
+  .talk-02 .btn-f {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #70C8E9;
+    border-radius: 20px;
+    padding: 0px 16px;
+    font-size: 20px;
+    border: 1px solid #70C8E9;
+    text-align: center;
+    transition: all 0.3s ease-out;
+    font-size: 15px;
+    padding: 0px 16px;
+    margin-top: 7px; }
+    .talk-02 .btn-f:hover {
+      background-color: #fff;
+      color: #70C8E9; }
+  .talk-02 span {
+    font-size: 15px;
+    margin-right: 0px;
+    color: #898989; }
+  .talk-02 i {
+    color: #FFA266;
+    font-size: 24px;
+    margin-right: 3px; }
+  .talk-02 .fa-pencil {
+    color: #fff; }
+  .talk-02 .r2 .btn-text .btn {
+    color: #fff; }
+  .talk-02 .lightbox {
+    width: 100vw;
+    height: 100vh;
+    background: #E0F0F8;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    display: none;
+    z-index: 555; }
+    .talk-02 .lightbox .talk-01 .box-01 .content {
+      padding-top: 0;
+      padding-left: 0;
+      padding-right: 0; }
+      .talk-02 .lightbox .talk-01 .box-01 .content .row {
+        line-height: 84px;
+        padding: 0;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+        border-radius: 0px; }
+      .talk-02 .lightbox .talk-01 .box-01 .content .col-xs-6, .talk-02 .lightbox .talk-01 .box-01 .content .col-xs-14 {
+        padding: 0; }
+      .talk-02 .lightbox .talk-01 .box-01 .content h2 {
+        font-size: 16px; }
+      .talk-02 .lightbox .talk-01 .box-01 .content .r1 {
+        background: #B2DAED;
+        line-height: 60px; }
+        .talk-02 .lightbox .talk-01 .box-01 .content .r1 h1 {
+          font-size: 21px; }
+      .talk-02 .lightbox .talk-01 .box-01 .content .r2 {
+        background: #E0F0F8; }
+        .talk-02 .lightbox .talk-01 .box-01 .content .r2 .col-xs-6, .talk-02 .lightbox .talk-01 .box-01 .content .r2 .col-xs-14 {
+          background: #E0F0F8; }
+      .talk-02 .lightbox .talk-01 .box-01 .content .r3 {
+        margin-bottom: 0px;
+        background: #E0F0F8; }
+        .talk-02 .lightbox .talk-01 .box-01 .content .r3 .col-xs-6, .talk-02 .lightbox .talk-01 .box-01 .content .r3 .col-xs-14 {
+          background: #E0F0F8; }
+      .talk-02 .lightbox .talk-01 .box-01 .content .r4 {
+        padding-left: 24px;
+        margin-bottom: 0px;
+        background: #E0F0F8; }
+        .talk-02 .lightbox .talk-01 .box-01 .content .r4 .rr1 {
+          background: none;
+          margin-bottom: 0px;
+          border: none; }
+        .talk-02 .lightbox .talk-01 .box-01 .content .r4 .rr2 {
+          background: #E0F0F8;
+          text-align: center; }
+          .talk-02 .lightbox .talk-01 .box-01 .content .r4 .rr2 .col-xs-6 {
+            background: #E0F0F8; }
+      .talk-02 .lightbox .talk-01 .box-01 .content .r5 {
+        background: #E0F0F8;
+        padding-top: 15px;
+        padding-bottom: 15px; }
+        .talk-02 .lightbox .talk-01 .box-01 .content .r5 .col-xs-6, .talk-02 .lightbox .talk-01 .box-01 .content .r5 .col-xs-14 {
+          background: #E0F0F8; }
+      .talk-02 .lightbox .talk-01 .box-01 .content .r6 {
+        margin-bottom: 14px;
+        background: #E0F0F8; } }
+@media all and (min-width: 768px) {
+  body {
+    background: #C2E4EC; }
+
+  .talk-bk-02 .talk-bk-table {
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 40px; }
+    .talk-bk-02 .talk-bk-table tr th {
+      font-size: 21px;
+      line-height: 50px;
+      background: #B2DAED;
+      padding-left: 10px;
+      padding-right: 10px; }
+    .talk-bk-02 .talk-bk-table tr td {
+      font-size: 21px;
+      line-height: 50px;
+      text-align: left;
+      padding-left: 10px;
+      padding-right: 10px; }
+      .talk-bk-02 .talk-bk-table tr td .btn:nth-child(1) {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        background-color: #FFA266;
+        border-radius: 20px;
+        padding: 5px 10px;
+        font-size: 20px;
+        border: 1px solid #FFA266;
+        text-align: center;
+        transition: all 0.3s ease-out;
+        margin-right: 10px; }
+        .talk-bk-02 .talk-bk-table tr td .btn:nth-child(1):hover {
+          background-color: #fff;
+          color: #FFA266; }
+        .talk-bk-02 .talk-bk-table tr td .btn:nth-child(1):focus {
+          outline: none; }
+      .talk-bk-02 .talk-bk-table tr td .btn:nth-child(2) {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        background-color: #66DBFF;
+        border-radius: 20px;
+        padding: 5px 10px;
+        font-size: 20px;
+        border: 1px solid #66DBFF;
+        text-align: center;
+        transition: all 0.3s ease-out; }
+        .talk-bk-02 .talk-bk-table tr td .btn:nth-child(2):hover {
+          background-color: #fff;
+          color: #66DBFF; }
+        .talk-bk-02 .talk-bk-table tr td .btn:nth-child(2):focus {
+          outline: none; }
+
+  .talk-bk-01 .talk-bk-table {
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 40px; }
+    .talk-bk-01 .talk-bk-table tr th {
+      font-size: 21px;
+      line-height: 50px;
+      background: #B2DAED;
+      padding-left: 10px;
+      padding-right: 10px; }
+    .talk-bk-01 .talk-bk-table tr td {
+      font-size: 21px;
+      line-height: 50px;
+      text-align: left;
+      padding-left: 10px;
+      padding-right: 10px; }
+      .talk-bk-01 .talk-bk-table tr td .btn:nth-child(1) {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        background-color: #FFA266;
+        border-radius: 20px;
+        padding: 5px 10px;
+        font-size: 20px;
+        border: 1px solid #FFA266;
+        text-align: center;
+        transition: all 0.3s ease-out;
+        margin-right: 10px; }
+        .talk-bk-01 .talk-bk-table tr td .btn:nth-child(1):hover {
+          background-color: #fff;
+          color: #FFA266; }
+        .talk-bk-01 .talk-bk-table tr td .btn:nth-child(1):focus {
+          outline: none; }
+      .talk-bk-01 .talk-bk-table tr td .btn:nth-child(2) {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        background-color: #66DBFF;
+        border-radius: 20px;
+        padding: 5px 10px;
+        font-size: 20px;
+        border: 1px solid #66DBFF;
+        text-align: center;
+        transition: all 0.3s ease-out; }
+        .talk-bk-01 .talk-bk-table tr td .btn:nth-child(2):hover {
+          background-color: #fff;
+          color: #66DBFF; }
+        .talk-bk-01 .talk-bk-table tr td .btn:nth-child(2):focus {
+          outline: none; }
+
+  .talk-05 {
+    background: #C2E4EC; }
+    .talk-05 .btn {
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      background-color: #FFA266;
+      border-radius: 20px;
+      padding: 10px 20px;
+      font-size: 20px;
+      border: 1px solid #FFA266;
+      text-align: center;
+      transition: all 0.3s ease-out; }
+      .talk-05 .btn:hover {
+        background-color: #fff;
+        color: #FFA266; }
+      .talk-05 .btn:hover i {
+        color: #FFA266; }
+    .talk-05 nav ul {
+      text-align: center;
+      padding-left: 30px; }
+      .talk-05 nav ul li {
+        display: inline-block;
+        margin-right: 40px;
+        line-height: 30px; }
+        .talk-05 nav ul li a {
+          display: inline-block;
+          font-size: 19.9995px;
+          text-decoration: none;
+          color: #666666;
+          border-radius: 10px;
+          padding: 0 15px;
+          line-height: 50px; }
+        .talk-05 nav ul li #newest:hover {
+          color: #fff;
+          background: #70C8E9; }
+        .talk-05 nav ul li #hot:hover {
+          color: #fff;
+          background: red; }
+        .talk-05 nav ul li #change:hover {
+          color: #fff;
+          background: #D566A0; }
+        .talk-05 nav ul li #clothes:hover {
+          color: #fff;
+          background: #FFA266; }
+        .talk-05 nav ul li #rookie:hover {
+          color: #fff;
+          background: #4CBCC2; }
+        .talk-05 nav ul li #sport:hover {
+          color: #fff;
+          background: #7FC597; }
+    .talk-05 .row {
+      width: 100%;
+      max-width: 100vw;
+      font-size: 1em;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      box-sizing: border-box;
+      line-height: 1.5em;
+      text-align: center;
+      margin: auto; }
+      .talk-05 .row:after {
+        content: '';
+        display: block;
+        clear: both; }
+    .talk-05 p {
+      font-size: 15px; }
+    .talk-05 h1 {
+      font-size: 36px;
+      padding: 20px 0; }
+    .talk-05 h2 {
+      font-size: 21px; }
+    .talk-05 h3 {
+      font-size: 19.9995px; }
+    .talk-05 h4 {
+      font-size: 15.9999px; }
+    .talk-05 #select-xs {
+      display: none; }
+    .talk-05 .r1 {
+      padding-top: 40px;
+      padding-bottom: 20px; }
+    .talk-05 .r2 {
+      background-color: #B2DEEB;
+      padding: 10px 0px 10px 41px;
+      margin-bottom: 50px; }
+    .talk-05 .no-js .item {
+      visibility: hidden;
+      background-color: transparent; }
+    .talk-05 .waterfall {
+      /* -webkit-columns: 10rem auto; */
+      /* -moz-columns: 10rem auto; */
+      /* columns: 10rem auto; */
+      margin: auto;
+      width: 100%;
+      max-width: 1280px;
+      column-count: 4;
+      /* -webkit-column-gap: 0.5rem; */
+      /* -moz-column-gap: 0.5rem; */
+      column-gap: 40px;
+      background: #C2E4EC;
+      padding: 0px 40px 70px 40px; }
+      .talk-05 .waterfall .item {
+        background: #fff;
+        border-radius: 10px;
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 20px;
+        -webkit-transition: all 2s;
+        transition: all 2s;
+        box-sizing: border-box;
+        padding: 15px 15px 17px 15px;
+        position: relative; }
+        .talk-05 .waterfall .item .type {
+          background-color: #4CBCC2;
+          color: #fff;
+          padding: 2px 10px;
+          position: absolute;
+          top: 30px;
+          left: 0;
+          z-index: 2; }
+        .talk-05 .waterfall .item .type:after {
+          content: "";
+          display: block;
+          position: absolute;
+          right: -13px;
+          top: 0;
+          border-top: 13px solid #4CBCC2;
+          border-right: 13px solid transparent;
+          border-bottom: 13px solid #4CBCC2; }
+        .talk-05 .waterfall .item:nth-of-type(4n+1) .imgBox {
+          overflow: hidden; }
+        .talk-05 .waterfall .item:nth-of-type(4n+1) .type {
+          background-color: #4CBCC2; }
+        .talk-05 .waterfall .item:nth-of-type(4n+1) .type:after {
+          border-top-color: #4CBCC2;
+          border-bottom-color: #4CBCC2; }
+        .talk-05 .waterfall .item:nth-of-type(4n+2) .imgBox {
+          overflow: hidden; }
+        .talk-05 .waterfall .item:nth-of-type(4n+2) .type {
+          background-color: #D566A0; }
+        .talk-05 .waterfall .item:nth-of-type(4n+2) .type:after {
+          border-top-color: #D566A0;
+          border-bottom-color: #D566A0; }
+        .talk-05 .waterfall .item:nth-of-type(4n+3) .imgBox {
+          overflow: hidden; }
+        .talk-05 .waterfall .item:nth-of-type(4n+3) .type {
+          background-color: #FFA266; }
+        .talk-05 .waterfall .item:nth-of-type(4n+3) .type:after {
+          border-top-color: #FFA266;
+          border-bottom-color: #FFA266; }
+        .talk-05 .waterfall .item:nth-of-type(4n) .imgBox {
+          overflow: hidden; }
+        .talk-05 .waterfall .item:nth-of-type(4n) .type {
+          background-color: #7FC597; }
+        .talk-05 .waterfall .item:nth-of-type(4n) .type:after {
+          border-top-color: #7FC597;
+          border-bottom-color: #7FC597; }
+        .talk-05 .waterfall .item img {
+          width: 100%;
+          transition: 0.5s;
+          transform: scale(1, 1); }
+          .talk-05 .waterfall .item img:hover {
+            transform: scale(1.2, 1.2); }
+        .talk-05 .waterfall .item a {
+          text-decoration: none; }
+        .talk-05 .waterfall .item h2 {
+          color: #8A7676;
+          text-align: left;
+          padding: 15px 0; }
+        .talk-05 .waterfall .item a p {
+          color: #888888;
+          text-align: justify;
+          margin-bottom: 40px;
+          border-bottom: none; }
+        .talk-05 .waterfall .item p {
+          color: #676767;
+          text-align: justify;
+          border-bottom: 1px solid #A8A7A7; }
+        .talk-05 .waterfall .item .type p {
+          color: #676767;
+          text-align: justify;
+          color: #fff; }
+        .talk-05 .waterfall .item i {
+          color: #676767; }
+          .talk-05 .waterfall .item i:nth-child(1) {
+            margin-left: 86px; }
+          .talk-05 .waterfall .item i:nth-child(3) {
+            margin-left: 5px; }
+
+  .talk-04 .container {
+    width: 100%;
+    max-width: 100vw;
+    margin: auto;
+    margin-top: -103px;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    background: #C2E4EC;
+    background: #FCF2E2; }
+  .talk-04 .content {
+    width: 100%;
+    max-width: 773.213px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-right: 91.516px;
+    border: 15px solid #fff;
+    border-radius: 10px;
+    border: 20px solid #DAEABE;
+    box-shadow: 1px 1px 5px rgba(136, 136, 136, 0.3); }
+  .talk-04 p {
+    font-size: 15px; }
+  .talk-04 h1 {
+    font-size: 36px;
+    padding: 20px 0; }
+  .talk-04 h2 {
+    font-size: 21px; }
+  .talk-04 h3 {
+    font-size: 19.9995px; }
+  .talk-04 h4 {
+    font-size: 15.9999px; }
+  .talk-04 .btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #66DBFF;
+    border-radius: 20px;
+    padding: 10px 12px;
+    font-size: 20px;
+    border: 1px solid #66DBFF;
+    text-align: center;
+    transition: all 0.3s ease-out;
+    line-height: 1em;
+    font-size: 15px; }
+    .talk-04 .btn:hover {
+      background-color: #fff;
+      color: #66DBFF; }
+  .talk-04 .row {
+    width: 100%;
+    max-width: 100%;
+    font-size: 1em;
+    padding-left: 0;
+    padding-right: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    line-height: 1.5em;
+    text-align: center;
+    margin: auto; }
+    .talk-04 .row:after {
+      content: '';
+      display: block;
+      clear: both; }
+  .talk-04 #pic-top {
+    width: 169.557px;
+    height: 53.27px;
+    margin: auto; }
+  .talk-04 img {
+    width: 100%; }
+  .talk-04 .r1 .pic-head {
+    border: 17.452px solid #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px #ccc;
+    transform: rotate(11deg); }
+  .talk-04 .r1 h2 {
+    background: #fff;
+    padding-bottom: 35px;
+    padding-top: 17px;
+    color: #666; }
+  .talk-04 .r2 {
+    width: 100%;
+    max-width: 793.6px;
+    font-size: 1em;
+    padding: 0;
+    padding-top: 66px;
+    margin-bottom: 15px;
+    line-height: 1.5em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: 200px; }
+    .talk-04 .r2 h2 {
+      color: #666; }
+    .talk-04 .r2 .col-16 {
+      background: #E0F0F8;
+      border-right: 3px dashed #fff;
+      border-radius: 10px;
+      box-sizing: border-box;
+      box-shadow: 3px 3px 5px #ccc; }
+    .talk-04 .r2 .col-4 {
+      border-radius: 10px;
+      background: #E0F0F8;
+      box-shadow: 3px 3px 5px #ccc; }
+      .talk-04 .r2 .col-4 .rr2 {
+        width: 137px;
+        height: 295.97px;
+        text-align: left;
+        margin: auto;
+        background: #E0F0F8; }
+    .talk-04 .r2 .rr1 {
+      width: 619.609px;
+      background: #B2DAED;
+      border-radius: 10px 10px 0 0;
+      padding: 10px; }
+    .talk-04 .r2 .rr2 {
+      line-height: 60px; }
+    .talk-04 .r2 .content {
+      width: 482.771px;
+      margin: auto;
+      border: none;
+      padding: 20px 75px;
+      box-shadow: none;
+      color: #666; }
+      .talk-04 .r2 .content .rr2 {
+        padding-left: 13px;
+        padding-right: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        box-shadow: 1px 1px 3px #ccc; }
+        .talk-04 .r2 .content .rr2 .col-4 {
+          background: none;
+          box-shadow: none; }
+      .talk-04 .r2 .content .rr3 {
+        padding-left: 13px;
+        padding-right: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        box-shadow: 1px 1px 3px #ccc; }
+        .talk-04 .r2 .content .rr3 .col-4 {
+          background: none;
+          box-shadow: none; }
+      .talk-04 .r2 .content .rr4 {
+        padding-left: 13px;
+        padding-right: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        box-shadow: 1px 1px 3px #ccc; }
+        .talk-04 .r2 .content .rr4 .col-4 {
+          background: none;
+          box-shadow: none; }
+      .talk-04 .r2 .content .row {
+        background: #fff;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        line-height: 60px; }
+        .talk-04 .r2 .content .row img {
+          width: 100%;
+          vertical-align: middle; }
+    .talk-04 .r2:after {
+      content: '';
+      display: block;
+      clear: both; }
+  .talk-04 h1 {
+    text-align: center;
+    font-size: 36px;
+    margin: auto;
+    padding-top: 0px;
+    padding-bottom: 70px;
+    color: #8A7676; }
+  .talk-04 ul {
+    text-align: left;
+    padding-left: 145px;
+    line-height: 60px; }
+  .talk-04 li {
+    font-size: 18.9px;
+    color: #666;
+    border-bottom: 1px solid gray; }
+  .talk-04 span {
+    outline: 1px solid red; }
+  .talk-04 .col-15 {
+    box-sizing: border-box;
+    padding-right: 50px;
+    text-align: left; }
+  .talk-04 .col-1 {
+    text-align: left;
+    margin-right: 5px;
+    box-sizing: border-box; }
+  .talk-04 .memInfo li:nth-child(5) {
+    border: none; }
+  .talk-04 .memInfo li:nth-child(6) {
+    background: #FFEDDB;
+    border-radius: 10px;
+    border: none;
+    font-size: 17px;
+    padding: 32.447px 15px;
+    line-height: 2em; }
+  .talk-04 a {
+    margin-left: 30px; }
+
+  .talk {
+    width: 100%;
+    background: #C2E4EC;
+    display: none; }
+    .talk .row {
+      width: 100%;
+      max-width: 100vw;
+      font-size: 1em;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 35.334px;
+      padding-bottom: 35.334px;
+      box-sizing: border-box;
+      line-height: 1.5em;
+      text-align: center;
+      margin: auto; }
+      .talk .row:after {
+        content: '';
+        display: block;
+        clear: both; }
+    .talk .btn {
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      background-color: #FFA266;
+      border-radius: 20px;
+      padding: 10px 20px;
+      font-size: 20px;
+      border: 1px solid #FFA266;
+      text-align: center;
+      transition: all 0.3s ease-out; }
+      .talk .btn:hover {
+        background-color: #fff;
+        color: #FFA266; }
+      .talk .btn:hover i {
+        color: #FFA266; }
+    .talk .container {
+      width: 100%;
+      max-width: 100vw;
+      margin: auto;
+      margin-top: -96px;
+      padding-top: 80px;
+      padding-bottom: 80px;
+      background: #C2E4EC; }
+    .talk .content {
+      width: 100%;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 60px;
+      padding-left: 0px; }
+    .talk #select-xs {
+      display: none; }
+    .talk .lightbox .talk-01 .box-01 .content {
+      padding-top: 0; }
+    .talk p {
+      font-size: 15px; }
+    .talk h1 {
+      font-size: 36px;
+      padding: 20px 0; }
+    .talk h2 {
+      font-size: 21px; }
+    .talk h3 {
+      font-size: 19.9995px; }
+    .talk h4 {
+      font-size: 15.9999px; }
+    .talk .r1 {
+      background-color: #C2E4EC;
+      padding-bottom: 26.334px; }
+    .talk .r2 {
+      background-color: #B2DEEB;
+      padding-top: 10px;
+      padding-left: 86px;
+      padding-bottom: 10px; }
+    .talk .r3 {
+      width: 100%;
+      max-width: 1200px;
+      font-size: 1em;
+      padding: 0;
+      padding-top: 15px;
+      margin-bottom: 15px;
+      line-height: 1.5em;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto; }
+      .talk .r3:after {
+        content: '';
+        display: block;
+        clear: both; }
+    .talk .r4 {
+      width: 100%;
+      max-width: 1200px;
+      font-size: 1em;
+      padding: 0;
+      padding-top: 15px;
+      margin-bottom: 15px;
+      line-height: 1.5em;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto; }
+      .talk .r4:after {
+        content: '';
+        display: block;
+        clear: both; }
+    .talk .r5 {
+      width: 100%;
+      max-width: 1200px;
+      font-size: 1em;
+      padding: 0;
+      padding-top: 15px;
+      margin-bottom: 15px;
+      line-height: 1.5em;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto; }
+      .talk .r5:after {
+        content: '';
+        display: block;
+        clear: both; }
+    .talk .r6 {
+      width: 100%;
+      max-width: 1200px;
+      font-size: 1em;
+      padding: 0;
+      padding-top: 15px;
+      margin-bottom: 15px;
+      line-height: 1.5em;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto; }
+      .talk .r6:after {
+        content: '';
+        display: block;
+        clear: both; }
+    .talk .col-5 {
+      box-sizing: border-box;
+      padding: 0 15px;
+      position: relative; }
+      .talk .col-5 .type {
+        background-color: #4CBCC2;
+        color: #fff;
+        padding: 2px 10px;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        z-index: 2; }
+      .talk .col-5 .type:after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: -13px;
+        top: 0;
+        border-top: 13px solid #4CBCC2;
+        border-right: 13px solid transparent;
+        border-bottom: 13px solid #4CBCC2; }
+      .talk .col-5:nth-of-type(4n+1) .imgBox {
+        height: 330px;
+        overflow: hidden; }
+      .talk .col-5:nth-of-type(4n+1) .type {
+        background-color: #4CBCC2; }
+      .talk .col-5:nth-of-type(4n+1) .type:after {
+        border-top-color: #4CBCC2;
+        border-bottom-color: #4CBCC2; }
+      .talk .col-5:nth-of-type(4n+2) .imgBox {
+        height: 200px;
+        overflow: hidden; }
+      .talk .col-5:nth-of-type(4n+2) .type {
+        background-color: #D566A0; }
+      .talk .col-5:nth-of-type(4n+2) .type:after {
+        border-top-color: #D566A0;
+        border-bottom-color: #D566A0; }
+      .talk .col-5:nth-of-type(4n+3) .imgBox {
+        height: 162px;
+        overflow: hidden; }
+      .talk .col-5:nth-of-type(4n+3) .type {
+        background-color: #FFA266; }
+      .talk .col-5:nth-of-type(4n+3) .type:after {
+        border-top-color: #FFA266;
+        border-bottom-color: #FFA266; }
+      .talk .col-5:nth-of-type(4n) .imgBox {
+        height: 265px;
+        overflow: hidden; }
+      .talk .col-5:nth-of-type(4n) .type {
+        background-color: #7FC597; }
+      .talk .col-5:nth-of-type(4n) .type:after {
+        border-top-color: #7FC597;
+        border-bottom-color: #7FC597; }
+      .talk .col-5 img {
+        width: 100%;
+        transition: 0.5s;
+        transform: scale(1, 1); }
+        .talk .col-5 img:hover {
+          transform: scale(1.2, 1.2); }
+      .talk .col-5 a {
+        text-decoration: none; }
+      .talk .col-5 .content {
+        width: 100%;
+        max-width: 240px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 0;
+        padding-left: 0;
+        border: 15px solid #fff;
+        border-radius: 10px;
+        background: #fff; }
+      .talk .col-5 h2 {
+        color: #8A7676;
+        text-align: left;
+        padding: 15px 0; }
+      .talk .col-5 .content a p {
+        color: #888888;
+        text-align: justify;
+        margin-bottom: 40px;
+        border-bottom: none; }
+      .talk .col-5 .content p {
+        color: #676767;
+        text-align: justify;
+        border-bottom: 1px solid #A8A7A7; }
+      .talk .col-5 .content .type p {
+        color: #676767;
+        text-align: justify;
+        color: #fff; }
+      .talk .col-5 i {
+        color: #676767; }
+        .talk .col-5 i:nth-child(1) {
+          margin-left: 45px; }
+    .talk span {
+      font-size: 15px;
+      margin-right: 3px;
+      color: #898989; }
+    .talk i {
+      color: #FFA266;
+      font-size: 24px;
+      margin-right: 3px; }
+    .talk .fa-pencil {
+      color: #fff; }
+    .talk nav ul {
+      text-align: center;
+      padding-left: 30px; }
+      .talk nav ul li {
+        display: inline-block;
+        margin-right: 40px;
+        line-height: 30px; }
+        .talk nav ul li a {
+          display: inline-block;
+          font-size: 19.9995px;
+          text-decoration: none;
+          color: #666666;
+          border-radius: 10px;
+          padding: 0 15px;
+          line-height: 50px; }
+        .talk nav ul li #newest:hover {
+          color: #fff;
+          background: #70C8E9; }
+        .talk nav ul li #hot:hover {
+          color: #fff;
+          background: red; }
+        .talk nav ul li #change:hover {
+          color: #fff;
+          background: #D566A0; }
+        .talk nav ul li #clothes:hover {
+          color: #fff;
+          background: #FFA266; }
+        .talk nav ul li #rookie:hover {
+          color: #fff;
+          background: #4CBCC2; }
+        .talk nav ul li #sport:hover {
+          color: #fff;
+          background: #7FC597; }
+
+  .talk-02 {
+    /*==== rr loop =============================*/
+    /*============ row loop=================*/ }
+    .talk-02 .fa-star:nth-child(1) {
+      text-shadow: 2px 2px 2px rgba(64, 64, 64, 0.3); }
+    .talk-02 .fa-star:nth-child(2) {
+      text-shadow: 2px 2px 2px rgba(64, 64, 64, 0.3); }
+    .talk-02 .fa-star:nth-child(3) {
+      text-shadow: 2px 2px 2px rgba(64, 64, 64, 0.3); }
+    .talk-02 #select-xs {
+      display: none; }
+    .talk-02 .lightbox .talk-01 .box-01 .content {
+      padding-top: 0;
+      padding-left: 0; }
+      .talk-02 .lightbox .talk-01 .box-01 .content .r3 {
+        margin-bottom: 0px; }
+        .talk-02 .lightbox .talk-01 .box-01 .content .r3 .col-13 {
+          padding-left: 0px;
+          border-left: none; }
+      .talk-02 .lightbox .talk-01 .box-01 .content .r4 {
+        margin-bottom: 0px; }
+        .talk-02 .lightbox .talk-01 .box-01 .content .r4 .rr1 {
+          background: none;
+          margin-bottom: 0px; }
+        .talk-02 .lightbox .talk-01 .box-01 .content .r4 .rr2 {
+          background: none; }
+      .talk-02 .lightbox .talk-01 .box-01 .content .r6 {
+        margin-bottom: 14px; }
+    .talk-02 .row {
+      width: 100%;
+      max-width: 100vw;
+      font-size: 1em;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 35.334px;
+      padding-bottom: 35.334px;
+      box-sizing: border-box;
+      line-height: 1.5em;
+      text-align: center;
+      margin: auto; }
+      .talk-02 .row:after {
+        content: '';
+        display: block;
+        clear: both; }
+    .talk-02 .r3 .rr2 {
+      text-align: left;
+      padding-right: 30px;
+      line-height: 1.8em; }
+    .talk-02 .r1 {
+      padding-bottom: 20px; }
+    .talk-02 .btn {
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      background-color: #FFA266;
+      border-radius: 20px;
+      padding: 8px 20px;
+      font-size: 20px;
+      border: 1px solid #FFA266;
+      text-align: center;
+      transition: all 0.3s ease-out;
+      width: 120px; }
+      .talk-02 .btn:hover {
+        background-color: #fff;
+        color: #FFA266; }
+    .talk-02 .btn-f {
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      background-color: #70C8E9;
+      border-radius: 20px;
+      padding: 0px 16px;
+      font-size: 20px;
+      border: 1px solid #70C8E9;
+      text-align: center;
+      transition: all 0.3s ease-out;
+      font-size: 15px;
+      padding: 0px 16px;
+      margin-top: 7px; }
+      .talk-02 .btn-f:hover {
+        background-color: #fff;
+        color: #70C8E9; }
+    .talk-02 .container {
+      width: 100%;
+      max-width: 100vw;
+      margin: auto;
+      margin-top: -125px;
+      padding-top: 120px;
+      padding-bottom: 80px;
+      background: #C2E4EC; }
+    .talk-02 .content {
+      width: 100%;
+      max-width: 1095.84px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 55px;
+      padding-left: 8px; }
+    .talk-02 a {
+      text-decoration: none;
+      color: #898989; }
+    .talk-02 p {
+      font-size: 15px; }
+    .talk-02 h1 {
+      font-size: 36px;
+      padding: 20px 0; }
+    .talk-02 h2 {
+      font-size: 21px; }
+    .talk-02 h3 {
+      font-size: 19.9995px; }
+    .talk-02 h4 {
+      font-size: 15.9999px; }
+    .talk-02 span {
+      font-size: 15px;
+      margin-right: 50px;
+      color: #898989; }
+    .talk-02 i {
+      color: #FFA266;
+      font-size: 24px;
+      margin-right: 3px; }
+    .talk-02 .fa-pencil {
+      color: #fff; }
+    .talk-02 .memInfo li {
+      line-height: 2em;
+      color: #666666; }
+    .talk-02 .memName li {
+      padding-left: 27px;
+      color: #666666; }
+    .talk-02 nav ul {
+      text-align: center;
+      padding-left: 30px; }
+      .talk-02 nav ul li {
+        display: inline-block;
+        margin-right: 40px;
+        line-height: 30px; }
+        .talk-02 nav ul li a {
+          display: inline-block;
+          font-size: 19.9995px;
+          text-decoration: none;
+          color: #666666;
+          border-radius: 10px;
+          padding: 0 15px;
+          line-height: 50px; }
+        .talk-02 nav ul li #newest:hover {
+          color: #fff;
+          background: #70C8E9; }
+        .talk-02 nav ul li #hot:hover {
+          color: #fff;
+          background: red; }
+        .talk-02 nav ul li #change:hover {
+          color: #fff;
+          background: #D566A0; }
+        .talk-02 nav ul li #clothes:hover {
+          color: #fff;
+          background: #FFA266; }
+        .talk-02 nav ul li #rookie:hover {
+          color: #fff;
+          background: #4CBCC2; }
+        .talk-02 nav ul li #sport:hover {
+          color: #fff;
+          background: #7FC597; }
+    .talk-02 textarea {
+      font-size: 20px;
+      border-radius: 10px;
+      width: 100%;
+      border: none;
+      height: 100px;
+      color: #AAA9A9;
+      padding-left: 10px;
+      box-sizing: border-box; }
+    .talk-02 textarea:focus {
+      outline: none; }
+    .talk-02 .col-3 {
+      padding-left: 5px; }
+    .talk-02 .r3 .col-13 {
+      padding-left: 87px;
+      border-left: 1px solid #A8A7A7; }
+    .talk-02 .r3 .rr1 {
+      margin-bottom: 24px;
+      padding: 15px;
+      border-radius: 10px;
+      background: #FFEDDB;
+      color: #8A7676; }
+    .talk-02 .r3 .rr2 {
+      background: #FFEDDB;
+      border: none;
+      border-radius: 10px 10px 0px 0px;
+      padding-top: 30px;
+      padding-left: 30px;
+      padding-bottom: 0px;
+      color: #888888; }
+    .talk-02 .r3 .rr3 {
+      background: #FFEDDB;
+      border: none;
+      padding: 34px; }
+    .talk-02 .r3 .rr4 {
+      background: #FFD7BA;
+      border: none;
+      border-radius: 0px 0px 10px 10px;
+      padding: 3px 0px;
+      text-align: right; }
+    .talk-02 .r4 .col-13 {
+      padding-left: 49px; }
+    .talk-02 .r4 .cc2 {
+      text-align: right; }
+    .talk-02 .r4 .rr1 {
+      padding: 0;
+      background: #fff;
+      color: #888888;
+      margin-bottom: 30px; }
+    .talk-02 .r4 .rr2 {
+      padding: 0;
+      background: #fff;
+      color: #888888;
+      margin-bottom: 0px; }
+    .talk-02 .r4 .time, .talk-02 .r4 .date {
+      font-weight: bold;
+      margin-right: 0px; }
+    .talk-02 .r4 .rr1,
+    .talk-02 .r4 .rr2 {
+      text-align: left; }
+    .talk-02 .r5 .col-13 {
+      padding-left: 49px; }
+    .talk-02 .r5 .cc2 {
+      text-align: right; }
+    .talk-02 .r5 .rr1 {
+      padding: 0;
+      background: #fff;
+      color: #888888;
+      margin-bottom: 30px; }
+    .talk-02 .r5 .rr2 {
+      padding: 0;
+      background: #fff;
+      color: #888888;
+      margin-bottom: 0px; }
+    .talk-02 .r5 .time, .talk-02 .r5 .date {
+      font-weight: bold;
+      margin-right: 0px; }
+    .talk-02 .r5 .rr1,
+    .talk-02 .r5 .rr2 {
+      text-align: left; }
+    .talk-02 .r1 {
+      border-radius: 0px;
+      background-color: #C2E4EC;
+      border: none;
+      max-width: 1280px;
+      text-align: center;
+      margin: auto; }
+    .talk-02 .r2 {
+      border-radius: 0px;
+      background-color: #B2DEEB;
+      border: none;
+      text-align: center;
+      margin: auto;
+      padding-top: 10px;
+      padding-left: 41px;
+      padding-bottom: 10px; }
+    .talk-02 .r3 {
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 1px 1px 3px #ccc;
+      border: none;
+      margin-bottom: 38px; }
+    .talk-02 .r4 {
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 1px 1px 3px #ccc;
+      border: none;
+      margin-bottom: 38px;
+      padding-bottom: 0px; }
+    .talk-02 .r5 {
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 1px 1px 3px #ccc;
+      border: none;
+      padding-bottom: 0px; }
+    .talk-02 .r6 {
+      background-color: #C2E4EC;
+      border: none;
+      margin-bottom: 38px;
+      padding-bottom: 0px;
+      padding-top: 10px;
+      text-align: center;
+      color: #AAA9A9; }
+    .talk-02 .r7 {
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 1px 1px 3px #ccc;
+      border: none;
+      margin-bottom: 38px;
+      padding-bottom: 0px; }
+    .talk-02 .r8 {
+      background-color: #C2E4EC;
+      text-align: center;
+      padding-top: 0px;
+      border: none; }
+
+  .talk-01 .col-5 {
+    padding: 0px 0px;
+    margin-left: 23px; }
+  .talk-01 h2 {
+    text-align: left; }
+  .talk-01 input {
+    box-shadow: -1px -1px rgba(136, 136, 136, 0.3);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 277.868px;
+    font-size: 18px;
+    padding: 0;
+    border: none; }
+    .talk-01 input:focus {
+      outline: none; }
+  .talk-01 select {
+    box-shadow: -1px -1px rgba(136, 136, 136, 0.3);
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 0;
+    width: 100%;
+    max-width: 277.868px;
+    border: none;
+    font-size: 18px; }
+    .talk-01 select:focus {
+      outline: none; }
+  .talk-01 textarea {
+    box-shadow: -1px -1px rgba(136, 136, 136, 0.3);
+    height: 100px;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 100%;
+    border: none; }
+    .talk-01 textarea:focus {
+      outline: none; }
+  .talk-01 .content {
+    top: 50%;
+    left: 50%;
+    margin-left: -367.394px;
+    margin-top: -325px;
+    width: 100%;
+    max-width: 734.788px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 10px; }
+  .talk-01 .row {
+    width: 100%;
+    max-width: 678.72px;
+    font-size: 1em;
+    border: 0.1875em solid #fff;
+    padding-left: 1.956%;
+    padding-right: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    line-height: 1.5em; }
+    .talk-01 .row:after {
+      content: '';
+      display: block;
+      clear: both; }
+  .talk-01 .btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #66DBFF;
+    border-radius: 20px;
+    padding: 8px 40px;
+    font-size: 20px;
+    border: 1px solid #66DBFF;
+    text-align: center;
+    transition: all 0.3s ease-out;
+    width: 90px; }
+    .talk-01 .btn:hover {
+      background-color: #fff;
+      color: #66DBFF; }
+  .talk-01 .r1 {
+    padding-bottom: 0;
+    padding-top: 0;
+    height: 50px; }
+    .talk-01 .r1 h1 {
+      padding: 15px 0; }
+  .talk-01 .r2,
+  .talk-01 .r3 {
+    text-align: left; }
+  .talk-01 .r4 .rr2 {
+    padding-left: 60px; }
+    .talk-01 .r4 .rr2 .col-4 #btn-left {
+      padding-top: 30%;
+      padding-left: 32%; }
+    .talk-01 .r4 .rr2 .col-4 #btn-right {
+      padding-top: 30%;
+      padding-left: 26px;
+      text-align: left; }
+  .talk-01 .r2 {
+    margin-left: 4.35%;
+    margin-right: 4.35%;
+    margin-top: 20px; }
+  .talk-01 .r3 {
+    margin-left: 4.35%;
+    margin-right: 4.35%;
+    margin-top: 20px; }
+  .talk-01 .r4 {
+    margin-left: 4.35%;
+    margin-right: 4.35%;
+    margin-top: 20px; }
+  .talk-01 .r5 {
+    margin-left: 4.35%;
+    margin-right: 4.35%;
+    margin-top: 20px; }
+  .talk-01 .r6 {
+    margin-top: 24px; }
+  .talk-01 p {
+    font-size: 15px; }
+  .talk-01 h1 {
+    font-size: 19.99995px; }
+  .talk-01 h2 {
+    font-size: 18px; }
+  .talk-01 input[type='button'] {
+    border-radius: 20px;
+    background-color: #66DBFF;
+    font-size: 18px;
+    color: #fff;
+    width: 144.499px;
+    margin-left: 73px; }
+  .talk-01 li {
+    display: inline-block;
+    margin-left: 9.933%; }
+  .talk-01 .box-01 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0; }
+  .talk-01 .btn-close {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center; }
+  .talk-01 .r1 {
+    border-radius: 10px 10px 0px 0px;
+    background-color: #B2DAED;
+    border: none;
+    max-width: 734.788px;
+    text-align: center; }
+  .talk-01 .r2 {
+    border-radius: 10px;
+    background-color: #E0F0F8;
+    box-shadow: 1px 1px 3px #ccc;
+    border: none; }
+  .talk-01 .r3 {
+    border-radius: 10px;
+    background-color: #E0F0F8;
+    box-shadow: 1px 1px 3px #ccc;
+    border: none; }
+  .talk-01 .r4 {
+    border-radius: 10px;
+    background-color: #E0F0F8;
+    box-shadow: 1px 1px 3px #ccc;
+    border: none; }
+  .talk-01 .r5 {
+    border-radius: 10px;
+    background-color: #E0F0F8;
+    box-shadow: 1px 1px 3px #ccc;
+    border: none; }
+  .talk-01 .r6 {
+    border-radius: 0px 0px 10px 10px;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 0px; }
+  .talk-01 #imgUpLoad {
+    border-radius: 10px;
+    background-color: #fff;
+    border: none;
+    max-width: 125px;
+    width: 100%; }
+    .talk-01 #imgUpLoad img {
+      width: 100%; }
+  .talk-01 #t001 {
+    margin-left: 0px; }
+  .talk-01 .rr1,
+  .talk-01 .rr2 {
+    padding: 0px;
+    border: 0px; }
+
+  .lightbox {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 555; } }
+body {
+  font-size: 15px; }
+
+.col-1 {
+  width: 5%;
+  float: left; }
+
+.col-2 {
+  width: 10%;
+  float: left; }
+
+.col-3 {
+  width: 15%;
+  float: left; }
+
+.col-4 {
+  width: 20%;
+  float: left; }
+
+.col-5 {
+  width: 25%;
+  float: left; }
+
+.col-6 {
+  width: 30%;
+  float: left; }
+
+.col-7 {
+  width: 35%;
+  float: left; }
+
+.col-8 {
+  width: 40%;
+  float: left; }
+
+.col-9 {
+  width: 45%;
+  float: left; }
+
+.col-10 {
+  width: 50%;
+  float: left; }
+
+.col-11 {
+  width: 55%;
+  float: left; }
+
+.col-12 {
+  width: 60%;
+  float: left; }
+
+.col-13 {
+  width: 65%;
+  float: left; }
+
+.col-14 {
+  width: 70%;
+  float: left; }
+
+.col-15 {
+  width: 75%;
+  float: left; }
+
+.col-16 {
+  width: 80%;
+  float: left; }
+
+.col-17 {
+  width: 85%;
+  float: left; }
+
+.col-18 {
+  width: 90%;
+  float: left; }
+
+.col-19 {
+  width: 95%;
+  float: left; }
+
+.col-20 {
+  width: 100%;
+  float: left; }

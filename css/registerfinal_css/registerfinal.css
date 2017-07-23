@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+body {
+  font-family: 文鼎圓體;
+  background-color: #FEF4E4; }
+
+
+#register_content_session3{
+	/*padding-top:315px;*/
+	max-width: 1280px;
+	width: 100%;
+	height:90vh;
+	margin: auto;
+	background-color: #FEF4E4;
+	box-sizing: border-box;
+	padding-top:80px;}
+
+#register_content_session3 p {
+  text-align: center;
+  display: block;
+  margin-top: 20px; }
+
+#register_content_session3 p:nth-child(2) {
+  margin-top: 40px; }
+
+#matchestext{
+  color:red;
+  display:inline-block;
+  margin:0px 10px;
+}
+
+#register_matches_text {
+  font-weight: 900;
+  margin: 0 10px; }
+
+#three_banner {
+  max-width: 1280px;
+  width:100%;
+  box-sizing: border-box;
+  padding: 30px;
+  margin: auto;
+  margin-top:50px;
+  text-align: center;
+  /*background-color: red;*/ }
+
+#three_banner .three_banner_child {
+  width: 270px;
+  height: 300px;
+  display: inline-block; }
+
+#footer {
+  color: white;
+  height:10vh;
+  line-height: 10vh;
+/*  padding: 20px;*/
+  text-align: center;
+  background-color: black; }
+
+
+
+
+
+
+
+
+@media screen and (max-width:767px){
+
+
+/*
+body{
+	max-width:767px;
+	width:100%;
+}*/
+ #register_content_session3{
+	/*padding-top:315px;*/
+	/*max-width: 767px;*/
+	width: 100%;
+/*	height:90vh;*/
+  height:150vh;
+	margin: auto;
+	background-color: #FEF4E4;
+	box-sizing: border-box;
+	padding-top:0px;
+  margin-top:110px;}
+
+
+#register_content_session3 p {
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 0px; }
+#matchestext{
+  /*width:100px;*/
+  /*background-color: pink;*/
+  display:inline-block;
+  color:red;
+}
+#three_banner {
+max-width: 700px;
+width:100%;
+box-sizing: border-box;
+padding: 0px;
+margin: auto;
+/*margin-bottom: 100px;*/}
+
+#three_banner .three_banner_child {
+  width: 100%;
+  text-align: center;
+  display: block; 
+  margin:auto;
+/*background-color: red;*/}
+.three_banner_child img{
+  /*width:100%;*/
+  height:100%;
+}
+#footer{
+	color: white;
+  height:5vh;
+  line-height: 5vh;
+  text-align: center;
+  background-color: black; 
+}
+
+}/*767end*/
+
+
+
+@media screen and (max-width:767px)

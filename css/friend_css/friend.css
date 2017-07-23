@@ -1,0 +1,346 @@
+body {
+  background: linear-gradient(180deg, #E1F0F7 30%, #9CFFFC); }
+
+section.friend {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto; }
+  section.friend h2 {
+    color: #8a7676;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 1%; }
+  section.friend p {
+    color: #8a7676;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 60px; }
+  section.friend .friend_searchbar {
+    position: relative;
+    text-align: center; }
+    section.friend .friend_searchbar > label {
+      position: absolute;
+      left: 10%; }
+    section.friend .friend_searchbar .friend_search {
+      border: 0;
+      padding: 10px;
+      font-size: 15px;
+      border-radius: 10px;
+      outline: 0; }
+    section.friend .friend_searchbar .friend_gosearch {
+      position: relative;
+      left: -30px;
+      top: -2px;
+      width: 40px;
+      height: 40px;
+      color: #fff;
+      font-size: 20px;
+      background-color: #66DBFF;
+      border-radius: 50%;
+      vertical-align: middle;
+      text-align: center;
+      line-height: 40px;
+      box-shadow: 0 2px 2px #65B1C9, 0 2px 1px 1px rgba(0, 0, 0, 0.1);
+      transition: all 0.15s ease-in-out;
+      cursor: pointer; }
+      section.friend .friend_searchbar .friend_gosearch:hover {
+        background-color: #76E2F4;
+        box-shadow: 0 2px 0 #55D2F9, 0 2px 1px 1px rgba(0, 0, 0, 0.1); }
+      section.friend .friend_searchbar .friend_gosearch:active {
+        box-shadow: none;
+        top: 1px; }
+    section.friend .friend_searchbar .friend_filter,
+    section.friend .friend_searchbar .friend_random {
+      position: absolute;
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: #66DBFF;
+      color: #fff;
+      text-align: center;
+      border-radius: 40px;
+      box-shadow: 0 2px 2px #65B1C9, 0 2px 1px 1px rgba(0, 0, 0, 0.1);
+      transition: all 0.15s ease-in-out;
+      cursor: pointer; }
+      section.friend .friend_searchbar .friend_filter:hover,
+      section.friend .friend_searchbar .friend_random:hover {
+        background-color: #76E2F4;
+        box-shadow: 0 2px 0 #55D2F9, 0 2px 1px 1px rgba(0, 0, 0, 0.1); }
+      section.friend .friend_searchbar .friend_filter:active,
+      section.friend .friend_searchbar .friend_random:active {
+        box-shadow: none;
+        top: 1px; }
+    section.friend .friend_searchbar .friend_filter {
+      left: 44%; }
+    section.friend .friend_searchbar .friend_random {
+      right: 10%; }
+    section.friend .friend_searchbar .friend_filteron {
+      display: none;
+      position: absolute;
+      text-align: left;
+      left: 38%;
+      top: -5vh;
+      padding: 12px 30px;
+      border-radius: 15px;
+      background-color: rgba(255, 255, 255, 0.5);
+      z-index: 5; }
+      section.friend .friend_searchbar .friend_filteron span {
+        display: inline-block;
+        padding: 10px 0; }
+      section.friend .friend_searchbar .friend_filteron label {
+        display: inline-block; }
+        section.friend .friend_searchbar .friend_filteron label input[type=radio] {
+          display: none; }
+        section.friend .friend_searchbar .friend_filteron label #male:checked + i {
+          color: #66DBFF; }
+        section.friend .friend_searchbar .friend_filteron label #female:checked + i {
+          color: #ff95be; }
+        section.friend .friend_searchbar .friend_filteron label .fa {
+          color: #aaa;
+          margin-right: 66px;
+          font-size: 20px;
+          cursor: pointer; }
+        section.friend .friend_searchbar .friend_filteron label input[type=checkbox] {
+          width: 20px;
+          height: 20px;
+          background-color: #B2DAED;
+          vertical-align: middle; }
+        section.friend .friend_searchbar .friend_filteron label input[type=checkbox]:focus {
+          outline: 0; }
+      section.friend .friend_searchbar .friend_filteron label:nth-of-type(4) {
+        margin: 10px 30px; }
+      section.friend .friend_searchbar .friend_filteron label:nth-of-type(7) {
+        margin: 10px 30px; }
+      section.friend .friend_searchbar .friend_filteron #gofilt {
+        font-size: 15px;
+        position: relative;
+        left: 28%;
+        border: 0;
+        border-radius: 15px;
+        padding: 5px 20px;
+        color: #ffffff;
+        background-color: #66dbff;
+        box-shadow: 0 2px 2px #65B1C9, 0 2px 1px 1px rgba(0, 0, 0, 0.1);
+        transition: all 0.15s ease-in-out;
+        cursor: pointer; }
+        section.friend .friend_searchbar .friend_filteron #gofilt:focus {
+          outline: 0; }
+        section.friend .friend_searchbar .friend_filteron #gofilt:hover {
+          background-color: #76E2F4;
+          box-shadow: 0 2px 0 #55D2F9, 0 2px 1px 1px rgba(0, 0, 0, 0.1); }
+        section.friend .friend_searchbar .friend_filteron #gofilt:active {
+          box-shadow: none;
+          top: 1px; }
+  section.friend .friend_result {
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 17vh;
+    position: relative;
+    left: 0; }
+    section.friend .friend_result .friend_member {
+      display: inline-block;
+      width: 11.9%;
+      box-sizing: border-box;
+      position: relative; }
+      section.friend .friend_result .friend_member a {
+        color: #666; }
+      section.friend .friend_result .friend_member:nth-child(odd) {
+        top: 100px; }
+      section.friend .friend_result .friend_member:nth-child(even) {
+        top: 50px; }
+      section.friend .friend_result .friend_member img {
+        width: 100%; }
+      section.friend .friend_result .friend_member .clothHead,
+      section.friend .friend_result .friend_member .clothUpper,
+      section.friend .friend_result .friend_member .clothLower {
+        width: 100%;
+        position: absolute; }
+      section.friend .friend_result .friend_member .clothHead {
+        top: 0;
+        z-index: 3; }
+      section.friend .friend_result .friend_member .clothUpper {
+        top: 58.5%;
+        z-index: 2; }
+      section.friend .friend_result .friend_member .clothLower {
+        top: 67.9%;
+        z-index: 1; }
+      section.friend .friend_result .friend_member .cylinder {
+        width: 100%;
+        height: 20px;
+        display: inline-block;
+        position: relative;
+        top: -5px;
+        z-index: -1; }
+        section.friend .friend_result .friend_member .cylinder:before {
+          content: '';
+          display: inline-block;
+          width: 100%;
+          height: 30px;
+          border-radius: 45%;
+          position: absolute;
+          left: 0;
+          top: -18px; }
+        section.friend .friend_result .friend_member .cylinder:after {
+          content: '';
+          display: inline-block;
+          width: 100%;
+          height: 30px;
+          border-radius: 45%;
+          position: absolute;
+          left: 0;
+          bottom: -12px;
+          z-index: -1; }
+      section.friend .friend_result .friend_member:nth-child(odd) .cylinder {
+        background-color: #4ba6a6; }
+        section.friend .friend_result .friend_member:nth-child(odd) .cylinder:before {
+          background-color: #64dddd; }
+        section.friend .friend_result .friend_member:nth-child(odd) .cylinder:after {
+          background-color: #4ba6a6; }
+      section.friend .friend_result .friend_member:nth-child(even) .cylinder {
+        background-color: #ffa6a6; }
+        section.friend .friend_result .friend_member:nth-child(even) .cylinder:before {
+          background-color: #ffdddd; }
+        section.friend .friend_result .friend_member:nth-child(even) .cylinder:after {
+          background-color: #ffa6a6; }
+      section.friend .friend_result .friend_member .friend_memId {
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 70%;
+        padding: 5% 2.5%;
+        margin: auto;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 5px;
+        z-index: 9; }
+      section.friend .friend_result .friend_member:nth-child(even) .friend_memId {
+        top: 20px; }
+      section.friend .friend_result .friend_member .friend_info {
+        display: none;
+        position: absolute;
+        bottom: -10%;
+        left: -20%;
+        width: 250px;
+        height: 250px;
+        background-color: #ffeddb;
+        z-index: 5;
+        cursor: auto;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 15px;
+        text-align: left; }
+        section.friend .friend_result .friend_member .friend_info .avatar {
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          box-sizing: border-box;
+          overflow: hidden;
+          vertical-align: top;
+          margin: 3%;
+          float: left; }
+          section.friend .friend_result .friend_member .friend_info .avatar img {
+            width: 100%;
+            position: relative;
+            top: -40%; }
+        section.friend .friend_result .friend_member .friend_info .basicinfo {
+          width: 100%; }
+          section.friend .friend_result .friend_member .friend_info .basicinfo div {
+            padding: 3% 0; }
+        section.friend .friend_result .friend_member .friend_info .selfintro {
+          width: 100%; }
+          section.friend .friend_result .friend_member .friend_info .selfintro div {
+            display: block;
+            padding: 3% 0; }
+          section.friend .friend_result .friend_member .friend_info .selfintro .introduce {
+            background-color: #ffd7ba;
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 10px;
+            padding: 8% 0 30% 0;
+            overflow: hidden; }
+      section.friend .friend_result .friend_member:hover .friend_info {
+        display: initial; }
+      section.friend .friend_result .friend_member:nth-child(odd) .friend_info .avatar {
+        border: 2px solid #79c2d4; }
+      section.friend .friend_result .friend_member:nth-child(even) .friend_info .avatar {
+        border: 2px solid #ff95be; }
+    @media screen and (max-width: 767px) {
+      section.friend .friend_result .friend_member {
+        width: 40%;
+        left: 1%;
+        display: block;
+        margin-top: 7%; }
+        section.friend .friend_result .friend_member:nth-child(odd) {
+          top: 75px; }
+        section.friend .friend_result .friend_member:nth-child(even) {
+          top: 75px; }
+        section.friend .friend_result .friend_member .friend_info {
+          display: block;
+          width: 130%;
+          left: 110%;
+          top: 15%;
+          height: 75vw;
+          padding-top: 3%; }
+          section.friend .friend_result .friend_member .friend_info .avatar {
+            width: 25vw;
+            height: 25vw;
+            float: none; }
+          section.friend .friend_result .friend_member .friend_info .selfintro .introduce {
+            padding: 8% 0; } }
+    section.friend .friend_result > div:nth-child(odd) .cylinder {
+      background-color: #4ba6a6; }
+      section.friend .friend_result > div:nth-child(odd) .cylinder:before {
+        background-color: #64dddd; }
+      section.friend .friend_result > div:nth-child(odd) .cylinder:after {
+        background-color: #4ba6a6; }
+    section.friend .friend_result > div:nth-child(even) .cylinder {
+      background-color: #ffa6a6; }
+      section.friend .friend_result > div:nth-child(even) .cylinder:before {
+        background-color: #ffdddd; }
+      section.friend .friend_result > div:nth-child(even) .cylinder:after {
+        background-color: #ffa6a6; }
+  @media screen and (max-width: 767px) {
+    section.friend .friend_result {
+      margin-top: 0;
+      padding: 0 2.5%;
+      box-sizing: border-box; }
+    section.friend .friend_searchbar {
+      position: relative; }
+      section.friend .friend_searchbar > label {
+        margin: auto;
+        position: relative;
+        display: block;
+        left: 3%;
+        width: 80%; }
+      section.friend .friend_searchbar .friend_filter,
+      section.friend .friend_searchbar .friend_random,
+      section.friend .friend_searchbar .friend_filteron {
+        margin: auto;
+        position: initial;
+        width: 150px;
+        margin: 10px auto; }
+      section.friend .friend_searchbar .friend_filter {
+        left: 0;
+        display: block; }
+      section.friend .friend_searchbar .friend_random {
+        right: 0;
+        display: block; }
+      section.friend .friend_searchbar .friend_filteron {
+        width: 80%;
+        padding: 5% 8%;
+        box-sizing: border-box; } }
+
+@media screen and (max-width: 767px) {
+  section.friend {
+    margin-bottom: 100px; } }
+.friend_stage {
+  background-image: url("../../images/friend_img/stage.png");
+  background-repeat: repeat-x;
+  height: 240px;
+  position: relative;
+  z-index: -2; }
+
+@media screen and (max-width: 767px) {
+  .friend_stage {
+    display: none; } }

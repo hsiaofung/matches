@@ -1,0 +1,488 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+body {
+  font-family: 文鼎圓體;
+  background-color: #FEF4E4;
+   }
+
+@media screen and (min-width:768px){
+  #mobile_Tr_address,#mobile_Tr_introduce,#mobile_hobby_Tr{
+  display:none;
+}
+
+}/*768*/
+
+#register {
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
+  background-color: #FEF4E4; }
+
+#register tr{
+  height:45px;
+}
+
+#register_content h2 {
+  text-align: center; }
+
+#register_content_session1 td{
+  margin-bottom:25px;
+}
+
+#register_content_session1 {
+  margin-top: 6.2%;
+  /*height:100vh;*/
+   }
+
+#register_content_session1_box th {
+  white-space: nowrap; }
+
+#register_content_session1_box td {
+  text-align: left;
+  margin-right: 20px; }
+
+#register_content_session1_box,#register_content_session2_box{
+  font-family: 文鼎圓體;
+  font-size: 14px;
+  text-align: right;
+  max-width: 900px;
+  margin: auto;
+  border-radius: 10px;
+  background-color: white;
+  position: relative; }
+
+#register_content_session1_box h3 {
+  padding: 8px;
+  margin: auto;
+  text-align: left;
+  text-indent: 8em;
+  font-size: 15px;
+  background-color: #b2daed;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  display: block; }
+
+#register_content_session1_box h3:before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-color: #ffc7a3;
+  display: inline-block;
+  border: 5px solid white;
+  border-radius: 50%;
+  position: absolute;
+  top: -35px;
+  left: 50px;
+  background-image: url(../../images/register_img/before1.png);
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+#register_content_session1_box input {
+  width: 130px;
+  padding: 4px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: #e0f0f8;
+  border: none;
+  outline: none; }
+
+#register_content_session1_box #address_length {
+  width: 180px; }
+
+.v {
+  width: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 0px; }
+
+.v img {
+  width: 100%; }
+
+#hobbybox, #hobbybox1 {
+  width: 100px; }
+
+#hobbybox input {
+  width: 23px;
+  vertical-align: middle;
+  background-color: #f00; }
+
+#hobbybox1 input {
+  width: 23px;
+  vertical-align: middle; }
+
+#register_content_session1_box #feedback {
+  color: #70c9ea;
+  text-align: center;
+  text-indent: 11.5em;
+  margin: auto; }
+
+#feedbacktext{
+  color:pink;
+}
+
+#register_content_session1_box textarea {
+  width: 180px;
+  height: 160px;
+  resize : none;
+  margin-left: 10px;
+  background-color: #e0f0f8; }
+
+#register_content_session1_box_box {
+  width: 70%;
+  margin: auto;
+  padding: 40px;
+  box-sizing: border-box; }
+
+#register_content_session1 #next {
+  width: 100px;
+  padding: 5px;
+  color: white;
+  background: #ffa266;
+  display: block;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  text-align: center; 
+  text-decoration: none; 
+  border-radius: 40px;
+  cursor: pointer;
+  box-shadow: 0 2px 2px #F99158 ,0 2px 1px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.15s ease-in-out;
+  position: relative;
+  top: 0;
+}
+
+#register_content_session1 #next:hover{
+    background-color: #FCAD6D;
+    box-shadow: 0 2px 0 #FFA071 ,0 2px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+#register_content_session1 #next:active{
+  box-shadow: none;
+  top:1px;
+}
+
+#register_content_session1 #feedbacktext {
+  margin: 5px; 
+}
+
+#register_content_session2 {
+  /*padding: 50px 0;*/
+  display: none;
+  opacity: 0;
+ }
+ #register_content_session3 {
+  display: none;
+ }
+
+#register_content_session2_box h3 {
+  padding: 8px;
+  margin: auto;
+  text-align: left;
+  text-indent: 8em;
+  font-size: 15px;
+  background-color: #b2daed;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  display: block; }
+
+#register_content_session2_box h3:before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-color: #ffc7a3;
+  display: inline-block;
+  border: 5px solid white;
+  border-radius: 50%;
+  position: absolute;
+  top: -35px;
+  left: 50px;
+  background-image: url(../../images/register_img/before2.png);
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+#register_content_session2_box td {
+  text-align: center;
+  padding: 10px;
+  padding-bottom:0px;
+  padding-top:0px; }
+
+.charactor {
+  width: 170px;
+  height: 250px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 15px;
+  padding-top:25px;
+  box-sizing: border-box; }
+
+.charactor_img {
+  width: 130px;
+  height: 200px; }
+
+.charactor_img img {
+  width: 100%;
+  height: 100%; }
+
+#register_content_session2_box_box {
+  width: 100%;
+  margin: auto;
+  padding: 40px;
+  box-sizing: border-box; }
+
+#choose_boy, #choose_girl {
+  width: 20px;
+  display: block;
+  position: absolute;
+  opacity: 0; }
+
+#labelfor_boy, #labelfor_girl {
+  width: 80px;
+  color: white;
+  padding: 5px;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  background-color: #66dbff;
+  display: block;
+  border-radius: 21px; }
+
+#labelfor_girl {
+  background-color: #ff95be; }
+
+.four_clothes {
+  width: 130px;
+  height: 130px;
+  padding: 15px;
+  margin-left: 25px;
+  background-color: #b2daed;
+  border: 3px solid #70c9ea; }
+
+.four_clothes_img {
+  width: 110px;
+  height: 110px;
+  display: block;
+  margin: auto;
+   margin-top: 15px;
+   box-sizing: border-box; }
+
+
+.four_clothes_img img {
+  width: 100%;
+  height: 100%; }
+
+#clothes_top1,#clothes_top2{
+  margin-top:10px;
+  border-bottom:none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#clothes_bot1,#clothes_bot2{
+  margin-top: -50px;
+  border-top:none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#register_content_session2 #register_submit {
+    width: 100px;
+    padding: 5px;
+    color: white;
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    text-align: center;
+    border:none;
+    background: #ffa266;
+    border-radius: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 文鼎圓體;
+    font-size:17px;
+    box-shadow: 0 2px 2px #F99158 ,0 2px 1px 1px rgba(0, 0, 0, 0.1);
+    transition: all 0.15s ease-in-out;
+    position:relative;
+    top: 0;
+     }
+
+#register_content_session2 #register_submit:hover{
+  background-color: #FCAD6D;
+  box-shadow: 0 2px 0 #FFA071 ,0 2px 1px 1px rgba(0, 0, 0, 0.1);
+}
+#register_content_session2 #register_submit:active{
+  box-shadow: none;
+  top:1px;
+}
+
+
+#register_content_session3 p {
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 0px; }
+
+#register_content_session3 p:nth-child(2) {
+  margin-bottom: 80px; }
+
+#matchestext{
+  /*color:red;*/
+  margin:0px 10px;
+}
+
+#register_matches_text {
+  font-weight: 900;
+  margin: 0 10px; }
+
+#three_banner {
+  width: 900px;
+  box-sizing: border-box;
+  padding: 30px;
+  margin: auto;
+  margin-bottom: 100px; }
+
+#three_banner .three_banner_child {
+  width: 270px;
+  height: 300px;
+  display: inline-block; }
+
+#footer {
+  color: white;
+  padding: 20px;
+  text-align: center;
+  background-color: black; }
+
+
+
+@media screen and (max-width:767px){
+
+#mobile_Tr_address,#mobile_Tr_introduce,#mobile_hobby_Tr{
+  display:"";
+}
+
+
+
+
+
+#register{
+  padding-top:50px;
+}
+#register h3{
+  text-indent: 11em;
+}
+
+#addressTh{
+  display:none;
+}
+
+#addressInputTd{
+  display:none;
+}
+
+#hobbyTh{
+  display:none;
+}
+
+#hobbybox,#hobbybox1{
+  display:none;
+}
+
+#introduceTh{
+  display:none;
+}
+
+#textarea_box{
+  display:none;
+}
+
+#feedbackTr{
+  display:none;
+}
+
+#feedback{
+  display:none;
+}
+
+.v{
+  display:none;
+}
+
+
+#memberRegisterTable{
+  /*background-color: red;*/
+  width:100%;
+  margin:auto;
+  margin-left:-20px;
+}
+#memberRegisterTable input{
+  width:150px;
+}
+
+#mobile_hobby_Tr{
+  margin-top:20px;
+}
+#mobile_hobbybox{
+  width:150px;
+  padding-top:15px;
+}
+
+#mobile_hobbyTh{
+  vertical-align: top;
+  padding-top:15px;
+}
+
+#mobile_hobbybox input{
+  width:30px;
+  height:20px;
+  display:inline-block;
+  /*padding:50px;*/
+  margin-left:15px;
+  /*padding-bottom:10px;*/
+  margin-bottom: 13px;
+  vertical-align:top;
+  box-sizing: border-box;
+}
+
+
+#choose_Table{
+  width:100%;
+  margin:auto;
+}
+
+#boy_td{
+  width:50%;
+}
+#boy_girl{
+  width:50%;
+}
+
+#register_content_session2_box_box{
+  padding:0px;
+  padding-bottom: 20px;
+}
+#register_content_session2_box td{
+  padding:7px;
+  padding-top:20px;
+}
+
+
+.four_clothes{
+  display:none;
+}
+
+.charactor{
+  margin:auto;
+}
+
+
+
+}/*767*/
