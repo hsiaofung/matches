@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+<link rel="stylesheet" href="css/public.css">
+
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    /*@font-face {
+      font-family: 文鼎圓體H;
+      src: url("../font/文鼎圓體H.OTF") format("opentype");
+    }*/
+
+    body {
+      background: url("images/me_gift_img/indexpng.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      /*background-position: center center;*/
+    }
+    /*.me_gift_pairing_lightbox {*/
+
+    button:focus {
+      outline: 0;
+    }
+
+
+    .me_gift_pairing_lightbox {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .5);
+      position: fixed;
+      top: 0;
+      left: 0;
+      /*display: none;*/
+    }
+
+    .me_gift_pairing_content {
+      width:650px;
+      height: 550px;
+      display: inline-block;
+      margin: auto;
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right:0;
+      left: 0;
+      /*margin-top: -150px;*/
+      /*margin-left: -300px;*/
+      text-align: center;
+      border-radius: 10px;
+      border: 1px solid #444;
+      overflow: hidden;
+      color: #857474;
+      animation-name: Movewindow;
+      animation-delay:3s;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+
+      animation-fill-mode: forwards;
+    }
+    /*@keyframes Movewindow {
+        0%   { left:0px; top:0px;}
+        25%  { left:500px; top:200px;}
+        50%  { left:1000px; top:400px;}
+        75%  { left:500px; top:200px;}
+        100% { left:0px; top:0px; z-index: 10}
+    }*/
+
+    .me_gift_season {
+      width:400px;
+      /*height: 400px;*/
+      margin: auto;
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      bottom: 100px;
+      right:100px;
+      left: 0;
+      /*margin-top: -150px;*/
+      /*margin-left: -300px;*/
+      text-align: center;
+      border-radius: 10px;
+      border: 1px solid #444;
+      overflow: hidden;
+      color: #857474;
+
+
+      animation-name: Movewindow2;
+      animation-delay:3s;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes Movewindow2 {
+        0%   { left:0px; top:0px;}
+        25%  { left:-500px; top:-200px;}
+        50%  { left:-1000px; top:-400px;}
+        75%  { left:-500px; top:-200px;}
+        100% {background-color: rgba(255,255,255,0.8); left:0px; top:0px; z-index: 5}
+    }
+    .me_gift_history {
+      width:400px;
+      /*height: 400px;*/
+      margin: auto;
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      bottom: -100px;
+      right:-100px;
+      left: 0;
+      /*margin-top: -150px;*/
+      /*margin-left: -300px;*/
+      text-align: center;
+      border-radius: 10px;
+      border: 1px solid #444;
+      overflow: hidden;
+      color: #857474;
+
+      animation-name: Movewindow3;
+      animation-delay:3s;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes Movewindow3 {
+        0%   { left:0px; top:0px;}
+        25%  { left:-500px; top:200px;}
+        50%  { left:-1000px; top:400px;}
+        75%  { left:-500px; top:200px;}
+        100% {background-color: rgba(0,0,0,0.8); left:0px; top:0px; z-index: 5}
+    }
+
+    .me_gift_pairing_btn-close {
+      display: block;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      background-color: #B2DAED;
+      color: #fff;
+      padding: 0;
+      border: none;
+      background: none;
+      text-align: center;
+    }
+
+    .me_gift_title {
+      background-color: #B2DAED;
+      height: 50px;
+
+      font-size: 16px;
+      /*check font size*/
+      text-align: center;
+      line-height: 50px;
+    }
+
+    .me_gift_pairing_title2 {
+
+      height: 30px;
+      color: #666;
+      font-size: 15px;
+      /*padding: 10px;*/
+      padding-left: 50px;
+      padding-right: 50px;
+
+      /*check font size*/
+      text-align: center;
+      line-height: 30px;
+    }
+
+    .me_gift_pairing_img {
+      width: 200px;
+      margin: 10px;
+    }
+
+    .me_gift_pairing_content_box1{
+
+      background-color: #E0F0F8;
+      width: 280px;
+      border-radius: 10px;
+      margin: 15px;
+    }
+
+    .me_gift_pairing_button_giveUp {
+
+      /*background-color: #FFA266 ;*/
+      background-color: #66DBFF;
+      padding-left: 30px;
+      padding-right: 30px;
+      line-height: 30px;
+      font-size: 15px;
+      color:white;
+      border-radius: 30px;
+      border: none;
+      margin: 10px;
+    }
+
+    .me_gift_pairing_button {
+      /*background-color: #FFA266 ;*/
+      background-color: #66DBFF;
+      padding-left: 30px;
+      padding-right: 30px;
+      line-height: 30px;
+      font-size: 15px;
+      color:white;
+      border-radius: 30px;
+      border: none;
+      margin: 10px;
+    }
+
+    .me_gift_pairing_report_text{
+      padding:15px;
+      margin: 15px;
+      border: none;
+      background-color: #E0F0F8;
+      border-radius: 10px;
+      height:150px;
+      /*display: inline;*/
+      vertical-align: top;
+
+1
+    }
+    .me_gift_pairing_report_select{
+      font-family: 'GOTHAMRND', '文鼎圓體', sans-serif;
+
+      border:none;
+      background: #E0F0F8;
+      /*text-align: */
+      padding:5px;
+      margin: 5px;
+      border-radius: 20px;
+      outline: none;
+      /*display: inline;*/
+      /*appearance:none;
+      -moz-appearance:none;
+      -webkit-appearance:none;
+      background: url("images/me_gift_img/arrow.png") no-repeat scroll right center transparent;
+      background-size: contain;
+      padding-right: 14px;
+      position: relative;*/
+    }
+    /*.me_gift_pairing_report_select:after{
+      content: '';
+      position: absolute;
+      background-image:
+      top: 0;
+      right:0;
+      display: block;
+      background-color: #ccc;
+    }*/
+
+    .me_gift_pairing_content_box1,
+    .me_gift_pairing_content_box2{
+      display: inline-block;
+      /*background-color: #E0F0F8;*/
+      width: 280px;
+      margin-top: 45px;
+
+    }
+    .me_gift_pairing_content_box2{
+      vertical-align: top;
+
+
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <button class="me_gift_gift" id="me_gift_pairing_lightboxButton">點我開啟光箱</button>
+
+
+  <div class="me_gift_pairing_lightbox" id="me_gift_pairing_lightbox">
+
+
+    <div class="me_gift_pairing_content">
+      <h2 class="me_gift_title">檢舉</h2>
+
+
+<div class="me_gift_pairing_content_box1">
+  <h3 class="me_gift_pairing_title2"> 點選下方圖片上傳檢舉照片</h2>
+    <img class="me_gift_pairing_img" src="images/me_gift_img/upload.png" alt="">
+    <!-- 檢舉上傳圖片 -->
+</div>
+
+<div class="me_gift_pairing_content_box2">
+  <h3 class="me_gift_pairing_report_title3">檢舉原因</h3>
+
+  <select class="me_gift_pairing_report_select" name="report reason" form="carform">
+    <option value="money">金額不符</option>
+    <option value="type">禮物種類不符</option>
+    <option value="danger">危險物品</option>
+    <option value="others">其它</option>
+  </select>
+  <br>
+  <input class="me_gift_pairing_report_text" type="textarea" name="" value="">
+</div>
+<br>
+
+
+
+      <button class="me_gift_pairing_button" id="me_gift_ok">檢舉</button>
+
+
+        <button class="me_gift_pairing_btn-close" id="me_gift_pairing_btn-close">X</button>
+
+    </div>
+
+
+    <!-- <div class="me_gift_season">
+      <h2 class="me_gift_title">季節活動交換進度</h2>
+      <img class="me_gift_pairing_img" src="images/me_gift_img/gift2.png" alt="">
+      <h3 class="me_gift_pairing_title2"> 活動配對中,請耐心等候</h2>
+      <br>
+            <p class="me_gift_pairing_p">金額設定 :500-1000</p>
+      <p class="me_gift_pairing_p">禮物類別 :桌遊</p>
+      <button class="me_gift_pairing_button" id="me_gift_ok_activity">放棄</button>
+      <button class="me_gift_pairing_button" id="me_gift_ok_activity">OK</button>
+      <button class="me_gift_pairing_btn-close" id="me_gift_pairing_btn-close_activity">X</button>
+
+    </div>
+    <div class="me_gift_history">
+      <h2 class="me_gift_title">歷史紀錄</h2>
+      <img class="me_gift_pairing_img" src="images/me_gift_img/gift2.png" alt="">
+      <h3 class="me_gift_pairing_title2"> 活動配對中,請耐心等候</h2>
+      <br>
+            <p class="me_gift_pairing_p">金額設定 :500-1000</p>
+      <p class="me_gift_pairing_p">禮物類別 :桌遊</p>
+      <button class="me_gift_pairing_button" id="me_gift_ok_activity">放棄</button>
+      <button class="me_gift_pairing_button" id="me_gift_ok_activity">OK</button>
+      <button class="me_gift_pairing_btn-close" id="me_gift_pairing_btn-close_activity">X</button>
+
+    </div> -->
+  </div>
+
+  <script type="text/javascript">
+
+
+
+  function $id(id) {
+    return document.getElementById(id);
+  }
+
+  function showLightBox(){
+    $id("me_gift_pairing_lightbox").style.display = "block";
+    // console.log($id("me_gift_pairing_lightbox").style )
+  }
+  function hide(){
+    $id("me_gift_pairing_lightbox").style.display = "none";
+    // console.log($id("me_gift_pairing_lightbox").style )
+  }
+  function hide1(){
+    $id("me_gift_pairing_lightbox").style.display = "none";
+    // console.log($id("me_gift_pairing_lightbox").style )
+  }
+
+  function init(){
+    $id("me_gift_pairing_lightboxButton").onclick = showLightBox;
+    $id("me_gift_ok_activity").onclick = hide;
+    $id("me_gift_ok").onclick = hide;
+    $id("me_gift_pairing_btn-close_activity").onclick = hide1;
+    $id("me_gift_pairing_btn-close").onclick = hide1;
+
+  }
+
+  window.onload=init;
+
+  </script>
+
+
+</body>
+
+</html>

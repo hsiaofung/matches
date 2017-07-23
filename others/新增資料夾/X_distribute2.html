@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+<link rel="stylesheet" href="css/public.css">
+
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    /*@font-face {
+      font-family: 文鼎圓體H;
+      src: url("../font/文鼎圓體H.OTF") format("opentype");
+    }*/
+
+    body {
+      background: url("images/me_gift_img/indexpng.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      /*background-position: center center;*/
+    }
+    /*.me_gift_distribute_lightbox {*/
+
+    button:focus {
+      outline: 0;
+    }
+
+
+    .me_gift_distribute_lightbox {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .5);
+      position: fixed;
+      top: 0;
+      left: 0;
+
+      /*display: none;*/
+    }
+
+    .me_gift_distribute_content {
+      width:650px;
+      height: 470px;
+      margin: auto;
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right:0;
+      left: 0;
+      /*margin-top: -150px;*/
+      /*margin-left: -300px;*/
+      text-align: center;
+      border-radius: 10px;
+      border: 1px solid #444;
+      overflow: hidden;
+      color: #857474;
+
+    }
+
+
+    .me_gift_distribute_btn-close {
+      display: block;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      background-color: #B2DAED;
+      color: #fff;
+      padding: 0;
+      border: none;
+      background: none;
+      text-align: center;
+    }
+
+    .me_gift_distribute_title {
+      background-color: #B2DAED;
+      height: 50px;
+      line-height: 50px;
+
+      font-size: 16px;
+      /*check font size*/
+      text-align: center;
+    }
+
+        .me_gift_distribute_title2 {
+
+      height: 30px;
+      color: #666;
+      font-size: 16px;
+      /*padding: 10px;*/
+      /*padding-left: 50px;
+      padding-right: 50px;*/
+      margin-top: 15px;
+      /*check font size*/
+      font-size: text-align: center;
+      line-height: 30px;
+    }
+
+
+
+    .me_gift_distribute_button {
+      /*background-color: #FFA266 ;*/
+      background-color: #66DBFF;
+      padding-left: 30px;
+      padding-right: 30px;
+      line-height: 30px;
+      font-size: 15px;
+      color:white;
+      border-radius: 30px;
+      border: none;
+      margin-top: 10px;
+      margin-bottom:10px;
+    }
+
+
+    /*distribute content*/
+
+    .me_gift_distribute_msg_season{
+
+  padding: 11px;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius:100%;
+        text-align: center;
+  float: left;
+        color:white;
+        margin-left: 81px;
+
+
+}
+
+    .me_gift_distribute_msg1_season{
+       background-color:#F9C7A3;
+    }
+    .me_gift_distribute_msg2_season{
+       background-color:#F6B284;
+    }
+    .me_gift_distribute_msg3_season{
+       background-color:#F39D67;
+    }
+
+.me_gift_distribute_msg_season:after{
+  content:'';
+  display:block;
+  width: 0px;
+  height: 0px;
+  /*background-color:#f00;*/
+
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  margin: auto;
+}
+
+    .me_gift_distribute_msg1_season:after{
+        border-top: 10px solid #F9C7A3;
+        /*z-index: 1;*/
+    }
+    .me_gift_distribute_msg2_season:after{
+        border-top: 10px solid #F6B284;
+    }
+    .me_gift_distribute_msg3_season:after{
+        border-top: 10px solid #F39D67;
+    }
+
+    .me_gift_distribute_clearfix{
+        clear: both;
+    }
+    .me_gift_distribute_frame_season{
+        width: 450px;
+        height: 20px;
+        background-color: #DCDDDD;
+        margin-top:10px;
+        border-radius:15px;
+        padding-top:5px;
+        padding-right:5px;
+        padding-left:5px;
+        /*margin: auto;*/
+    }
+
+    .me_gift_distribute_state_left_season{
+        width: 25%;
+        height: 15px;
+        background-color: #B5B6B6;
+        border-radius:15px;
+        margin: auto;
+        float:left;
+
+    }
+
+    .me_gift_distribute_state_left_head_season{
+      margin-top: 25px;
+      float: left;
+    }
+    .me_gift_distribute_state_right_head_season{
+      margin-top: 25px;
+      float: right;
+    }
+    .me_gift_distribute_season{
+      width: 460px;
+      margin: auto;
+    }
+     .me_gift_distribute_msg2_season p{
+      /*line-height: 3em;*/
+      margin-top: 15px;
+    }
+     .me_gift_distribute_msg3_season p,
+     .me_gift_distribute_msg1_season p{
+      /*line-height: 3em;*/
+      margin-top: 8px;
+    }
+
+    .me_gift_distribute_state_right_head_season img{
+      margin-top: 10px;
+      width: 70%;
+    }
+    .me_gift_distribute_statusBar_season{
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <button class="me_gift_gift" id="me_gift_distribute_lightboxButton">點我開啟光箱</button>
+
+
+  <div class="me_gift_distribute_lightbox" id="me_gift_distribute_lightbox">
+
+
+
+    <div class="me_gift_distribute_content">
+      <h2 class="me_gift_distribute_title">我的禮物交換進度</h2>
+
+
+      <!-- distribute content  -->
+      <br>
+<div class="me_gift_distribute_season">
+
+    <div class="me_gift_distribute_msg_season me_gift_distribute_msg1_season">
+      <p>寄出<br>禮物 </p>
+    </div>
+    <div class="me_gift_distribute_msg_season me_gift_distribute_msg2_season">
+      <p>配送中 </p>
+    </div>
+    <div class="me_gift_distribute_msg_season me_gift_distribute_msg3_season" >
+      <p>收到<br>禮物 </p>
+    </div>
+
+
+      <div class="me_gift_distribute_clearfix"></div>
+
+      <div class="me_gift_distribute_statusBar_season">
+          <div class="me_gift_distribute_frame_season">
+
+              <div class="me_gift_distribute_state_left_season">
+
+              </div>
+          </div>
+
+          <div class="me_gift_distribute_state_left_head_season">
+            <img src="images/me_gift_img/boy.png" alt="">
+            <br>
+            <p>小荒先生</p>
+
+          </div>
+          <div class="me_gift_distribute_state_right_head_season">
+            <img src="images/me_gift_img/gift2.png" alt="">
+            <br>
+
+          </div>
+
+
+          <div class="me_gift_distribute_clearfix"></div>
+
+      </div>
+</div>
+
+      <!-- distribute content  -->
+
+      <button class="me_gift_distribute_button" id="me_gift_ok">確認</button>
+
+        <button class="me_gift_distribute_btn-close" id="me_gift_distribute_btn-close">X</button>
+
+
+
+    </div>
+
+
+
+  </div>
+
+  <script type="text/javascript">
+
+
+
+  function $id(id) {
+    return document.getElementById(id);
+  }
+
+  function showLightBox(){
+    $id("me_gift_distribute_lightbox").style.display = "block";
+    // console.log($id("me_gift_distribute_lightbox").style )
+  }
+  function hide(){
+    $id("me_gift_distribute_lightbox").style.display = "none";
+    // console.log($id("me_gift_distribute_lightbox").style )
+  }
+  function hide1(){
+    $id("me_gift_distribute_lightbox").style.display = "none";
+    // console.log($id("me_gift_distribute_lightbox").style )
+  }
+
+  function init(){
+    $id("me_gift_distribute_lightboxButton").onclick = showLightBox;
+    // $id("me_gift_ok_activity").onclick = hide;
+    $id("me_gift_ok").onclick = hide;
+    // $id("me_gift_distribute_btn-close_activity").onclick = hide1;
+    $id("me_gift_distribute_btn-close").onclick = hide1;
+
+  }
+
+  window.onload=init;
+
+  </script>
+
+
+</body>
+
+</html>

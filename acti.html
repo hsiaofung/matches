@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" href="css/public.css">
+	<!-- 公版 -->
+	
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!-- 公版OVER -->
+	<link rel="stylesheet" href="css/acti.css">
+
+	<style>
+		@font-face{
+			font-family: "文鼎圓體";
+			src: url('font/文鼎圓體M.OTF') format("opentype");
+		}
+		@font-face{
+			font-family: "Gotham Round";
+			src: url('font/GOTHAMRND-MEDIUM.OTF') format("opentype");
+		}
+	</style>
+
+	<title>七夕情人節交換禮物活動</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="javascript/script.js"></script>
+	<script type="text/javascript" src="javascript/jquery.stellar.js"></script>
+    <script type="text/javascript" src="javascript/TweenMax.min.js"></script>
+
+    <script type="text/javascript" src="javascript/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="javascript/animation.gsap.min.js"></script>
+    <script type="text/javascript" src="javascript/debug.addIndicators.min.js"></script>
+    <script src="javascript/acti.js"></script>
+</head>
+<body>
+
+	<!-- head -->
+<header>
+      <nav>
+            <div class="hamburger"></div>
+            <ul>
+                  <li><a href="exchange.html">禮物交友</a></li>
+                  <li><a href="friend.html">社交圈</a></li>
+                  <li><a href="shop.html">造型商城</a></li>
+            </ul>
+            <div class="logo">
+                  <a href="index.html">
+               <img src="images/logo_b.png" alt="LOGO">
+            </a>
+            </div>
+            <ul>
+                  <li><a href="act.html">季節活動</a></li>
+                  <li><a href="talk.html">討論區</a></li>
+            </ul>
+
+            <div class="member">
+                  <div id="login">
+                        <img src="images/defaultmember.png" alt="訪客">
+                        <span>登入</span>
+                  </div>
+            </div>
+            <div class="head_cart">
+                  <img src="images/cart.png" alt="購物車"></a>
+                  <div class="head_cartlist">
+                        <div class="cartlist">
+                              <div class="prodpic"><img src="images/line_body.png"></div>
+                              <div>
+                                    <div class="prodname">條紋上衣</div>
+                                    <div class="prodprice">200 點</div>
+                                    <div class="isgift">送禮: 小小噹</div>
+                              </div>
+                        </div>
+                        <div class="cartlist">
+                              <div class="prodpic"><img src="images/line_body.png"></div>
+                              <div>
+                                    <div class="prodname">條紋上衣</div>
+                                    <div class="prodprice">200 點</div>
+                              </div>
+                        </div>
+                        <div class="cartlist">
+                              <div class="prodpic"><img src="images/redHead_body.png"></div>
+                              <div>
+                                    <div class="prodname">小紅帽上衣</div>
+                                    <div class="prodprice">250 點</div>
+                              </div>
+                        </div>
+                        <div class="gocart"><a href="cart.html">前往結帳</a></div>
+                  </div>
+            </div>
+      </nav>
+
+      <ul class="hbmenu">
+            <li>
+                  <div class="hb_close"></div>
+            </li>
+            <li><a href="exchange.html"><img src="images/exchange.png">禮物交友</a></li>
+            <li><a href="friend.html"><img src="images/friend.png">社交圈</a></li>
+            <li><a href="shop.html"><img src="images/shop.png">造型商城</a></li>
+            <li><a href="act.html"><img src="images/act.png">季節活動</a></li>
+            <li><a href="talk.html"><img src="images/talk.png">討論區</a></li>
+            <li><a href="cart.html"><img src="images/cartrwd.png">購物車</a></li>
+      </ul>
+
+      <div class="loginbox">
+            <div class="login_content">
+                  <div class="login_top">
+                        <div class="login_title">會員登入</div>
+                        <div id="login_close"></div>
+                  </div>
+                  <div class="login_scope">
+                        <span>會員帳號</span><input type="text" name="memId" id="memId"><br>
+                        <span>會員密碼</span><input type="password" name="memPsw" id="memPsw"><br>
+                        <input type="submit" value="登入" class="gologin">
+                        <div>還沒有MATCHES的帳號嗎? 馬上加入我們吧!</div>
+                        <a class="goregister" href="register.html">
+                              <span class="reg">註冊</span>
+                        </a>
+                        </span>
+                  </div>
+            </div>
+</header>
+<div class="headerb"></div>
+	<!-- head over -->
+
+
+	<div class="acti">
+		<!-- <div class="acti_container"> -->
+			<div class="acti_section acti_section1">
+				<div class="acti_title">
+					<h2>季節活動</h2>
+					<p>七夕情人節交換禮物</p>
+				</div>
+				<div class="acti_banner">
+					<div class="acti_infoTitle">HAPPY VALENTINE’S DAY</div>
+					<div class="acti_balloon"><img src="images/act_image/l.png" alt=""></div>
+					<div class="acti_balloon"><img src="images/act_image/o.png" alt=""></div>
+					<div class="acti_balloon"><img src="images/act_image/v.png" alt=""></div>
+					<div class="acti_balloon"><img src="images/act_image/e.png" alt=""></div>
+
+
+					<svg viewBox="0 0 3387 1270" id="acti_plane">
+						<path id="planePath" class="planePath" d="M-226 626c439,4 636,-213 934,-225 755,-31 602,769 1334,658 562,-86 668,-698 266,-908 -401,-210 -893,189 -632,630 260,441 747,121 1051,91 360,-36 889,179 889,179" />
+						<g id="plane">
+					    <polygon class="fil1" points="-141,-10 199,0 -198,-72 -188,-61 -171,-57 -184,-57 " />
+					    <polygon class="fil2" points="199,0 -141,-10 -163,63 -123,9 " />
+					    <polygon class="fil3" points="-95,39 -113,32 -123,9 -163,63 -105,53 -108,45 -87,48 -90,45 -103,41 -94,41 " />
+					    <path class="fil4" d="M-87 48l-21 -3 3 8 19 -4 -1 -1zm-26 -16l18 7 -2 -1 32 -7 -29 1 11 -4 -24 -1 -16 -18 10 23zm10 9l13 4 -4 -4 -9 0z" />
+					    <polygon class="fil1" points="-83,28 -94,32 -65,31 -97,38 -86,49 -67,70 199,0 -123,9 -107,27 " />
+						</g>
+						<!-- Define the motion path animation -->
+						<animateMotion xlink:href="#plane" dur="5s" repeatCount="indefinite" rotate="auto">
+					    <mpath xlink:href="#planePath" />
+						</animateMotion>
+					</svg>
+
+					<div id="acti_clouds">
+						<div class="acti_cloud x1"></div>
+						<!-- Time for multiple clouds to dance around -->
+						<div class="acti_cloud x2"></div>
+						<div class="acti_cloud x3"></div>
+						<div class="acti_cloud x4"></div>
+						<div class="acti_cloud x5"></div>
+					</div>
+
+					<div class="acti_infoTitle2">
+					  	七夕情人節交換禮物<br>
+					  	和MATCHES上的朋友們 一起度過浪漫七夕吧
+					</div>
+				</div>
+
+				<div class="acti_count">
+					<div class="acti_countBar">
+						<span>報名人數80/100</span>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="acti_section_01"></div>
+			<div class="acti_section acti_section2 flow">
+				<div class="acti_bar">
+					<div class="acti_dot">
+						<div class="acti_dots">
+							<img src="images/act_image/gift.png" alt="start">
+						</div>
+					</div>
+					<div class="acti_line item"></div>
+					<div class="acti_dot item">
+						<div class="acti_dots">
+							<span>1</span>
+						</div>
+
+						<div class="acti_info item"  id="acti_stepA">
+							<div class="acti_infoContent">
+								<p>點按報名活動，</p>
+								<p>和MATCHES上的朋友們一起交換禮物吧！</p>
+							</div>
+					</div>
+
+					</div>
+
+
+					<div class="acti_line item"></div>
+					<div class="acti_dot item">
+						<div class="acti_dots">
+							<span>2</span>
+						</div>
+
+						<div class="acti_info item"  id="acti_stepB">
+							<div class="acti_infoContent">
+								<p>準備符合七夕情人節的禮物，</p>
+								<p>巧克力、皮夾、小飾品...</p>
+								<p>價值在500-1000的小禮物。</p>
+							</div>
+						</div>
+
+				</div>
+
+				<div class="acti_line item"></div>
+				<div class="acti_dot item">
+					<div class="acti_dots">
+						<span>3</span>
+					</div>
+
+					<div class="acti_info item"  id="acti_stepA">
+						<div class="acti_infoContent">
+							<p>在2017/8/21之前寄出禮物，</p>
+							<p>MATCHES就會幫你配送其他人寄的禮物。</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="acti_line item"></div>
+				<form action="">
+					<input type="submit" name="" value="我要報名" class="acti_button item">
+				</form>
+			</div>
+		</div>
+
+		<!-- </div> -->
+	</div>
+
+	<!-- gotop -->
+	<div class="gotop">
+	   <img src="images/gotop.png" alt="回到頁首">
+	</div>
+	<!-- gotop over -->
+
+
+	<!-- footer -->
+	<footer>
+	   <p>Copyright © 2017 MATCHES</p>
+	</footer>
+
+	<!-- footer OVER -->
+
+
+</body>
+</html>

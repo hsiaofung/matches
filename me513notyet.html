@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>個人主頁</title>
+	<link rel="stylesheet" type="text/css" href="css/me_css/me.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="javascript/me_js/me.js"></script>
+    <script src="javascript/me_js/script.js"></script>
+<link rel="stylesheet" href="css/me_gift_css/me_gift_css.css">
+
+</head>
+<body>
+
+
+	<!-- header -->
+   <header>
+     <nav>
+           <div class="hamburger"></div>
+           <ul>
+                 <li><a href="exchange.html">禮物交友</a></li>
+                 <li><a href="friend.html">社交圈</a></li>
+                 <li><a href="shop.html">造型商城</a></li>
+           </ul>
+           <div class="logo">
+                 <a href="index.html">
+              <img src="images/logo_b.png" alt="LOGO">
+           </a>
+           </div>
+           <ul>
+                 <li><a href="act.html">季節活動</a></li>
+                 <li><a href="talk.html">討論區</a></li>
+           </ul>
+
+           <div class="member">
+                 <a href="#">
+           <img src="images/defaultmember.png" alt="會員">
+           <span>登入</span>
+        </a>
+           </div>
+           <div class="cart">
+                 <a href="#">
+           <img src="images/cart.png" alt="購物車">
+        </a>
+           </div>
+     </nav>
+     <ul id="hbmenu">
+           <li><a href="exchange.html">禮物交友</a></li>
+           <li><a href="friend.html">社交圈</a></li>
+           <li><a href="shop.html">造型商城</a></li>
+           <li><a href="act.html">季節活動</a></li>
+           <li><a href="talk.html">討論區</a></li>
+     </ul>
+	  </header>
+	  <div class="headerb"></div>
+      <!-- <div class="bread" id="breadcrumb"></div> -->
+	<!-- herder--end -->
+
+
+	<div id="me">
+		  <h2>我的房間</h2>
+		  <div id="room_box">
+           <img src="images/me_img/house_1920.png">
+			     <div id="computer"><img src="images/me_img/computer1.png" id="computerimg"></div>
+			     <div id="letter"><img src="images/me_img/letter1.png" id="letterimg"></div>
+			     <div id="gift" ><img src="images/me_img/gift1.png" id="giftimg"></div>
+			     <div id="clothes"><img src="images/me_img/clothes1.png" id="clothesimg"></div>
+			     <div id="myself"><img src="images/me_img/myself.png"></div>
+		  </div>
+		<!-- 手機版我的房間 -->
+      <div id="mobile_top_father">
+			     <div id="mobile_top">
+               <img src="images/me_img/mobile_house6.png">
+				       <div id="mobile_myself">
+                    <img src="images/me_img/mobile_myself.png">
+               </div>
+			     </div>
+      </div>
+
+      <div id="mobile_bot_father">
+			     <div id="mobile_bot">
+				        <div id="mobile_computer">
+					           <img src="images/me_img/laptop.png">
+					           <p>個人資料</p>
+				        </div>
+				        <div id="mobile_letter">
+					           <img src="images/me_img/mail.png">
+					           <p>我的信件</p>
+				        </div>
+				        <div id="mobile_gift">
+					           <img src="images/me_img/gift (1).png">
+					           <p>禮物管理</p>
+				        </div>
+				        <div id="mobile_clothes">
+					           <img src="images/me_img/shirt.png">
+					           <p>我的衣櫃</p>
+				        </div>
+			     </div>
+      </div>
+      <div id="footer"><p>Copyright &copy; Matches</p></div>
+	</div>
+
+<!-- 登入光箱 -->
+<!-- 	<div id="light">
+		<div id="loginbox">
+			<div id="logincontent">
+				<div id="logintop">會員登入
+					<div id="loginxxx">x</div>
+				</div>
+				<div id="loginbot">
+					會員帳號<input type="text" name="" id="memId"><br>
+					會員密碼<input type="text" name="" id="memPsw"><br>
+					<input type="submit" value="送出" id="loginsubmit"><br>
+					<span>還沒有MATCHES的帳號嗎? 馬上加入我們吧!</span><br>
+					<input type="button" value="註冊" id="loginbutton">
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+<!-- 編輯個人資料 -->
+<!-- <form> -->
+	<div id="changeDATA">
+    	<div id="boxxx">
+    		<div class="content">
+    			<div class="boxxx_1">
+    				<div class="boxxx_2" id="boxxx_2">個人資料
+						<div class="x" id="x"><img src="images/me_img/cross.png"></div>
+    				</div>
+    				<div class="boxxx_3">
+    					<div class="left">
+    						<div id="content1"><span class="span11">M</span>   20000<span class="span22">★<span class="span33">100</span></span></div>
+    						<div id="content2"><img src="images/me_img/小人.png"></div>
+    						<div id="content3">衣櫃</div>
+    						<div id="content4">商城</div>
+    						<div class="clearfix"></div>
+    					</div>
+    					<div class="right">
+    						<div class="rightcontent">
+    							<div id="inputbefore">
+                      <span>帳號</span>
+                      <!-- <input type="" name="" value="tommy" id="changeId"> -->
+                      <p>tommy</p>
+                  </div>
+    							<div>
+                        <span>暱稱</span>
+                        <input type="" name="" value="Tommy" id="memName">
+                        <p id="memNameText">Tommy</p>
+                    </div>
+    							<div>
+                        <span>生日</span>
+                        <input type="" name="" value="01/01" id="memBirthday">
+                        <p id="memBirthdayText">01/01</p>
+                    </div>
+    							<div>
+                          <span>信箱</span>
+                          <input type="" name="" value="Tommy@matches.com" id="memEmail">
+                          <p id="memEmailText">Tommy@matches.com</p>
+                      </div>
+    							<div>
+                        <span>電話</span>
+                        <input type="" name="" value="0912-345-678" id="memTel">
+                        <p id="memTelText">0912-345-678</p>
+                    </div>
+    							<div>
+                        <span>地址</span>
+                        <input type="" name="" value="桃園市中壢區中大路300號" id="memAddress">
+                        <p id="memAddressText">桃園市中壢區中大路300號</p></div>
+    							<div>
+                        <span>興趣</span>
+                        <input type="" name="" value="運動、桌遊" id="memHobby">
+                        <p id="memHobbyText">運動、桌遊</p>
+                    </div>
+    							<div>
+                        <span>自介</span>
+                        <input type="" name="" value="大家好我是Tommy ， 快和我交換禮物吧" id="memIntroduce">
+                    <p id="memIntroduceText">大家好我是Tommy ， 快和我交換禮物吧</p></div>
+                  <div id="change_and_reset_father">
+    					<button id="change">編輯</button>
+                        <button id="dataReset">復原</button>
+                  </div>
+    						</div>
+    					</div>
+    					<div class="clearfix"></div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+
+
+
+
+		  <div class="me_gift_lightbox" id="me_gift_lightbox">
+
+		<div id="stack1" class="card-container me_giftstart">
+
+		      <div id="me_gift_card1" class="me_gift_card1 card">
+		        <h2 class="me_gift_title">我的禮物交換進度</h2>
+						<!-- content -->
+		        <img class="me_gift_notyet_img" src="images/me_gift_img/gift2.png" alt="">
+		        <h3 class="me_gift_notyet_title2"> 目前沒有進行中的交換禮物活動喔</h2>
+		        <br>
+		        <button class="me_gift_button" id="me_gift_ok">確認</button>
+		        <button class="me_gift_btn-close" id="me_gift_btn-close"><img src="images/me_gift_img/x.png" alt=""></button>
+		        <!-- content -->
+		      </div>
+
+
+		      <div id="me_gift_card2" class="me_gift_card2 card">
+		        <h2 class="me_gift_title">季節活動交換進度</h2>
+						<!-- content -->
+		        <img class="me_gift_notyet_img" src="images/me_gift_img/gift2.png" alt="">
+		        <h3 class="me_gift_notyet_title2"> 目前沒有進行中的季節交換活動喔</h2>
+		        <br>
+		        <button class="me_gift_button" id="me_gift_ok">確認</button>
+		        <button class="me_gift_btn-close" id="me_gift_btn-close_activity"><img src="images/me_gift_img/x.png" alt=""></button>
+		        <!-- content -->
+		      </div>
+
+
+		      <div id="me_gift_card3" class="me_gift_card3 card">
+		        <h2 class="me_gift_title">歷史紀錄</h2>
+
+		  <table class="me_gift_history_table">
+
+		  <tr>
+		    <th>交換對象</th>
+		    <th>日期</th>
+		    <th>評分紀錄</th>
+		  </tr>
+
+		  <tr>
+		    <td><img src="images/me_gift_img/girl.png" alt=""> <br> 點點小姐</td>
+		    <td>2017/07/07</td>
+		    <td><ul>
+		      <li class="me_gift_star_li">★</li>
+		      <li class="me_gift_star_li">★</li>
+		      <li class="me_gift_star_li">★</li>
+		      <li class="me_gift_star_li">★</li>
+		      <li class="me_gift_star_li">★</li>
+		    </ul></td>
+		  </tr>
+		  </table>
+		        <hr width="70%">
+		        <table class="me_gift_history_table">
+
+		        <tr>
+		          <th>交換對象</th>
+		          <th>日期</th>
+		          <th>評分紀錄</th>
+		        </tr>
+
+		        <tr>
+		          <td><img src="images/me_gift_img/boy.png" alt=""> <br> 小吳先生</td>
+		          <td>2017/07/07</td>
+		          <td><ul>
+		            <li class="me_gift_star_li">★</li>
+		            <li class="me_gift_star_li">★</li>
+		            <li class="me_gift_star_li">★</li>
+		            <li class="me_gift_star_li">★</li>
+		            <li class="me_gift_star_li">★</li>
+
+		          </ul></td>
+		        </tr>
+		        </table>
+
+		  <br>
+		  <!-- <button class="me_gift_button" id="me_gift_ok">OK</button> -->
+			<a class="me_gift_button" id="me_gift_ok" href="me513pairing.html">OK</a>
+		    <button class="me_gift_btn-close" id="me_gift_btn-close"><img src="images/me_gift_img/x.png" alt=""></button>
+		      </div>
+
+
+		  </div>
+
+
+		  </div>
+<!-- </form> -->
+
+<!--  -->
+
+
+
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+
+var stack1 = $('#stack1');
+
+stack1.removeClass('me_giftstart');
+
+
+});
+  </script>
+
+</body>
+</html>

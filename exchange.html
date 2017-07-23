@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/exchange.css">
+  <link rel="stylesheet" href="css/public.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="javascript/script.js"></script>
+   <script src="javascript/exchange_js/sprinkle.js"></script> 
+
+
+  <script type="text/javascript">
+    var bar, slider;
+
+    // function init() {
+    $(document).ready(function() {
+
+      bar = document.getElementById('bar');
+      slider = document.getElementById('exchange_slider');
+      info = document.getElementById('info');
+      mark = document.getElementById('mark');
+      exchange_buttonType = document.getElementById('exchange_buttonType');
+      button_bgc = document.querySelectorAll(".exchange_buttonType");
+      bar.addEventListener('mousedown', startSlide, false);
+      bar.addEventListener('mouseup', stopSlide, false);
+      mark.style.postion = 'absolute';
+      mark.style.left = bar.offsetLeft + 'px';
+      mark.style.top = bar.offsetTop - 40 + 'px';
+      window.addEventListener("resize", reSize, false);
+      exchange_buttonType_sports.addEventListener("click", selectType1, false);
+      exchange_buttonType_3c.addEventListener("click", selectType2, false);
+      exchange_buttonType_card.addEventListener("click", selectType3, false);
+      exchange_buttonType_book.addEventListener("click", selectType4, false);
+      exchange_buttonType_cloth.addEventListener("click", selectType5, false);
+      exchange_buttonType_bottle.addEventListener("click", selectType6, false);
+      // button_bgc.addEventListener("click", selectTypeClear, false);
+
+})
+    // }
+
+    // selectType1 change bgc
+
+    function selectType1(event) {
+      for (var i = 0; i < button_bgc.length; i++) {
+        button_bgc[i].style.backgroundColor = "#FDF3E4";
+        button_bgc[i].setAttribute('class', ' exchange_buttonType');
+      }
+      button_bgc[0].setAttribute('class', 'exchange_buttonType checkmark');
+      exchange_buttonType_sports.style.backgroundColor = "#E0F4F6";
+
+    }
+
+    function selectType2(event) {
+      for (var i = 0; i < button_bgc.length; i++) {
+        button_bgc[i].style.backgroundColor = "#FDF3E4";
+        button_bgc[i].setAttribute('class', ' exchange_buttonType');
+
+      }
+      button_bgc[1].setAttribute('class', 'exchange_buttonType checkmark');
+
+      exchange_buttonType_3c.style.backgroundColor = "#E0F4F6";
+
+    }
+
+    function selectType3(event) {
+      for (var i = 0; i < button_bgc.length; i++) {
+        button_bgc[i].style.backgroundColor = "#FDF3E4";
+        button_bgc[i].setAttribute('class', ' exchange_buttonType');
+
+      }
+      button_bgc[2].setAttribute('class', 'exchange_buttonType checkmark');
+
+      exchange_buttonType_card.style.backgroundColor = "#E0F4F6";
+    }
+
+    function selectType4(event) {
+      for (var i = 0; i < button_bgc.length; i++) {
+        button_bgc[i].style.backgroundColor = "#FDF3E4";
+        button_bgc[i].setAttribute('class', ' exchange_buttonType');
+
+      }
+      button_bgc[3].setAttribute('class', 'exchange_buttonType checkmark');
+
+      exchange_buttonType_book.style.backgroundColor = "#E0F4F6";
+    }
+
+    function selectType5(event) {
+      for (var i = 0; i < button_bgc.length; i++) {
+        button_bgc[i].style.backgroundColor = "#FDF3E4";
+        button_bgc[i].setAttribute('class', ' exchange_buttonType');
+
+      }
+      button_bgc[4].setAttribute('class', 'exchange_buttonType checkmark');
+
+      exchange_buttonType_cloth.style.backgroundColor = "#E0F4F6";
+    }
+
+    function selectType6(event) {
+      for (var i = 0; i < button_bgc.length; i++) {
+        button_bgc[i].style.backgroundColor = "#FDF3E4";
+        button_bgc[i].setAttribute('class', ' exchange_buttonType');
+
+      }
+      button_bgc[5].setAttribute('class', 'exchange_buttonType checkmark');
+
+      exchange_buttonType_bottle.style.backgroundColor = "#E0F4F6";
+    }
+
+
+    // fix the mark position
+    function reSize() {
+      // console.log('resize!');
+
+      // sliderwidth 存在的狀況下
+      var barnow = document.getElementById('bar');
+      var slidernow =document.getElementById('exchange_slider');
+      mark.style.postion = 'absolute';
+      // mark.style.left = barnow.offsetLeft +sliderwidth-15+ 'px';
+      mark.style.left = barnow.offsetLeft+slidernow.offsetWidth-10+'px';
+      mark.style.top = barnow.offsetTop - 40 + 'px';
+
+        console.log('1',barnow.offsetLeft);
+        console.log('2',slidernow.offsetWidth);
+        console.log('3',barnow.offsetLeft+slidernow.offsetWidth);
+
+      // sliderwidth 存在的狀況下
+
+      // console.log('bar.offsetTop :',bar.offsetTop);
+    }
+
+    function startSlide(event) {
+
+
+      console.log('x :',event.clientX);
+      console.log('y :',event.clientY);
+      console.log('bar.offsetLeft :',bar.offsetLeft);
+      // console.log('set_perc :',set_perc);
+
+      // console.log('set_perc*100 :',set_perc*100);
+       set_perc = ((((event.clientX - bar.offsetLeft) / bar.offsetWidth)).toFixed(2));
+
+
+      if (set_perc * 100 < 98) {
+        info.innerHTML = '禮物金額' + Math.round(set_perc * 10) * 1000 + '元';
+        bar.addEventListener('mousemove', moveSlide, false);
+        console.log(event.clientX);
+        mark.style.position = 'absolute';
+        var str = "'" + event.clientX //+"px'";
+        var modify = event.clientX - 15;
+        slider.style.width = (set_perc * 100) + '%';
+        sliderwidth = set_perc *bar.offsetWidth;
+        console.log('sliderwidth :',set_perc *bar.offsetWidth);
+        mark.style.left = modify + 'px';
+
+      }
+    }
+
+    function moveSlide(event) {
+       set_perc = ((((event.clientX - bar.offsetLeft) / bar.offsetWidth)).toFixed(2));
+      if (set_perc * 100 < 98) {
+        info.innerHTML = '禮物金額 : ' + Math.round(set_perc * 10) * 1000 + '元';
+        var modify = event.clientX - 15;
+        slider.style.width = (set_perc * 100) + '%';
+        mark.style.left = modify + 'px';
+
+      }
+    }
+
+    function stopSlide(event) {
+       set_perc = ((((event.clientX - bar.offsetLeft) / bar.offsetWidth)).toFixed(2));
+      if (set_perc * 100 < 98) {
+
+        slider.style.width = (set_perc * 100) + '%';
+
+        info.innerHTML = '禮物金額 : ' + Math.round(set_perc * 10) * 1000 + '元';
+        bar.removeEventListener('mousemove', moveSlide, false);
+      }
+    }
+  </script>
+
+
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+
+  <link rel="stylesheet" type="text/css" href="css/public.css">
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+  <title>exchage_gift</title>
+</head>
+
+<body onload='init()'>
+
+  <header>
+        <nav>
+              <div class="hamburger"></div>
+              <ul>
+                    <li><a href="exchange.html">禮物交友</a></li>
+                    <li><a href="friend.html">社交圈</a></li>
+                    <li><a href="shop.html">造型商城</a></li>
+              </ul>
+              <div class="logo">
+                    <a href="index.html">
+                 <img src="images/logo_b.png" alt="LOGO">
+              </a>
+              </div>
+              <ul>
+                    <li><a href="act.html">季節活動</a></li>
+                    <li><a href="talk.html">討論區</a></li>
+              </ul>
+
+              <div class="member">
+                    <div id="login">
+                          <img src="images/defaultmember.png" alt="訪客">
+                          <span>登入</span>
+                    </div>
+              </div>
+              <div class="head_cart">
+                    <img src="images/cart.png" alt="購物車"></a>
+                    <div class="head_cartlist">
+                          <div class="cartlist">
+                                <div class="prodpic"><img src="images/line_body.png"></div>
+                                <div>
+                                      <div class="prodname">條紋上衣</div>
+                                      <div class="prodprice">200 點</div>
+                                      <div class="isgift">送禮: 小小噹</div>
+                                </div>
+                          </div>
+                          <div class="cartlist">
+                                <div class="prodpic"><img src="images/line_body.png"></div>
+                                <div>
+                                      <div class="prodname">條紋上衣</div>
+                                      <div class="prodprice">200 點</div>
+                                </div>
+                          </div>
+                          <div class="cartlist">
+                                <div class="prodpic"><img src="images/redHead_body.png"></div>
+                                <div>
+                                      <div class="prodname">小紅帽上衣</div>
+                                      <div class="prodprice">250 點</div>
+                                </div>
+                          </div>
+                          <div class="gocart"><a href="cart.html">前往結帳</a></div>
+                    </div>
+              </div>
+        </nav>
+
+        <ul class="hbmenu">
+              <li>
+                    <div class="hb_close"></div>
+              </li>
+              <li><a href="exchange.html"><img src="images/exchange.png">禮物交友</a></li>
+              <li><a href="friend.html"><img src="images/friend.png">社交圈</a></li>
+              <li><a href="shop.html"><img src="images/shop.png">造型商城</a></li>
+              <li><a href="act.html"><img src="images/act.png">季節活動</a></li>
+              <li><a href="talk.html"><img src="images/talk.png">討論區</a></li>
+              <li><a href="cart.html"><img src="images/cartrwd.png">購物車</a></li>
+        </ul>
+
+        <div class="loginbox">
+              <div class="login_content">
+                    <div class="login_top">
+                          <div class="login_title">會員登入</div>
+                          <div id="login_close"></div>
+                    </div>
+                    <div class="login_scope">
+                          <span>會員帳號</span><input type="text" name="memId" id="memId"><br>
+                          <span>會員密碼</span><input type="password" name="memPsw" id="memPsw"><br>
+                          <input type="submit" value="登入" class="gologin">
+                          <div>還沒有MATCHES的帳號嗎? 馬上加入我們吧!</div>
+                          <a class="goregister" href="register.html">
+                                <span class="reg">註冊</span>
+                          </a>
+                          </span>
+                    </div>
+              </div>
+  </header>
+  <div class="headerb"></div>
+
+  <div class="exchange_box">
+
+    <h1 class="exchange_title">禮物交友</h1>
+    <h3 class="exchange_3rd_title">分享你與我相遇的悸動</h3>
+
+
+
+    <div class="exchange_explaineBox">
+
+      <div class="exchange_icon">
+        <div class="exchange_icon_lightbox_step1">
+        </div>
+        <img class="exchange_icon_img1" src="images/exchange_images/tool.png" alt="">
+        <h3 class="exchange_3rd_title">設定金額和類別</h3>
+      </div>
+      <div class="exchange_icon">
+        <div class="exchange_icon_lightbox_step2">
+        </div>
+        <img class="exchange_icon_img2" src="images/exchange_images/msg.png" alt="">
+        <h3 class="exchange_3rd_title">等待配對結果通知</h3>
+      </div>
+      <div class="exchange_icon">
+        <div class="exchange_icon_lightbox_step3">
+        </div>
+        <img class="exchange_icon_img3" src="images/exchange_images/gift.png" alt="">
+        <h3 class="exchange_3rd_title">準備&寄送禮物</h3>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+
+    <div class="exchange_setPairCondition">
+      <form action="">
+        <div class="exchange_button_box">
+          <h2 class="exchange_sub_title_1">步驟 1:選擇禮物金額範圍</h2>
+
+          <!-- test -->
+          <div class="content">
+            <div class="exchange_bar_content">
+
+              <img class="mark" id="mark" src="images/exchange_images/progressbarmark.png" alt="">
+
+              <div id='bar'>
+                <div id='exchange_slider'>
+                  <div id='info'>禮物金額範圍</div>
+                </div>
+
+              </div>
+            </div>
+
+            <br>
+
+          </div>
+          <!-- test -->
+
+
+          <h4 class="exchange_sub_title_1">步驟 2:為這次的交換禮物對象留下想傳遞的訊息吧</h4>
+          <textarea class="exchange_text" name="name" rows="8" cols="80"></textarea>
+
+
+          <h2 class="exchange_sub_title_1">步驟 3:選擇禮物類型</h2>
+
+
+
+            <button type='button' class="exchange_buttonType " id="exchange_buttonType_sports"><img src="images/exchange_images/basketball.png" alt=""><br>運動</button>
+
+            <button type='button' class="exchange_buttonType " id="exchange_buttonType_3c"><img src="images/exchange_images/games.png" alt=""><br>3C</button>
+
+            <button type='button' class="exchange_buttonType " id="exchange_buttonType_card"><img src="images/exchange_images/cards.png" alt=""><br>桌遊</button>
+            <div class="clearfix"></div>
+            <button type='button' class="exchange_buttonType " id="exchange_buttonType_book"><img src="images/exchange_images/book.png" alt=""><br>閱讀</button>
+
+            <button type='button' class="exchange_buttonType " id="exchange_buttonType_cloth"><img src="images/exchange_images/hat.png" alt=""><br>服飾</button>
+
+            <button type='button' class="exchange_buttonType " id="exchange_buttonType_bottle"><img src="images/exchange_images/bottle.png" alt=""><br>民生用品</button>
+            <div class="clearfix"></div>
+
+
+            <br>
+            <button class="exchange_button">送出</button>
+          <h4 class="exchange_4th_title">還不知道買什麼禮物嗎? 看看大家都送些什麼吧</h4>
+          <a href="talk.html">前往討論區</a>
+
+        </div>
+      </div>
+      </form>
+  </div>
+
+
+
+  <footer>
+     <p>Copyright © 2017 MATCHES</p>
+  </footer>
+
+
+
+</body>
+
+</html>

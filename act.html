@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" href="css/public.css">
+	<!-- 公版 -->
+	
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!-- 公版OVER -->
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" href="css/act.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
+
+
+	<style>
+		@font-face{
+			font-family: "文鼎圓體";
+			src: url('font/文鼎圓體M.OTF') format("opentype");
+		}
+		@font-face{
+			font-family: "Gotham Round";
+			src: url('font/GOTHAMRND-MEDIUM.OTF') format("opentype");
+		}
+	</style>
+
+
+	<title>季節活動</title>
+	<script type="text/javascript" src="javascript/act.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="javascript/script.js"></script>
+	<script type="text/javascript" src="javascript/jquery.stellar.js"></script>
+    <script type="text/javascript" src="javascript/TweenMax.min.js"></script>
+
+    <script type="text/javascript" src="javascript/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="javascript/animation.gsap.min.js"></script>
+    <script type="text/javascript" src="javascript/debug.addIndicators.min.js"></script>
+    <script type="text/javascript" src="javascript/slick.js"></script>
+
+</head>
+<body>
+
+	<!-- head -->
+<header>
+      <nav>
+            <div class="hamburger"></div>
+            <ul>
+                  <li><a href="exchange.html">禮物交友</a></li>
+                  <li><a href="friend.html">社交圈</a></li>
+                  <li><a href="shop.html">造型商城</a></li>
+            </ul>
+            <div class="logo">
+                  <a href="index.html">
+               <img src="images/logo_b.png" alt="LOGO">
+            </a>
+            </div>
+            <ul>
+                  <li><a href="act.html">季節活動</a></li>
+                  <li><a href="talk.html">討論區</a></li>
+            </ul>
+
+            <div class="member">
+                  <div id="login">
+                        <img src="images/defaultmember.png" alt="訪客">
+                        <span>登入</span>
+                  </div>
+            </div>
+            <div class="head_cart">
+                  <img src="images/cart.png" alt="購物車"></a>
+                  <div class="head_cartlist">
+                        <div class="cartlist">
+                              <div class="prodpic"><img src="images/line_body.png"></div>
+                              <div>
+                                    <div class="prodname">條紋上衣</div>
+                                    <div class="prodprice">200 點</div>
+                                    <div class="isgift">送禮: 小小噹</div>
+                              </div>
+                        </div>
+                        <div class="cartlist">
+                              <div class="prodpic"><img src="images/line_body.png"></div>
+                              <div>
+                                    <div class="prodname">條紋上衣</div>
+                                    <div class="prodprice">200 點</div>
+                              </div>
+                        </div>
+                        <div class="cartlist">
+                              <div class="prodpic"><img src="images/redHead_body.png"></div>
+                              <div>
+                                    <div class="prodname">小紅帽上衣</div>
+                                    <div class="prodprice">250 點</div>
+                              </div>
+                        </div>
+                        <div class="gocart"><a href="cart.html">前往結帳</a></div>
+                  </div>
+            </div>
+      </nav>
+
+      <ul class="hbmenu">
+            <li>
+                  <div class="hb_close"></div>
+            </li>
+            <li><a href="exchange.html"><img src="images/exchange.png">禮物交友</a></li>
+            <li><a href="friend.html"><img src="images/friend.png">社交圈</a></li>
+            <li><a href="shop.html"><img src="images/shop.png">造型商城</a></li>
+            <li><a href="act.html"><img src="images/act.png">季節活動</a></li>
+            <li><a href="talk.html"><img src="images/talk.png">討論區</a></li>
+            <li><a href="cart.html"><img src="images/cartrwd.png">購物車</a></li>
+      </ul>
+
+      <div class="loginbox">
+            <div class="login_content">
+                  <div class="login_top">
+                        <div class="login_title">會員登入</div>
+                        <div id="login_close"></div>
+                  </div>
+                  <div class="login_scope">
+                        <span>會員帳號</span><input type="text" name="memId" id="memId"><br>
+                        <span>會員密碼</span><input type="password" name="memPsw" id="memPsw"><br>
+                        <input type="submit" value="登入" class="gologin">
+                        <div>還沒有MATCHES的帳號嗎? 馬上加入我們吧!</div>
+                        <a class="goregister" href="register.html">
+                              <span class="reg">註冊</span>
+                        </a>
+                        </span>
+                  </div>
+            </div>
+</header>
+<div class="headerb"></div>
+	<!-- head over -->
+
+
+	<div class="act">
+		<div class="act_container">
+			<div class="act_title">
+				<h2>季節活動</h2>
+				<p>一年四季都要交換禮物</p>
+			</div>
+			<div class="act_bgCloud"></div>
+			<!-- <div class="act_bg2"></div> -->
+			<div class="balloons"></div>
+
+			
+			<div class="act_main">
+				<img src="images/act_image/bg.gif" alt="">
+
+
+				<!-- 輪播套件 -->
+				<div class="center slider">
+				  <div>
+				  	<a href="acti.html" title="">
+						<img src="images/act_image/valentine_s.jpg" alt="七夕情人節交換禮物活動">
+						<div class="act_actTitle">七夕情人節交換禮物活動</div>
+						<input type="submit" class="act_btn" name="act_join" value="查看詳情">
+					</a>
+				  </div>
+
+
+				  <div>
+		  			<a href="acti.html" title="">
+						<img src="images/act_image/bday.jpg" alt="當月壽星交換禮物">
+						<div class="act_actTitle">當月壽星交換禮物</div>
+						<input type="submit" class="act_btn" name="act_join" value="查看詳情">
+					</a>	
+				  </div>
+
+
+				  <div>
+		  			<a href="acti.html" title="">
+						<img src="images/act_image/hp.jpg" alt="哈利波特周年紀念交換禮物">
+						<div class="act_actTitle">哈利波特周年紀念交換禮物</div>
+						<input type="submit" class="act_btn" name="act_join" value="查看詳情">
+					</a>
+				  </div>
+				</div>
+				<!-- 輪播套件 -->
+
+
+				<!-- 輪播 -->
+				<!-- <div id="act_slideBoard">
+					<ul>
+						<li>
+							<a href="acti.html" title="">
+								<img src="images/act_image/valentine_s.jpg" alt="七夕情人節交換禮物活動">
+								<div class="act_actTitle">七夕情人節交換禮物活動</div>
+								<input type="submit" class="act_btn" name="act_join" value="查看詳情">
+							</a>	
+						</li>
+						<li>
+							<a href="acti.html" title="">
+								<img src="images/act_image/bday.jpg" alt="當月壽星交換禮物">
+								<div class="act_actTitle">當月壽星交換禮物</div>
+								<input type="submit" class="act_btn" name="act_join" value="查看詳情">
+							</a>
+						</li>
+						<li>
+							<a href="acti.html" title="">
+								<img src="images/act_image/hp.jpg" alt="哈利波特周年紀念交換禮物">
+								<div class="act_actTitle">哈利波特周年紀念交換禮物</div>
+								<input type="submit" class="act_btn" name="act_join" value="查看詳情">
+							</a>
+						</li>
+						<li>
+							<a href="acti.html" title="">
+								<img src="images/act_image/valentine_s.jpg" alt="七夕情人節交換禮物活動">
+								<div class="act_actTitle">七夕情人節交換禮物活動</div>
+								<input type="submit" class="act_btn" name="act_join" value="查看詳情">
+							</a>
+						</li>
+					</ul>
+				</div> -->
+
+			</div>
+
+			
+		</div>
+	</div>
+	<script type="text/javascript" src="javascript/act.js"></script>
+
+
+	<!-- gotop -->
+	<div class="gotop">
+	   <img src="images/gotop.png" alt="回到頁首">
+	</div>
+	<!-- gotop over -->
+
+
+	<!-- footer -->
+	<footer>
+	   <p>Copyright © 2017 MATCHES</p>
+	</footer>
+
+	<!-- footer OVER -->
+
+</body>
+</html>

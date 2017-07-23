@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+<link rel="stylesheet" href="css/public.css">
+
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    /*@font-face {
+      font-family: 文鼎圓體H;
+      src: url("../font/文鼎圓體H.OTF") format("opentype");
+    }*/
+
+    body {
+      background: url("images/me_gift_img/indexpng.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      /*background-position: center center;*/
+    }
+    /*.me_gift_pick_lightbox {*/
+
+    button:focus {
+      outline: 0;
+    }
+
+
+    .me_gift_pick_lightbox {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .5);
+      position: fixed;
+      top: 0;
+      left: 0;
+      /*display: none;*/
+    }
+
+    .me_gift_pick_content {
+
+      background-color: #fff;
+      position: absolute;
+      top: 15vw;
+      right:25vw;
+      /*bottom:;*/
+      left: 25vw;
+      /*margin-top: -150px;*/
+      /*margin-left: -300px;*/
+      text-align: center;
+      border-radius: 10px;
+      border: 1px solid #444;
+      overflow: hidden;
+      color: #857474;
+      margin: auto;
+    }
+
+
+    .me_gift_pick_btn-close {
+      display: block;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      background-color: #B2DAED;
+      color: #fff;
+      padding: 0;
+      border: none;
+      background: none;
+      text-align: center;
+    }
+
+    .me_gift_pick_title {
+      background-color: #B2DAED;
+      height: 50px;
+
+      font-size: 16px;
+      /*check font size*/
+      text-align: center;
+      line-height: 50px;
+    }
+
+        .me_gift_pick_title2 {
+
+      height: 30px;
+      color: #666;
+      font-size: 16px;
+      /*padding: 10px;*/
+      /*padding-left: 50px;
+      padding-right: 50px;*/
+      margin-top: 15px;
+      /*check font size*/
+      font-size: text-align: center;
+      line-height: 30px;
+    }
+
+    .me_gift_pick_calendarBody{
+        /*padding-left: 10px;*/
+        /*padding-right: 10px;*/
+        /*text-align: center;*/
+        margin: auto;
+        width: 300px;
+
+    }
+
+    .me_gift_pick_year{
+        background-color: #D02927;
+        line-height: 50px;
+        border-radius: 10px 10px 0 0 ;
+        color:#fff;
+        font-size: 20px;
+        width: 310px;
+
+    }
+
+    .me_gift_pick_table{
+        background-color: #E6E6E6;
+        padding :5px;
+        border-spacing:5px;
+        border-radius: 0px 0px 10px 10px ;
+        overflow: hidden;
+
+    }
+
+    .me_gift_pick_table th{
+        color: #333;
+        font-size:12px;
+        /*background-color: #ccc;*/
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .me_gift_pick_table td{
+        color: #666;
+        font-size:15px;
+        padding: 7px 9px 7px 9px;
+        /*margin: 5px 5px 5px 5px;*/
+
+        background-color: #FFF;
+        border-radius: 5px;
+    }
+    .me_gift_pick_table tr:nth-child(4) td {
+        color: #666;
+        font-size:15px;
+        padding: 8px 10px 8px 10px;
+        /*margin: 5px 5px 5px 5px;*/
+
+        background-color:#FFA266;
+        color:#fff;
+        border-radius: 5px;
+    }
+    .me_gift_pick_table td:hover{
+        color: #666;
+        font-size:15px;
+        padding: 7px 9px 7px 9px;
+        /*margin: 5px 5px 5px 5px;*/
+
+        background-color: #FFF;
+        border-radius: 5px;
+        cursor:pointer;
+    }
+
+    .me_gift_pick_img {
+      width: 100px;
+      margin: 15px;
+    }
+
+    .me_gift_pick_button {
+      /*background-color: #FFA266 ;*/
+      background-color: #66DBFF;
+      padding-left: 30px;
+      padding-right: 30px;
+      line-height: 30px;
+      font-size: 15px;
+      color:white;
+      border-radius: 30px;
+      border: none;
+      margin-top: 10px;
+      margin-bottom:10px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <button class="me_gift_gift" id="me_gift_pick_lightboxButton">點我開啟光箱</button>
+
+
+  <div class="me_gift_pick_lightbox" id="me_gift_pick_lightbox">
+    <div class="me_gift_pick_content">
+      <h2 class="me_gift_pick_title">我的禮物交換進度</h2>
+
+      <h3 class="me_gift_pick_title2"> 選擇收貨時間</h2>
+      <br>
+        <div class="me_gift_pick_calendarBody">
+
+            <h4 class ="me_gift_pick_year">● &nbsp&nbsp&nbsp&nbsp&nbsp 2017 July &nbsp&nbsp&nbsp&nbsp&nbsp  ●</h4>
+          <table class="me_gift_pick_table">
+
+
+            <tr>
+                <th>SUN</th>
+                <th>MON</th>
+                <th>TUE</th>
+                <th>WED</th>
+                <th>THU</th>
+                <th>FRI</th>
+                <th>SAT</th>
+            </tr>
+
+            <tr>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>31</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+
+
+      </table>
+    </div>
+
+      <button class="me_gift_pick_button" id="me_gift_ok">確認</button>
+
+        <button class="me_gift_pick_btn-close" id="me_gift_pick_btn-close">X</button>
+
+    </div>
+
+
+
+  </div>
+
+  <script type="text/javascript">
+
+
+
+  function $id(id) {
+    return document.getElementById(id);
+  }
+
+  function showLightBox(){
+    $id("me_gift_pick_lightbox").style.display = "block";
+    // console.log($id("me_gift_pick_lightbox").style )
+  }
+  function hide(){
+    $id("me_gift_pick_lightbox").style.display = "none";
+    // console.log($id("me_gift_pick_lightbox").style )
+  }
+  function hide1(){
+    $id("me_gift_pick_lightbox").style.display = "none";
+    // console.log($id("me_gift_pick_lightbox").style )
+  }
+
+  function init(){
+    $id("me_gift_pick_lightboxButton").onclick = showLightBox;
+    // $id("me_gift_ok_activity").onclick = hide;
+    $id("me_gift_ok").onclick = hide;
+    // $id("me_gift_pick_btn-close_activity").onclick = hide1;
+    $id("me_gift_pick_btn-close").onclick = hide1;
+
+  }
+
+  window.onload=init;
+
+  </script>
+
+
+</body>
+
+</html>

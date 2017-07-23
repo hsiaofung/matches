@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <title>me_gift</title>
+  <link rel="stylesheet" href="css/public.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    /*@font-face {
+      font-family: 文鼎圓體H;
+      src: url("../font/文鼎圓體H.OTF") format("opentype");
+    }*/
+    /*pairng 共版*/
+
+    body {
+      background: url("images/me_gift_img/indexpng.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      /*background-position: center center;*/
+    }
+    /*.me_gift_lightbox {*/
+
+    button:focus {
+      outline: 0;
+    }
+
+
+    .me_gift_lightbox {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .5);
+      position: fixed;
+      top: 0;
+      left: 0;
+      /*display: none;*/
+    }
+
+    .me_gift_card1 {
+
+      height: 470px;
+      margin: auto;
+      background-color: #fff;
+
+      position: absolute;
+      left: -60%;
+
+
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px #999;
+      overflow: hidden;
+      color: #857474;
+      transform: rotateZ(-2deg);
+      z-index: 10;
+
+      transition: all 0.5s ease-out 0.3s;
+    }
+
+    .me_gift_card2 {
+
+      height: 470px;
+      margin: auto;
+      background-color: #fff;
+      position: absolute;
+      left: -60%;
+
+
+
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px #999;
+      overflow: hidden;
+      color: #857474;
+
+
+      z-index: 9;
+      transition: all 0.5s ease-out 0.3s;
+    }
+
+
+    .me_gift_card3 {
+
+      height: 470px;
+      margin: auto;
+      background-color: #fff;
+      position: absolute;
+      left: -60%;
+
+      /*margin-top: -150px;*/
+      /*margin-left: -300px;*/
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px #999;
+      overflow: hidden;
+      color: #857474;
+
+      /*animation-name: Movewindow3;
+      animation-delay:3s;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+
+      animation-fill-mode: forwards;*/
+      transform: rotateZ(2deg);
+      transition: all 0.5s ease-out 0.3s;
+      z-index: 8;
+    }
+
+
+    .me_gift_btn-close {
+      display: block;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      background-color: #B2DAED;
+      color: #fff;
+      padding: 0;
+      border: none;
+      background: none;
+      text-align: center;
+    }
+
+    .me_gift_title {
+      background-color: #B2DAED;
+      height: 50px;
+
+      font-size: 16px;
+      /*check font size*/
+      text-align: center;
+      line-height: 50px;
+    }
+
+    .me_gift_title2 {
+
+      height: 30px;
+      color: #71C9EA;
+      font-size: 16px;
+      /*padding: 10px;*/
+      padding-left: 50px;
+      padding-right: 50px;
+
+      /*check font size*/
+      font-size: text-align: center;
+      line-height: 30px;
+    }
+
+    .me_gift_p {
+
+      height: 20px;
+      color: #666666;
+      font-size: 12px;
+      /*padding: 10px;*/
+      padding-left: 50px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 50px;
+
+      /*check font size*/
+      font-size: text-align: center;
+      line-height: 20px;
+    }
+
+    .me_gift_img {
+      width: 100px;
+      margin: 15px;
+    }
+
+    .me_gift_button_giveUp {
+      /*background-color: #FFA266 ;*/
+      background-color: #66DBFF;
+      padding-left: 30px;
+      padding-right: 30px;
+      line-height: 30px;
+      font-size: 15px;
+      color: white;
+      border-radius: 30px;
+      border: none;
+      margin: 10px;
+    }
+
+    .me_gift_button {
+      /*background-color: #FFA266 ;*/
+      background-color: #66DBFF;
+      padding-left: 30px;
+      padding-right: 30px;
+      line-height: 30px;
+      font-size: 15px;
+      color: white;
+      border-radius: 30px;
+      border: none;
+      margin: 10px;
+    }
+
+    hr {
+
+      margin: auto;
+    }
+
+    .me_gift_history_table {
+      text-align: center;
+      margin: auto;
+      overflow: scroll;
+    }
+
+    .me_gift_history_table td,
+    .me_gift_history_table th {
+      padding: 10px 30px;
+    }
+
+    .me_gift_star_li {
+      display: inline-block;
+      color: yellow;
+      font-size: 20px;
+    }
+    /*animation*/
+
+    .me_giftstart .card {
+      left: -100%;
+      opacity: 0;
+      transform: rotateZ(0deg);
+      -webkit-transform: rotateZ(0deg);
+      -moz-transform: rotateZ(0deg);
+    }
+
+    .card-container {
+      position: relative;
+      width: 18em;
+      margin: 4em auto;
+    }
+
+    .card {
+      position: absolute;
+      top: 100px;
+      background: #fff;
+      box-shadow: 1px 1px 2px #999;
+      border-radius: 10px;
+      /*padding: 2em;*/
+      width: 40em;
+      max-width: 40em;
+      -webkit-backface-visibility: hidden;
+    }
+
+
+
+    .card-container:hover .card,
+    .card-container.hover .card {
+      opacity: 0.9;
+      transform: scale(0.95);
+      -webkit-transform: scale(0.95);
+      /*margin-left: -12em;*/
+    }
+
+    .card-container:hover .card:hover,
+    .card-container.hover .card:hover,
+    .card-container:hover .card.hover,
+    .card-container.hover .card.hover {
+      opacity: 1;
+      z-index: 11;
+      transform: scale(1);
+      -webkit-transform: scale(1);
+    }
+
+    .card-container:hover .me_gift_card1,
+    .card-container.hover .me_gift_card1 {
+      transform: rotateZ(0deg) scale(0.95);
+      -webkit-transform: rotateZ(0deg) scale(0.95);
+    }
+
+    .card-container:hover .me_gift_card2,
+    .card-container.hover .me_gift_card2 {
+      left: -100%;
+    }
+
+    .card-container:hover .me_gift_card3,
+    .card-container.hover .me_gift_card3 {
+      left: -0%;
+    }
+    /*not yet*/
+
+    .me_gift_notyet_img {
+      width: 100px;
+      margin: 45px;
+    }
+
+    .me_gift_notyet_title2 {
+
+      height: 30px;
+      color: #666666;
+      font-size: 16px;
+      /*padding: 10px;*/
+      padding-left: 50px;
+      padding-right: 50px;
+      margin: 5px;
+      /*check font size*/
+      font-size: text-align: center;
+      line-height: 30px;
+    }
+  /*not yet*/
+
+    /*.me_gift_star_li:hover ~li{
+  background-color: blue
+}
+.me_gift_star_li:hover {
+  background-color: blue
+}*/
+  </style>
+</head>
+
+<body>
+
+
+  <button class="me_gift_gift" id="me_gift_lightboxButton">點我開啟光箱</button>
+
+
+  <div class="me_gift_lightbox" id="me_gift_lightbox">
+
+    <div id="stack1" class="card-container me_giftstart">
+
+      <div id="me_gift_card1" class="me_gift_card1 card">
+        <h2 class="me_gift_title">我的禮物交換進度</h2>
+
+        <!-- content -->
+        <img class="me_gift_notyet_img" src="images/me_gift_img/gift2.png" alt="">
+        <h3 class="me_gift_notyet_title2"> 目前沒有進行中的交換禮物活動喔</h2>
+        <br>
+        <button class="me_gift_button" id="me_gift_ok">確認</button>
+        <button class="me_gift_btn-close" id="me_gift_btn-close">X</button>
+        <!-- content -->
+
+      </div>
+
+
+      <div id="me_gift_card2" class="me_gift_card2 card">
+        <h2 class="me_gift_title">季節活動交換進度</h2>
+        <!-- content -->
+        <img class="me_gift_notyet_img" src="images/me_gift_img/gift2.png" alt="">
+        <h3 class="me_gift_notyet_title2"> 目前沒有進行中的季節交換活動喔</h2>
+        <br>
+        <button class="me_gift_button" id="me_gift_ok">確認</button>
+        <button class="me_gift_btn-close" id="me_gift_btn-close_activity">x</button>
+        <!-- content -->
+      </div>
+
+
+      <div id="me_gift_card3" class="me_gift_card3 card">
+        <h2 class="me_gift_title">歷史紀錄</h2>
+
+  <table class="me_gift_history_table">
+
+  <tr>
+    <th>交換對象</th>
+    <th>日期</th>
+    <th>評分紀錄</th>
+  </tr>
+
+  <tr>
+    <td><img src="images/me_gift_img/girl.png" alt=""> <br> 點點小姐</td>
+    <td>2017/07/07</td>
+    <td><ul>
+      <li class="me_gift_star_li">★</li>
+      <li class="me_gift_star_li">★</li>
+      <li class="me_gift_star_li">★</li>
+      <li class="me_gift_star_li">★</li>
+      <li class="me_gift_star_li">★</li>
+    </ul></td>
+  </tr>
+      </table>
+        <hr width="70%">
+        <table class="me_gift_history_table">
+
+        <tr>
+          <th>交換對象</th>
+          <th>日期</th>
+          <th>評分紀錄</th>
+        </tr>
+
+        <tr>
+          <td><img src="images/me_gift_img/boy.png" alt=""> <br> 小吳先生</td>
+          <td>2017/07/07</td>
+          <td><ul>
+            <li class="me_gift_star_li">★</li>
+            <li class="me_gift_star_li">★</li>
+            <li class="me_gift_star_li">★</li>
+            <li class="me_gift_star_li">★</li>
+
+          </ul></td>
+        </tr>
+      </table>
+
+  <br>
+  <button class="me_gift_button" id="me_gift_ok">OK</button>
+    <button class="me_gift_btn-close" id="me_gift_btn-close">X</button>
+      </div>
+
+
+  </div>
+
+
+  </div>
+
+  <script type="text/javascript">
+
+
+
+  function $id(id) {
+    return document.getElementById(id);
+  }
+
+  function showLightBox(){
+    $id("me_gift_lightbox").style.display = "block";
+    // console.log($id("me_gift_lightbox").style )
+  }
+  function hide(){
+    $id("me_gift_lightbox").style.display = "none";
+    // console.log($id("me_gift_lightbox").style )
+  }
+  function hide1(){
+    $id("me_gift_lightbox").style.display = "none";
+    // console.log($id("me_gift_lightbox").style )
+  }
+
+  function init(){
+    $id("me_gift_lightboxButton").onclick = showLightBox;
+    $id("me_gift_ok_activity").onclick = hide;
+    $id("me_gift_ok").onclick = hide;
+    $id("me_gift_btn-close_activity").onclick = hide1;
+    $id("me_gift_btn-close").onclick = hide1;
+
+  }
+
+  window.onload=init;
+
+  </script>
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+
+var stack1 = $('#stack1');
+
+stack1.removeClass('me_giftstart');
+
+stack1.hammer().on('tap', function(event) {
+  stack1.addClass('hover');
+  event.stopPropagation();
+});
+
+
+$(document).hammer().on('tap', function(event) {
+  stack1.removeClass('hover');
+  $('.card').removeClass('hover');
+});
+
+$('.card').hammer().on('tap', function(event) {
+    $('.card').removeClass('hover');
+    $(this).addClass('hover');
+});
+});
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <!-- <link rel="stylesheet" href="css/public.css"> -->
+    <link rel="stylesheet" href="css/talk-main.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+     <link rel="stylesheet" type="text/css" href="css/public.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="libs/gsap/src/minified/TweenMax.min.js"></script>
+    <script type="text/javascript" src="libs/Scrollmagic/scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="libs/Scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+    <script type="text/javascript" src="libs/Scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+    <script type="text/javascript" src="libs/jquery.stellar/src/jquery.stellar.js"></script>
+    <script src="javascript/script.js"></script>
+    <script src="javascript/light_box.js"></script>
+    <script type="text/javascript" src="javascript/talk_js.js"></script>     
+    <title>文章</title>    
+</head>
+
+<body>
+    <header>
+          <nav>
+                <div class="hamburger"></div>
+                <ul>
+                      <li><a href="exchange.html">禮物交友</a></li>
+                      <li><a href="friend.html">社交圈</a></li>
+                      <li><a href="shop.html">造型商城</a></li>
+                </ul>
+                <div class="logo">
+                      <a href="index.html">
+                   <img src="images/logo_b.png" alt="LOGO">
+                </a>
+                </div>
+                <ul>
+                      <li><a href="act.html">季節活動</a></li>
+                      <li><a href="talk.html">討論區</a></li>
+                </ul>
+    
+                <div class="member">
+                      <div id="login">
+                            <img src="images/defaultmember.png" alt="訪客">
+                            <span>登入</span>
+                      </div>
+                </div>
+                <div class="head_cart">
+                      <img src="images/cart.png" alt="購物車"></a>
+                      <div class="head_cartlist">
+                            <div class="cartlist">
+                                  <div class="prodpic"><img src="images/line_body.png"></div>
+                                  <div>
+                                        <div class="prodname">條紋上衣</div>
+                                        <div class="prodprice">200 點</div>
+                                        <div class="isgift">送禮: 小小噹</div>
+                                  </div>
+                            </div>
+                            <div class="cartlist">
+                                  <div class="prodpic"><img src="images/line_body.png"></div>
+                                  <div>
+                                        <div class="prodname">條紋上衣</div>
+                                        <div class="prodprice">200 點</div>
+                                  </div>
+                            </div>
+                            <div class="cartlist">
+                                  <div class="prodpic"><img src="images/redHead_body.png"></div>
+                                  <div>
+                                        <div class="prodname">小紅帽上衣</div>
+                                        <div class="prodprice">250 點</div>
+                                  </div>
+                            </div>
+                            <div class="gocart"><a href="cart.html">前往結帳</a></div>
+                      </div>
+                </div>
+          </nav>
+    
+          <ul class="hbmenu">
+                <li>
+                      <div class="hb_close"></div>
+                </li>
+                <li><a href="exchange.html"><img src="images/exchange.png">禮物交友</a></li>
+                <li><a href="friend.html"><img src="images/friend.png">社交圈</a></li>
+                <li><a href="shop.html"><img src="images/shop.png">造型商城</a></li>
+                <li><a href="act.html"><img src="images/act.png">季節活動</a></li>
+                <li><a href="talk.html"><img src="images/talk.png">討論區</a></li>
+                <li><a href="cart.html"><img src="images/cartrwd.png">購物車</a></li>
+          </ul>
+    
+          <div class="loginbox">
+                <div class="login_content">
+                      <div class="login_top">
+                            <div class="login_title">會員登入</div>
+                            <div id="login_close"></div>
+                      </div>
+                      <div class="login_scope">
+                            <span>會員帳號</span><input type="text" name="memId" id="memId"><br>
+                            <span>會員密碼</span><input type="password" name="memPsw" id="memPsw"><br>
+                            <input type="submit" value="登入" class="gologin">
+                            <div>還沒有MATCHES的帳號嗎? 馬上加入我們吧!</div>
+                            <a class="goregister" href="register.html">
+                                  <span class="reg">註冊</span>
+                            </a>
+                            </span>
+                      </div>
+                </div>
+    </header>
+    <div class="headerb"></div>    
+    <div class="gotop">
+       <img src="images/gotop.png" alt="回到頁首">
+    </div>
+    <div class="wrapper talk-02">
+        <div class="container">
+                        <div class="row r1">
+                            <h1 style="color:#8A7676" class="eyes">討論區</h1>
+                            <h2 style="color:#8A7676" class="content_01">分享你與我相遇的悸動</h2>
+                        </div>
+                        <div class="row r2 ">
+                            <div class="col-16 col-xs-20 text-type">
+                                <nav>
+                                    <ul>
+                                        <li><a href="#" id="newest">最新文章</a></li>
+                                        <li><a href="#" id="hot">熱門文章</a></li>
+                                        <li><a href="#" id="change">交換禮物</a></li>
+                                        <li><a href="#" id="clothes">飾品分享</a></li>
+                                        <li><a href="#" id="rookie">新手分享</a></li>
+                                        <li><a href="#" id="sport">活動分享</a></li>
+                                    </ul>
+                                </nav>
+            
+                                <select id="select-xs">
+                                    <option value="">最新文章</option>
+                                    <option value="">熱門文章</option>
+                                    <option value="">交換禮物</option>
+                                    <option value="">飾品分享</option>
+                                    <option value="">新手分享</option>
+                                    <option value="">活動分享</option>
+                                </select>
+            
+                            </div>
+                            <div class="col-4 col-xs-20 btn-text">
+                                <ul>
+                                    <li>
+                                        <a class="btn" id="btn-light-box">
+                                            <i class="fa fa-pencil"></i> 發表文章
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+            <div class="content">
+                <div class="row r3 ">
+                    <div class="col-3 col-xs-20">
+                        <a href="talk_04.html"><img src="images/talk02/gril.png" alt=""></a>
+                        <ul class="memInfo">
+                            <li>暱稱:點點小姐</li>
+                            <li>性別:女生&nbsp<i class="fa fa-venus" style="font-size:15px;color:#FF95BE;"></i></li>
+                            <li>評價:
+                                <i class="fa fa-star" style="font-size:15px;color:#F5E154;"></i>
+                                <i class="fa fa-star" style="font-size:15px;color:#F5E154;"></i>
+                                <i class="fa fa-star" style="font-size:15px;color:#F5E154;"></i>
+                                <i class="fa fa-star" style="font-size:15px;color:#C6C5C5;"></i>
+                                <i class="fa fa-star" style="font-size:15px;color:#C6C5C5;"></i>
+                            </li>
+                            <li><a href="#" class="btn btn-f">加入好友</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-13 col-xs-20">
+                        <div class="row rr1">
+                            <h2>我收到禮物了</h2></div>
+                        <div class="row rr2">
+                            <h4>我透過Matchs交換禮物，真的超棒超好玩的，下一次還要再玩! 不過交換禮物好玩歸好玩，找禮物的時候可是噩夢啊......要怎樣找到符合預算又不讓人收到失禮的禮物其實大有學問，畢竟送禮的人總不希望自己送出去的禮物被當垃圾呀!!!!!!如果沒有訂交換禮物的"主題"，那麼其實禮物還蠻好挑的，如果有訂"主題"，那難度馬上就爆表啦~~~</h4>
+                        </div>
+                        <div class="row rr3"><img src="images/talk02/talk02_1.png" alt=""></div>
+                        <div class="row rr4">
+                            <a href="#"><i class="fa fa-thumbs-up"></i><span>讚</span></a>
+                            <a href="#"><i class="fa fa-commenting" ></i><span>留言</span></a>
+                            <a href="#"><i class="fa fa-exclamation-circle" ></i><span>檢舉</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row r4 ">
+                    <div class="col-3 col-xs-6">
+                        <a href="#">
+                            <img src="images/talk02/man.png" alt="">
+                                <ul class="memName">
+                                    <li>小荒先生&nbsp<i class="fa fa-mars" style="font-size:15px;color:#70C8E9;" ></i></li>
+                                </ul>
+                        </a>
+                    </div>
+                    <div class="col-13 col-xs-14">
+                        <div class="row rr1">
+                            <p> 希望有機會跟你交換禮物唷~希望有機會跟你交換禮物唷~希望有機會跟你交換禮物唷~希望有機 會跟你交換禮物唷~
+                            </p>
+                        </div>
+                        <div class="row rr2">
+                            <div class="col-10 col-xs-20 cc1 ">
+                                <span class="date">2017/07/07</span> 昨天下午<span class="time">4:36</span>
+                            </div>
+                            <div class="col-10 col-xs-20 cc2">
+                                <a href="#">
+                                   <i class="fa fa-exclamation-circle" ></i>
+                                   <span>檢舉</span>                                 
+                                 </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row r5 ">
+                    <div class="col-3 col-xs-6 ">
+                        <a href="#">
+                        <img src="images/talk02/man.png" alt="">
+                        <ul class="memName">
+                            <li>小荒先生&nbsp<i class="fa fa-mars" style="font-size:15px;color:#70C8E9;"></i></li>
+                        </ul>
+                    </a>
+                    </div>
+                    <div class="col-13 col-xs-14">
+                        <div class="row rr1">
+                            <p>希望有機會跟你交換禮物唷~希望有機會跟你交換禮物唷~希望有機會跟你交換禮物唷~希望有機 會跟你交換禮物唷~
+                            </p>
+                        </div>
+                        <div class="row rr2">
+                            <div class="col-10 col-xs-20 cc1"><span class="date">2017/07/07</span> 昨天下午<span class="time">4:36</span></div>
+                            <div class="col-10 col-xs-20 cc2"><a href="#"><i class="fa fa-exclamation-circle" ></i><span>檢舉</span></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row r6 ">
+                    <a href="#"><h4>載入更多留言.......</h4></a>
+                </div>
+                <div class="row r7">
+                    <textarea style="resize:none;">我要留言....</textarea>
+                </div>
+                <div class="row r8">
+                    <ul>
+                        <li><a class="btn" href="#">送出</a></li>
+                    </ul>
+                </div>
+                <!--end of row 8-->
+            </div>
+            <!-- end of content -->
+        </div>
+        <!-- end of container -->
+        <div class="lightbox">
+                <div class="wrapper talk-01">
+                    <div class="box-01">
+                        <div class="content">
+                            <div class="row r1">
+                                <h1>發表文章</h1></div>
+                            <div class="row r2 ">
+                                <div class="col-4 col-xs-6">
+                                    <h2>文章標題</h2></div>
+                                <div class="col-13 col-xs-14">
+                                    <input type="text" name="articleTitle">
+                                </div>
+                            </div>
+                            <div class="row r3 ">
+                                <div class="col-4 col-xs-6">
+                                    <h2>文章分類</h2></div>
+                                <div class="col-13 col-xs-14">
+                                    <select name="catalog" id="">
+                                        <option value="op1">交換禮物</option>
+                                        <option value="op2">飾品分享</option>
+                                        <option value="op3">活動分享</option>
+                                        <option value="op4">新手分享</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row r4 ">
+                                <div class="row rr1">
+                                    <h2 id="t01">文章圖片</h2>
+                                </div>
+                                <div class="row rr2">
+                                    <div class="col-4 col-xs-6">
+                                        <div id="btn-left">
+                                            <a href="#"><img src="images/talk01/left.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 col-img col-xs-6">
+                                        <!-- <input type="button" value="上傳圖片"> -->
+                                        <div id="imgUpLoad">
+                                            <a href="#"><img id="img-01" src="images/talk01/imgUpLoad.png"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-xs-6">
+                                        <div id="btn-right">
+                                            <a href="#"><img src="images/talk01/right.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row r5 ">
+                                <div class="col-4 col-xs-6">
+                                    <h2>文章內容</h2></div>
+                                <div class="col-13 col-xs-14">
+                                    <!-- <textarea rows="5" cols="35" style="resize:none;"></textarea> -->
+                                    <textarea style="resize:none;"></textarea>
+                                </div>
+                            </div>
+                            <div class="row r6">
+                                <!-- <input id="btn-cancle" type="button" value="取消">
+                        <input type="button" value="確認送出"></div> -->
+                                <ul>
+                                    <li><a class="btn" href="#">取消</a></li>
+                                    <li><a class="btn" href="#">確認送出</a></li>
+                                </ul>
+                                <a href="#" class="btn-close">
+                                    <img src="images/talk01/btnClose.png" alt="">
+                                </a>
+                            </div><!-- end of row r6  -->
+                        </div><!-- end of content -->
+                    </div><!-- end of box-1 -->
+                    </div><!-- end of wrapper talk-01 -->
+                    </div><!-- end of light box -->
+    </div>
+    <!-- end of wrapper -->
+    <footer>
+       <p>Copyright © 2017 MATCHES</p>
+    </footer>
+</body>
+
+</html>

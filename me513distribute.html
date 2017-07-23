@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>個人主頁</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/me_cloth_css/me_cloth_reset.css">
+<!-- 宜 -->
+    <link rel="stylesheet" type="text/css" href="css/me_css/me.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="javascript/me_js/me.js"></script>
+    <script src="javascript/script.js"></script>
+<!-- 宜 -->
+<!-- 彥如 -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/public.css"> -->
+
+  <link rel="stylesheet" type="text/css" href="css/me_cloth_css/me_cloth_gird.css">
+  <link rel="stylesheet" type="text/css" href="css/me_cloth_css/me_cloth_css.css">
+  <script src="javascript/me_cloth_js/me_cloth_js.js"></script>
+<!-- 彥如 -->
+<!-- 小武郎 -->
+<link rel="stylesheet" type="text/css" href="css/me_msg_css/me_msg.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- 小武郎 -->
+
+<!-- 513 -->
+<link rel="stylesheet" href="css/me_gift_css/me_gift_css.css">
+<script src="javascript/me_gift_js/onload2.js" charset="utf-8"></script>
+<script src="javascript/me_gift_js/me_gift_event.js" charset="utf-8"></script>
+<script src="javascript/me_gift_js/lightboxanimation.js" charset="utf-8"></script>
+
+<!-- 513  end-->
+</head>
+<body>
+
+
+	<header>
+      <nav>
+            <div class="hamburger"></div>
+            <ul>
+                  <li><a href="exchange.html">禮物交友</a></li>
+                  <li><a href="friend.html">社交圈</a></li>
+                  <li><a href="shop.html">造型商城</a></li>
+            </ul>
+            <div class="logo">
+                  <a href="index.html">
+               <img src="images/logo_b.png" alt="LOGO">
+            </a>
+            </div>
+            <ul>
+                  <li><a href="act.html">季節活動</a></li>
+                  <li><a href="talk.html">討論區</a></li>
+            </ul>
+
+            <div class="member">
+                  <div id="login">
+                        <img src="images/defaultmember.png" alt="訪客">
+                        <span>登入</span>
+                  </div>
+            </div>
+            <div class="head_cart">
+                  <img src="images/cart.png" alt="購物車"></a>
+                  <div class="head_cartlist">
+                        <div class="cartlist">
+                              <div class="prodpic"><img src="images/line_body.png"></div>
+                              <div>
+                                    <div class="prodname">條紋上衣</div>
+                                    <div class="prodprice">200 點</div>
+                                    <div class="isgift">送禮: 小小噹</div>
+                              </div>
+                        </div>
+                        <div class="cartlist">
+                              <div class="prodpic"><img src="images/line_body.png"></div>
+                              <div>
+                                    <div class="prodname">條紋上衣</div>
+                                    <div class="prodprice">200 點</div>
+                              </div>
+                        </div>
+                        <div class="cartlist">
+                              <div class="prodpic"><img src="images/redHead_body.png"></div>
+                              <div>
+                                    <div class="prodname">小紅帽上衣</div>
+                                    <div class="prodprice">250 點</div>
+                              </div>
+                        </div>
+                        <div class="gocart"><a href="cart.html">前往結帳</a></div>
+                  </div>
+            </div>
+      </nav>
+
+      <ul class="hbmenu">
+            <li>
+                  <div class="hb_close"></div>
+            </li>
+            <li><a href="exchange.html"><img src="images/exchange.png">禮物交友</a></li>
+            <li><a href="friend.html"><img src="images/friend.png">社交圈</a></li>
+            <li><a href="shop.html"><img src="images/shop.png">造型商城</a></li>
+            <li><a href="act.html"><img src="images/act.png">季節活動</a></li>
+            <li><a href="talk.html"><img src="images/talk.png">討論區</a></li>
+            <li><a href="cart.html"><img src="images/cartrwd.png">購物車</a></li>
+      </ul>
+
+      <div class="loginbox">
+            <div class="login_content">
+                  <div class="login_top">
+                        <div class="login_title">會員登入</div>
+                        <div id="login_close"></div>
+                  </div>
+                  <div class="login_scope">
+                        <span>會員帳號</span><input type="text" name="memId" id="memId"><br>
+                        <span>會員密碼</span><input type="password" name="memPsw" id="memPsw"><br>
+                        <input type="submit" value="登入" class="gologin">
+                        <div>還沒有MATCHES的帳號嗎? 馬上加入我們吧!</div>
+                        <a class="goregister" href="register.html">
+                              <span class="reg">註冊</span>
+                        </a>
+                        </span>
+                  </div>
+            </div>
+</header>
+<div class="headerb"></div>
+
+
+	<div id="me">
+		  <h2>我的房間</h2>
+		  <div id="room_box">
+           <img src="images/me_img/house_1920.png">
+			     <div id="computer"><img src="images/me_img/computer1.png" id="computerimg"></div>
+			     <div id="letter"><img src="images/me_img/letter1.png" id="letterimg"></div>
+			     <div id="gift"><img src="images/me_img/gift1.png" id="giftimg"></div>
+			     <div id="clothes"><img src="images/me_img/clothes1.png" id="clothesimg"></div>
+			     <div id="myself"><img src="images/me_img/myself.png"></div>
+		  </div>
+		<!-- 手機版我的房間 -->
+      <div id="mobile_top_father">
+			     <div id="mobile_top">
+               <img src="images/me_img/mobile_house6.png">
+				       <div id="mobile_myself">
+                    <img src="images/me_img/mobile_myself.png">
+               </div>
+			     </div>
+      </div>
+
+      <div id="mobile_bot_father">
+			     <div id="mobile_bot">
+				        <div id="mobile_computer">
+					           <img src="images/me_img/laptop.png">
+					           <p>個人資料</p>
+				        </div>
+				        <div id="mobile_letter">
+					           <img src="images/me_img/mail.png">
+					           <p>我的信件</p>
+				        </div>
+				        <div id="mobile_gift">
+					           <img src="images/me_img/gift (1).png">
+					           <p>禮物管理</p>
+				        </div>
+				        <div id="mobile_clothes">
+					           <img src="images/me_img/shirt.png">
+					           <p>我的衣櫃</p>
+				        </div>
+			     </div>
+      </div>
+	</div>
+
+
+<!-- <form> -->
+	<div id="changeDATA" style="display: none">
+    	<div id="boxxx">
+    		<div class="content">
+    			<div class="boxxx_1">
+    				<div class="boxxx_2" id="boxxx_2">個人資料
+						<div class="x" id="x"><a href="#" id="xxxxx"></a></div>
+    				</div>
+    				<div class="boxxx_3">
+    					<div class="left">
+    						<div id="content1">
+                                <span class="span11">
+                                    <img src="images/me_img/shop_point.png">
+                                </span>
+                                <span class="span22">
+                                    20000
+                                </span>
+                                <span class="span33">
+                                    ★★★☆☆
+                                </span>
+                            </div>
+    						<div id="content2"><img src="images/me_img/小人.png"></div>
+    						<div id="content3"><a href="#">衣櫃</a></div>
+    						<div id="content4"><a href="shop.html">商城</a></div>
+    						<div class="clearfix"></div>
+    					</div>
+    					<div class="right">
+    						<div class="rightcontent">
+    							<div id="inputbefore">
+                      <span>帳號</span>
+                      <!-- <input type="" name="" value="tommy" id="changeId"> -->
+                      <p>tommy</p>
+                  </div>
+    							<div>
+                        <span>暱稱</span>
+                        <input type="" name="" value="Tommy" id="memName">
+                        <p id="memNameText">Tommy</p>
+                    </div>
+    							<div>
+                        <span>生日</span>
+                        <input type="" name="" value="01/01" id="memBirthday">
+                        <p id="memBirthdayText">01/01</p>
+                    </div>
+    							<div>
+                          <span>信箱</span>
+                          <input type="" name="" value="Tommy@matches.com" id="memEmail">
+                          <p id="memEmailText">Tommy@matches.com</p>
+                      </div>
+    							<div>
+                        <span>電話</span>
+                        <input type="" name="" value="0912-345-678" id="memTel">
+                        <p id="memTelText">0912-345-678</p>
+                    </div>
+    							<div>
+                        <span>地址</span>
+                        <input type="" name="" value="桃園市中壢區中大路300號" id="memAddress">
+                        <p id="memAddressText">桃園市中壢區中大路300號</p></div>
+    							<div>
+                        <span>興趣</span>
+                        <input type="" name="" value="運動、桌遊" id="memHobby">
+                        <p id="memHobbyText">運動、桌遊</p>
+                    </div>
+    							<div>
+                        <span>自介</span>
+                        <input type="" name="" value="大家好我是Tommy ， 快和我交換禮物吧" id="memIntroduce">
+                    <p id="memIntroduceText">大家好我是Tommy ， 快和我交換禮物吧</p></div>
+                  <div id="change_and_reset_father">
+    					<button id="change">編輯</button>
+                        <button id="dataReset">復原</button>
+                  </div>
+    						</div>
+    					</div>
+    					<div class="clearfix"></div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+<!-- </form> -->
+
+
+
+
+
+
+<!-- 彥如光箱 -->
+      <div class="me_cloth_LightBox">
+    <!-- 光箱背景 -->
+    <div class="me_cloth_LB_bg">
+      <!-- 光箱範圍 -->
+      <div class="me_cloth_content">
+        <!-- 光箱標題列 -->
+        <div class="me_cloth_row">
+          <div class="col-lg-12 col-xs-12">
+            <div class="me_cloth_LB_head">
+              <h3>個人衣櫃</h3>
+              <div class="me_cloth_x">
+                <a href="#" class="me_cloth_LB_close"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 光箱人物 -->
+        <div class="col-lg-4 col-xs-12">
+          <div class="me_cloth_left">
+            <!-- 紅利 -->
+            <div class="me_cloth_point">
+                  <img src="images/me_cloth_img/shop_point.png">
+                  <p>我的紅利<span class="me_cloth_myPoint"> 1000 </span>點</p>
+                </div>
+                <!-- 角色 -->
+                <div class="me_cloth_clothBox">
+                  <div class="me_cloth_cloth_people">
+                    <img src="images/me_cloth_img/new_girl/girl_people.png">
+                    <div class="me_cloth_clothHead">
+                      <img src="">
+                    </div>
+                    <div class="me_cloth_clothBody">
+                      <img src="">
+                    </div>
+                    <div class="me_cloth_clothBotton">
+                      <img src="">
+                    </div>
+                    <div class="me_cloth_clearfix"></div>
+                  </div>
+                </div>
+                <!-- 保存按鈕 -->
+                <div class="me_cloth_save">
+                  <input type="submit" value="保存設定">
+                  <a href="shop.html">前往商城</a>
+                </div>
+
+              </div>
+        </div>
+        <!-- 衣櫃 -->
+        <div class="col-lg-8 col-xs-12">
+          <div class="me_cloth_wardrobe">
+            <div class="me_cloth_row">
+              <!-- 選擇類別 -->
+              <div class="col-lg-12 col-xs-12">
+                <div class="me_cloth_select">
+                  <select>
+                    <option>全部類型</option>
+                    <option>頭　飾</option>
+                    <option>上半身</option>
+                    <option>下半身</option>
+                  </select>
+                </div>
+              </div>
+              <!-- 我的衣服 -->
+              <div class="me_cloth_row">
+              <div class="col-lg-12 col-xs-12">
+                <div class="me_cloth_myCloth">
+                  <div class="me_cloth_row">
+                    <div class="col-lg-4 col-xs-6">
+                      <div class="me_cloth_item">
+                        <div class="me_cloth_itemImg">
+                          <img src="images/me_cloth_img/new_girl/lady_body.png">
+                        </div>
+                        <div class="me_cloth_itemButton">
+                          <input type="button" value="更換造型" class="me_cloth_change">
+                          <input type="button" value="刪除" class="me_cloth_delete">
+                        </div>
+                        <div class="shop_clearfix"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-6">
+                      <div class="me_cloth_item">
+                        <div class="me_cloth_itemImg">
+                          <img src="images/me_cloth_img/new_girl/girlhead_24_shopItem.png">
+                        </div>
+                        <div class="me_cloth_itemButton">
+                          <input type="button" value="更換造型" class="me_cloth_change">
+                          <input type="button" value="刪除" class="me_cloth_delete">
+                        </div>
+                        <div class="shop_clearfix"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-6">
+                      <div class="me_cloth_item">
+                        <div class="me_cloth_itemImg">
+                          <img src="images/me_cloth_img/new_girl/winnter_body.png">
+                        </div>
+                        <div class="me_cloth_itemButton">
+                          <input type="button" value="更換造型" class="me_cloth_change">
+                          <input type="button" value="刪除" class="me_cloth_delete">
+                        </div>
+                        <div class="shop_clearfix"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-6">
+                      <div class="me_cloth_item">
+                        <div class="me_cloth_itemImg">
+                          <img src="images/me_cloth_img/new_girl/white_foot.png">
+                        </div>
+                        <div class="me_cloth_itemButton">
+                          <input type="button" value="更換造型" class="me_cloth_change">
+                          <input type="button" value="刪除" class="me_cloth_delete">
+                        </div>
+                        <div class="shop_clearfix"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-6">
+                      <div class="me_cloth_item">
+                        <div class="me_cloth_itemImg">
+                          <img src="images/me_cloth_img/new_girl/girlhead_26_shopItem.png">
+                        </div>
+                        <div class="me_cloth_itemButton">
+                          <input type="button" value="更換造型" class="me_cloth_change">
+                          <input type="button" value="刪除" class="me_cloth_delete">
+                        </div>
+                        <div class="shop_clearfix"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-6">
+                      <div class="me_cloth_item">
+                        <div class="me_cloth_itemImg">
+                          <img src="images/me_cloth_img/new_girl/alice_foot.png">
+                        </div>
+                        <div class="me_cloth_itemButton">
+                          <input type="button" value="更換造型" class="me_cloth_change">
+                          <input type="button" value="刪除" class="me_cloth_delete">
+                        </div>
+                        <div class="shop_clearfix"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-6">
+                      <div class="me_cloth_item">
+                        <div class="me_cloth_itemImg">
+                          <img src="images/me_cloth_img/new_girl/girlhead_30_shopItem.png">
+                        </div>
+                        <div class="me_cloth_itemButton">
+                          <input type="button" value="更換造型" class="me_cloth_change">
+                          <input type="button" value="刪除" class="me_cloth_delete">
+                        </div>
+                        <div class="shop_clearfix"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-6">
+                      <div class="me_cloth_item">
+                        <div class="me_cloth_itemImg">
+                          <img src="images/me_cloth_img/new_girl/lady_body.png">
+                        </div>
+                        <div class="me_cloth_itemButton">
+                          <input type="button" value="更換造型" class="me_cloth_change">
+                          <input type="button" value="刪除" class="me_cloth_delete">
+                        </div>
+                        <div class="shop_clearfix"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-6">
+                      <div class="me_cloth_item">
+                        <div class="me_cloth_itemImg">
+                          <img src="images/me_cloth_img/new_girl/girlhead_32_shopItem.png">
+                        </div>
+                        <div class="me_cloth_itemButton">
+                          <input type="button" value="更換造型" class="me_cloth_change">
+                          <input type="button" value="刪除" class="me_cloth_delete">
+                        </div>
+                        <div class="shop_clearfix"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-6">
+                      <div class="me_cloth_item">
+                        <div class="me_cloth_itemImg">
+                          <img src="images/me_cloth_img/new_girl/alice_body.png">
+                        </div>
+                        <div class="me_cloth_itemButton">
+                          <input type="button" value="更換造型" class="me_cloth_change">
+                          <input type="button" value="刪除" class="me_cloth_delete">
+                        </div>
+                        <div class="shop_clearfix"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-6">
+                      <div class="me_cloth_item">
+                        <div class="me_cloth_itemImg">
+                          <img src="images/me_cloth_img/new_girl/white_body.png">
+                        </div>
+                        <div class="me_cloth_itemButton">
+                          <input type="button" value="更換造型" class="me_cloth_change">
+                          <input type="button" value="刪除" class="me_cloth_delete">
+                        </div>
+                        <div class="shop_clearfix"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="me_cloth_clearfix"></div>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="me_cloth_clearfix"></div>
+          </div>
+        </div>
+      </div>
+      <div class="me_cloth_clearfix"></div>
+    </div>
+    <div class="me_cloth_clearfix"></div>
+
+
+    <!-- 刪除視窗 -->
+    <div class="me_cloth_LightBox_delet" style="display: none;">
+      <div class="me_cloth_LB_delete">
+        <div class="me_cloth_delete_bg">
+          <div class="me_cloth_delete_content">
+            <p>是否確定刪除【<span>白兔耳</span>】?</p>
+            <input type="button" value="取消">
+            <input type="button" value="確定">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 保存確定視窗 -->
+    <div class="me_cloth_LightBox_save" style="display:none">
+      <div class="me_cloth_LB_save">
+        <div class="me_cloth_save_bg">
+          <div class="me_cloth_save_content">
+            <p>儲存造型成功</p>
+            <input type="button" value="確定">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+<!-- 彥如光箱 END-->
+
+<!-- 小武郎光箱 -->
+<section class="me_msg" style="display:none">
+      <div class="me_msg_content">
+         <div class="me_msg_top">
+            <h3 class="me_msg_title">好友訊息</h3>
+            <div id="me_msg_close"></div>
+         </div>
+         <div class="me_msg_scope">
+            <div class="me_msg_friends">
+               <div class="me_msg_searchBar">
+                  <input class="me_msg_search" type="text" name="memId" placeholder="請輸入要搜尋的帳號...">
+                  <span class="fa fa-search me_msg_gosearch" aria-hidden="true"></span>
+               </div>
+               <div class="me_msg_friendList">
+                  <div class="avatar">
+                     <img src="images/me_msg_img/logo.png">
+                  </div>
+                  <span>MATCHES</span>
+               </div>
+               <div class="me_msg_friendList">
+                  <div class="avatar">
+                     <img src="images/me_msg_img/girl_people.png">
+                  </div>
+                  <span>點點小姐</span>
+               </div>
+               <div class="me_msg_friendList">
+                  <div class="avatar">
+                     <img src="images/me_msg_img/boy_people.png">
+                  </div>
+                  <span>安迪</span>
+               </div>
+               <div class="me_msg_friendList">
+                  <div class="avatar">
+                     <img src="images/me_msg_img/girl_people.png">
+                  </div>
+                  <span>球球小姐</span>
+               </div>
+            </div>
+            <div class="me_msg_chatroom">
+               <div id="me_msg_fname"></div>
+            </div>
+            <div class="me_msg_new">
+               <div class="me_msg_newfriend">好友申請</div>
+               <div class="me_msg_friendList">
+                  <div class="avatar">
+                     <img src="images/me_msg_img/boy_people.png">
+                  </div>
+                  <span>Tony</span>
+                  <div class="me_msg_addfriend">+</div>
+               </div>
+            </div>
+            <div class="me_msg_msg">
+               <textarea placeholder="請輸入訊息"></textarea>
+               <div class="me_msg_sendmsg">傳送訊息</div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <script src="javascript/me_msg_js/me_msg.js"></script>
+<!-- 小武郎光箱  END -->
+
+<!-- 513 light box test -->
+
+
+	<div class="me_gift_lightbox" id="me_gift_lightbox">
+
+<div id="stack1" class="card-container me_giftstart">
+
+
+
+<!-- pairing notyet  -->
+
+<!-- <div id="me_gift_card1" class="me_gift_card1 card">
+<h2 class="me_gift_title">我的禮物交換進度</h2>
+<img class="me_gift_notyet_img" src="images/me_gift_img/gift2.png" alt="">
+<h3 class="me_gift_notyet_title2"> 目前沒有進行中的交換禮物活動喔</h2>
+<br>
+<button class="me_gift_button" id="me_gift_notyet">確認</button>
+<button class="me_gift_btn-close" id="me_gift_btn-close"><img src="images/me_gift_img/x.png" alt=""></button>
+</div>
+
+
+<div id="me_gift_card2" class="me_gift_card2 card">
+<h2 class="me_gift_title">季節活動交換進度</h2>
+<img class="me_gift_notyet_img" src="images/me_gift_img/gift2.png" alt="">
+<h3 class="me_gift_notyet_title2"> 目前沒有進行中的季節交換活動喔</h2>
+<br>
+<button class="me_gift_button" id="me_gift_notyetbutton_season">確認</button>
+<button class="me_gift_btn-close" id="me_gift_btn-close_activity"><img src="images/me_gift_img/x.png" alt=""></button>
+</div>
+
+
+<div id="me_gift_card3" class="me_gift_card3 card">
+<h2 class="me_gift_title">歷史紀錄</h2>
+
+<table class="me_gift_history_table">
+
+<tr>
+<th>交換對象</th>
+<th>日期</th>
+<th>評分紀錄</th>
+</tr>
+
+<tr>
+<td><img src="images/me_gift_img/girl.png" alt=""> <br> 點點小姐</td>
+<td>2017/07/07</td>
+<td><ul>
+<li class="me_gift_star_li">★</li>
+<li class="me_gift_star_li">★</li>
+<li class="me_gift_star_li">★</li>
+<li class="me_gift_star_li">★</li>
+<li class="me_gift_star_li">★</li>
+</ul></td>
+</tr>
+</table>
+<hr width="70%">
+<table class="me_gift_history_table">
+
+<tr>
+	<th>交換對象</th>
+	<th>日期</th>
+	<th>評分紀錄</th>
+</tr>
+
+<tr>
+	<td><img src="images/me_gift_img/boy.png" alt=""> <br> 小吳先生</td>
+	<td>2017/07/07</td>
+	<td><ul>
+		<li class="me_gift_star_li">★</li>
+		<li class="me_gift_star_li">★</li>
+		<li class="me_gift_star_li">★</li>
+		<li class="me_gift_star_li">★</li>
+		<li class="me_gift_star_li">★</li>
+
+	</ul></td>
+</tr>
+</table>
+
+<br>
+<a class="me_gift_button" id="me_gift_history_ok" href="me513pairing.html">OK</a>
+<button class="me_gift_btn-close" id="me_gift_btn-close_history"><img src="images/me_gift_img/x.png" alt=""></button>
+</div> -->
+
+
+<!-- pairing notyet  -->
+
+
+
+
+
+
+
+	   <!-- content pairing -->
+
+			<!-- <div id="me_gift_card1" class="me_gift_card1 card">
+				<h2 class="me_gift_title">我的禮物交換進度</h2>
+				<img class="me_gift_img" src="images/me_gift_img/gift2.png" alt="">
+				<h3 class="me_gift_title2"> 活動配對中,請耐心等候</h2>
+				<br>
+				<p class="me_gift_p">金額設定 :500-1000</p>
+				<p class="me_gift_p">禮物類別 :桌遊</p>
+				<button class="me_gift_button" id="me_gift_giveup">放棄</button>
+				<button class="me_gift_button" id="me_gift_pairing">OK</button>
+
+					<button class="me_gift_btn-close" id="me_gift_btn-close"><img src="images/me_gift_img/x.png" alt=""></button>
+
+			</div>
+
+
+			<div id="me_gift_card2" class="me_gift_card2 card">
+				<h2 class="me_gift_title">季節活動交換進度</h2>
+				<img class="me_gift_img" src="images/me_gift_img//gift2.png" alt="">
+				<h3 class="me_gift_title2"> 目前參加人數 50/100</h2>
+				<br>
+							<p class="me_gift_p">活動預計於8/25開始</p>
+
+				<button class="me_gift_button" id="me_gift_ok_giveup">放棄</button>
+				<button class="me_gift_button" id="me_gift_ok_activity">OK</button>
+				<button class="me_gift_btn-close" id="me_gift_btn-close_activity"><img src="images/me_gift_img/x.png" alt=""></button>
+
+			</div>
+
+
+			<div id="me_gift_card3" class="me_gift_card3 card">
+				<h2 class="me_gift_title">歷史紀錄</h2>
+
+	<table class="me_gift_history_table">
+
+	<tr>
+		<th>交換對象</th>
+		<th>日期</th>
+		<th>評分紀錄</th>
+	</tr>
+
+	<tr>
+		<td><img src="images/me_gift_img/girl.png" alt=""> <br> 點點小姐</td>
+		<td>2017/07/07</td>
+		<td><ul>
+			<li class="me_gift_star_li">★</li>
+			<li class="me_gift_star_li">★</li>
+			<li class="me_gift_star_li">★</li>
+			<li class="me_gift_star_li">★</li>
+			<li class="me_gift_star_li">★</li>
+		</ul></td>
+	</tr>
+	</table>
+				<hr width="70%">
+				<table class="me_gift_history_table">
+
+				<tr>
+					<th>交換對象</th>
+					<th>日期</th>
+					<th>評分紀錄</th>
+				</tr>
+
+				<tr>
+					<td><img src="images/me_gift_img/boy.png" alt=""> <br> 小吳先生</td>
+					<td>2017/07/07</td>
+					<td><ul>
+						<li class="me_gift_star_li">★</li>
+						<li class="me_gift_star_li">★</li>
+						<li class="me_gift_star_li">★</li>
+						<li class="me_gift_star_li">★</li>
+						<li class="me_gift_star_li">★</li>
+
+					</ul></td>
+				</tr>
+				</table>
+
+	<br>
+
+	<a class="me_gift_button" id="me_gift_ok" href="me513pick.html">OK</a>
+		<button class="me_gift_btn-close" id="me_gift_btn-close_history"><img src="images/me_gift_img/x.png" alt=""></button>
+			</div> -->
+  <!-- pairing content end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- pick -->
+<!--
+			      <div id="me_gift_card1" class="me_gift_card1 card">
+			        <h2 class="me_gift_title">我的禮物交換進度</h2>
+							<h3 class="me_gift_pick_title2"> 選擇收貨時間</h2>
+							<br>
+								<div class="me_gift_pick_calendarBody">
+
+										<h4 class ="me_gift_pick_year">● &nbsp&nbsp&nbsp&nbsp&nbsp 2017 July &nbsp&nbsp&nbsp&nbsp&nbsp  ●</h4>
+									<table class="me_gift_pick_table">
+
+
+										<tr>
+												<th>SUN</th>
+												<th>MON</th>
+												<th>TUE</th>
+												<th>WED</th>
+												<th>THU</th>
+												<th>FRI</th>
+												<th>SAT</th>
+										</tr>
+
+										<tr>
+												<td>25</td>
+												<td>26</td>
+												<td>27</td>
+												<td>28</td>
+												<td>29</td>
+												<td>30</td>
+												<td>1</td>
+										</tr>
+										<tr>
+												<td>2</td>
+												<td>3</td>
+												<td>4</td>
+												<td>5</td>
+												<td>6</td>
+												<td>7</td>
+												<td>8</td>
+										</tr>
+										<tr>
+												<td>9</td>
+												<td>10</td>
+												<td>11</td>
+												<td>12</td>
+												<td>13</td>
+												<td>14</td>
+												<td>15</td>
+										</tr>
+										<tr>
+												<td>16</td>
+												<td>17</td>
+												<td>18</td>
+												<td>19</td>
+												<td>20</td>
+												<td>21</td>
+												<td>22</td>
+										</tr>
+										<tr>
+												<td>23</td>
+												<td>24</td>
+												<td>25</td>
+												<td>26</td>
+												<td>27</td>
+												<td>28</td>
+												<td>29</td>
+										</tr>
+										<tr>
+												<td>30</td>
+												<td>31</td>
+												<td>1</td>
+												<td>2</td>
+												<td>3</td>
+												<td>4</td>
+												<td>5</td>
+										</tr>
+
+
+							</table>
+						</div>
+
+							<button class="me_gift_pick_button" id="me_gift_pick">確認</button>
+
+								<button class="me_gift_btn-close" id="me_gift_btn-close"><img src="images/me_gift_img/x.png" alt=""></button>
+
+			      </div>
+
+
+			      <div id="me_gift_card2" class="me_gift_card2 card">
+			        <h2 class="me_gift_title">季節活動交換進度</h2>
+							<h3 class="me_gift_pick_title2"> 選擇收貨時間</h2>
+							<br>
+								<div class="me_gift_pick_calendarBody">
+
+										<h4 class ="me_gift_pick_year">● &nbsp&nbsp&nbsp&nbsp&nbsp 2017 July &nbsp&nbsp&nbsp&nbsp&nbsp  ●</h4>
+									<table class="me_gift_pick_table">
+
+
+										<tr>
+												<th>SUN</th>
+												<th>MON</th>
+												<th>TUE</th>
+												<th>WED</th>
+												<th>THU</th>
+												<th>FRI</th>
+												<th>SAT</th>
+										</tr>
+
+										<tr>
+												<td>25</td>
+												<td>26</td>
+												<td>27</td>
+												<td>28</td>
+												<td>29</td>
+												<td>30</td>
+												<td>1</td>
+										</tr>
+										<tr>
+												<td>2</td>
+												<td>3</td>
+												<td>4</td>
+												<td>5</td>
+												<td>6</td>
+												<td>7</td>
+												<td>8</td>
+										</tr>
+										<tr>
+												<td>9</td>
+												<td>10</td>
+												<td>11</td>
+												<td>12</td>
+												<td>13</td>
+												<td>14</td>
+												<td>15</td>
+										</tr>
+										<tr>
+												<td>16</td>
+												<td>17</td>
+												<td>18</td>
+												<td>19</td>
+												<td>20</td>
+												<td>21</td>
+												<td>22</td>
+										</tr>
+										<tr>
+												<td>23</td>
+												<td>24</td>
+												<td>25</td>
+												<td>26</td>
+												<td>27</td>
+												<td>28</td>
+												<td>29</td>
+										</tr>
+										<tr>
+												<td>30</td>
+												<td>31</td>
+												<td>1</td>
+												<td>2</td>
+												<td>3</td>
+												<td>4</td>
+												<td>5</td>
+										</tr>
+
+
+							</table>
+						</div>
+
+							<button class="me_gift_pick_button" id="me_gift_ok">確認</button>
+
+								<button class="me_gift_btn-close" id="me_gift_btn-close"><img src="images/me_gift_img/x.png" alt=""></button>
+
+
+
+				      </div>
+
+
+
+			      <div id="me_gift_card3" class="me_gift_card3 card">
+			        <h2 class="me_gift_title">歷史紀錄</h2>
+
+			  <table class="me_gift_history_table">
+
+			  <tr>
+			    <th>交換對象</th>
+			    <th>日期</th>
+			    <th>評分紀錄</th>
+			  </tr>
+
+			  <tr>
+			    <td><img src="images/me_gift_img/girl.png" alt=""> <br> 點點小姐</td>
+			    <td>2017/07/07</td>
+			    <td><ul>
+			      <li class="me_gift_star_li">★</li>
+			      <li class="me_gift_star_li">★</li>
+			      <li class="me_gift_star_li">★</li>
+			      <li class="me_gift_star_li">★</li>
+			      <li class="me_gift_star_li">★</li>
+			    </ul></td>
+			  </tr>
+			  </table>
+			        <hr width="70%">
+			        <table class="me_gift_history_table">
+
+			        <tr>
+			          <th>交換對象</th>
+			          <th>日期</th>
+			          <th>評分紀錄</th>
+			        </tr>
+
+			        <tr>
+			          <td><img src="images/me_gift_img/boy.png" alt=""> <br> 小吳先生</td>
+			          <td>2017/07/07</td>
+			          <td><ul>
+			            <li class="me_gift_star_li">★</li>
+			            <li class="me_gift_star_li">★</li>
+			            <li class="me_gift_star_li">★</li>
+			            <li class="me_gift_star_li">★</li>
+			            <li class="me_gift_star_li">★</li>
+
+			          </ul></td>
+			        </tr>
+			        </table>
+
+			  <br>
+				<a class="me_gift_button" id="me_gift_ok" href="me513distribute.html">OK</a>
+			    <button class="me_gift_btn-close" id="me_gift_btn-close"><img src="images/me_gift_img/x.png" alt=""></button>
+			      </div> -->
+	<!-- pick end-->
+
+	<!-- distribute -->
+
+			       <div id="me_gift_card1" class="me_gift_card1 card">
+			        <h2 class="me_gift_title">我的禮物交換進度</h2>
+							 <br>
+							<div class="me_gift_distribute">
+
+							    <div class="me_gift_distribute_msg me_gift_distribute_msg1">
+							      <p>配送中 </p>
+							    </div>
+							    <div class="me_gift_distribute_msg me_gift_distribute_msg2">
+							      <p>已收件 </p>
+							    </div>
+							    <div class="me_gift_distribute_msg me_gift_distribute_msg3" >
+							      <p>送達 </p>
+							    </div>
+							    <div class="me_gift_distribute_msg me_gift_distribute_msg2">
+							      <p>已收件 </p>
+							    </div>
+							    <div class="me_gift_distribute_msg me_gift_distribute_msg1">
+							      <p>配送中 </p>
+							    </div>
+
+							      <div class="me_gift_distribute_clearfix"></div>
+
+							      <div class="me_gift_distribute_statusBar">
+							          <div class="me_gift_distribute_frame">
+							              <div class="me_gift_distribute_state_right">
+
+							              </div>
+							              <div class="me_gift_distribute_state_left">
+
+							              </div>
+							          </div>
+
+							          <div class="me_gift_distribute_state_left_head">
+							            <img src="images/me_gift_img/boy.png" alt="">
+							            <br>
+							            <p>小荒先生</p>
+
+							          </div>
+							          <div class="me_gift_distribute_state_right_head">
+							            <img src="images/me_gift_img/girl.png" alt="">
+							            <br>
+							            <p>點點小姐</p>
+							          </div>
+
+
+							          <div class="me_gift_distribute_clearfix"></div>
+								        <button class="me_gift_btn-close" id="me_gift_btn-close"><img src="images/me_gift_img/x.png" alt=""></button>
+							      </div>
+							</div>
+							<button class="me_gift_button" id="me_gift_distribute">確認</button>
+
+			      </div>
+
+
+			      <div id="me_gift_card2" class="me_gift_card2 card">
+			        <h2 class="me_gift_title">季節活動交換進度</h2>
+
+							<br>
+				<div class="me_gift_distribute_season">
+
+				    <div class="me_gift_distribute_msg_season me_gift_distribute_msg1_season">
+				      <p>寄出<br>禮物 </p>
+				    </div>
+				    <div class="me_gift_distribute_msg_season me_gift_distribute_msg2_season">
+				      <p>配送中 </p>
+				    </div>
+				    <div class="me_gift_distribute_msg_season me_gift_distribute_msg3_season" >
+				      <p>收到<br>禮物 </p>
+				    </div>
+
+
+				      <div class="me_gift_distribute_clearfix"></div>
+
+				      <div class="me_gift_distribute_statusBar_season">
+				          <div class="me_gift_distribute_frame_season">
+
+				              <div class="me_gift_distribute_state_left_season">
+
+				              </div>
+				          </div>
+
+				          <div class="me_gift_distribute_state_left_head_season">
+				            <img src="images/me_gift_img/boy.png" alt="">
+				            <br>
+				            <p>小荒先生</p>
+
+				          </div>
+				          <div class="me_gift_distribute_state_right_head_season">
+				            <img src="images/me_gift_img/gift2.png" alt="">
+				            <br>
+
+				          </div>
+
+
+				          <div class="me_gift_distribute_clearfix"></div>
+
+									<button class="me_gift_btn-close" id="me_gift_btn-close_activity"><img src="images/me_gift_img/x.png" alt=""></button>
+				      </div>
+				</div>
+				<button class="me_gift_button" id="me_gift_ok">確認</button>
+
+			      </div>
+
+
+			      <div id="me_gift_card3" class="me_gift_card3 card">
+			        <h2 class="me_gift_title">歷史紀錄</h2>
+
+			  <table class="me_gift_history_table">
+
+			  <tr>
+			    <th>交換對象</th>
+			    <th>日期</th>
+			    <th>評分紀錄</th>
+			  </tr>
+
+			  <tr>
+			    <td><img src="images/me_gift_img/girl.png" alt=""> <br> 點點小姐</td>
+			    <td>2017/07/07</td>
+			    <td><ul>
+			      <li class="me_gift_star_li">★</li>
+			      <li class="me_gift_star_li">★</li>
+			      <li class="me_gift_star_li">★</li>
+			      <li class="me_gift_star_li">★</li>
+			      <li class="me_gift_star_li">★</li>
+
+			    </ul></td>
+			  </tr>
+			  </table>
+			        <hr width="70%">
+			        <table class="me_gift_history_table">
+
+			        <tr>
+			          <th>交換對象</th>
+			          <th>日期</th>
+			          <th>評分紀錄</th>
+			        </tr>
+
+			        <tr>
+			          <td><img src="images/me_gift_img/boy.png" alt=""> <br> 小吳先生</td>
+			          <td>2017/07/26</td>
+			          <td><ul>
+			            <li class="me_gift_star_li">★</li>
+			            <li class="me_gift_star_li">★</li>
+			            <li class="me_gift_star_li">★</li>
+			            <li class="me_gift_star_li">★</li>
+			            <li class="me_gift_star_li">★</li>
+
+
+
+			          </ul></td>
+			        </tr>
+			        </table>
+
+			  <br>
+				<a class="me_gift_button" id="me_gift_ok" href="me513finish.html">OK</a>
+			    <button class="me_gift_btn-close" id="me_gift_btn-close_history"><img src="images/me_gift_img/x.png" alt=""></button>
+			      </div>
+
+
+	<!-- distribute end -->
+
+<!-- finish start -->
+
+
+
+<!--
+		      <div id="me_gift_card1" class="me_gift_card1 card">
+		        <h2 class="me_gift_title">我的禮物交換進度</h2>
+						 <br>
+						<div class="me_gift_distribute">
+
+						    <div class="me_gift_distribute_msg me_gift_distribute_msg1">
+						      <p>配送中 </p>
+						    </div>
+						    <div class="me_gift_distribute_msg me_gift_distribute_msg2">
+						      <p>已收件 </p>
+						    </div>
+						    <div class="me_gift_distribute_msg me_gift_distribute_msg3" >
+						      <p>送達 </p>
+						    </div>
+						    <div class="me_gift_distribute_msg me_gift_distribute_msg2">
+						      <p>已收件 </p>
+						    </div>
+						    <div class="me_gift_distribute_msg me_gift_distribute_msg1">
+						      <p>配送中 </p>
+						    </div>
+
+						      <div class="me_gift_distribute_clearfix"></div>
+
+						      <div class="me_gift_distribute_statusBar">
+						          <div class="me_gift_distribute_frame">
+						              <div class="me_gift_distribute_state_right">
+
+						              </div>
+						              <div class="me_gift_distribute_state_left">
+
+						              </div>
+						          </div>
+											<h5 class="me_gift_finish_statement">
+						            已經收到彼此的禮物囉
+						          </h5>
+						          <div class="me_gift_distribute_state_left_head">
+						            <img src="images/me_gift_img/boy.png" alt="">
+						            <br>
+						            <p>小荒先生</p>
+
+						          </div>
+
+											<div class="me_gift_finish_star">
+												<img src="images/me_gift_img/emptyStar.png" alt="">
+											</div>
+
+						          <div class="me_gift_distribute_state_right_head">
+						            <img src="images/me_gift_img/girl.png" alt="">
+						            <br>
+						            <p>點點小姐</p>
+						          </div>
+
+
+						          <div class="me_gift_distribute_clearfix"></div>
+							        <button class="me_gift_btn-close" id="me_gift_btn-close_activity"><img src="images/me_gift_img/x.png" alt=""></button>
+						      </div>
+						</div>
+						<button class="me_gift_button" id="me_gift_finish_comment">給評價</button>
+						<button class="me_gift_button" id="me_gift_finish_report">檢舉</button>
+
+		      </div>
+
+
+		      <div id="me_gift_card2" class="me_gift_card2 card">
+		        <h2 class="me_gift_title">季節活動交換進度</h2>
+
+						<br>
+			<div class="me_gift_distribute_season">
+
+			    <div class="me_gift_distribute_msg_season me_gift_distribute_msg1_season">
+			      <p>寄出<br>禮物 </p>
+			    </div>
+			    <div class="me_gift_distribute_msg_season me_gift_distribute_msg2_season">
+			      <p>配送中 </p>
+			    </div>
+			    <div class="me_gift_distribute_msg_season me_gift_distribute_msg3_season" >
+			      <p>收到<br>禮物 </p>
+			    </div>
+
+
+			      <div class="me_gift_distribute_clearfix"></div>
+
+			      <div class="me_gift_distribute_statusBar_season">
+			          <div class="me_gift_distribute_frame_season">
+
+			              <div class="me_gift_distribute_state_left_season">
+
+			              </div>
+			          </div>
+								<h5 class="me_gift_finish_statement_season">
+									您所寄的禮物已經送達
+								</h5>
+			          <div class="me_gift_distribute_state_left_head_season">
+			            <img src="images/me_gift_img/boy.png" alt="">
+			            <br>
+			            <p>小荒先生</p>
+
+			          </div>
+			          <div class="me_gift_distribute_state_right_head_season">
+			            <img src="images/me_gift_img/gift2.png" alt="">
+			            <br>
+
+			          </div>
+
+
+			          <div class="me_gift_distribute_clearfix"></div>
+
+								<button class="me_gift_btn-close" id="me_gift_btn-close_activity"><img src="images/me_gift_img/x.png" alt=""></button>
+			      </div>
+			</div>
+			<button class="me_gift_button" id="me_gift_ok">確認</button>
+
+		      </div>
+
+
+		      <div id="me_gift_card3" class="me_gift_card3 card">
+		        <h2 class="me_gift_title">歷史紀錄</h2>
+
+		  <table class="me_gift_history_table">
+
+		  <tr>
+		    <th>交換對象</th>
+		    <th>日期</th>
+		    <th>評分紀錄</th>
+		  </tr>
+
+		  <tr>
+		    <td><img src="images/me_gift_img/girl.png" alt=""> <br> 點點小姐</td>
+		    <td>2017/07/07</td>
+		    <td><ul>
+		      <li class="me_gift_star_li">★</li>
+		      <li class="me_gift_star_li">★</li>
+		      <li class="me_gift_star_li">★</li>
+		      <li class="me_gift_star_li">★</li>
+		      <li class="me_gift_star_li">★</li>
+
+		    </ul></td>
+		  </tr>
+		  </table>
+		        <hr width="70%">
+		        <table class="me_gift_history_table">
+
+		        <tr>
+		          <th>交換對象</th>
+		          <th>日期</th>
+		          <th>評分紀錄</th>
+		        </tr>
+
+		        <tr>
+		          <td><img src="images/me_gift_img/boy.png" alt=""> <br> 小吳先生</td>
+		          <td>2017/07/26</td>
+		          <td><ul>
+		            <li class="me_gift_star_li">★</li>
+		            <li class="me_gift_star_li">★</li>
+		            <li class="me_gift_star_li">★</li>
+		            <li class="me_gift_star_li">★</li>
+		            <li class="me_gift_star_li">★</li>
+
+
+
+		          </ul></td>
+		        </tr>
+		        </table>
+
+		  <br>
+			<a class="me_gift_button" id="me_gift_ok" href="me513report.html">OK</a>
+		    <button class="me_gift_btn-close" id="me_gift_btn-close"><img src="images/me_gift_img/x.png" alt=""></button>
+		      </div> -->
+
+<!-- finish end -->
+
+<!-- report start -->
+<!--
+<div id="me_gift_card1" class="me_gift_card1 card">
+	<h2 class="me_gift_title">檢舉</h2>
+	<div class="me_gift_pairing_content_box1">
+		<h3 class="me_gift_pairing_title2"> 點選下方圖片上傳檢舉照片</h2>
+			<img class="me_gift_pairing_img" src="images/me_gift_img/upload.png" alt="">
+	</div>
+
+	<div class="me_gift_pairing_content_box2">
+		<h3 class="me_gift_pairing_report_title3">檢舉原因</h3>
+
+		<select class="me_gift_pairing_report_select" name="report reason" form="carform">
+			<option value="money">金額不符</option>
+			<option value="type">禮物種類不符</option>
+			<option value="danger">危險物品</option>
+			<option value="others">其它</option>
+		</select>
+		<br>
+		<input class="me_gift_pairing_report_text" type="textarea" name="" value="">
+	</div>
+	<br>
+
+
+
+
+
+
+					<button class="me_gift_btn-close" id="me_gift_btn-close"><img src="images/me_gift_img/x.png" alt=""></button>
+
+
+	<button class="me_gift_button" id="me_gift_ok">檢舉</button>
+	<button class="me_gift_button" id="me_gift_ok">放棄</button>
+
+</div>
+
+
+<div id="me_gift_card2" class="me_gift_card2 card">
+	<h2 class="me_gift_title">季節活動交換進度</h2>
+
+	<br>
+<div class="me_gift_distribute_season">
+
+<div class="me_gift_distribute_msg_season me_gift_distribute_msg1_season">
+	<p>寄出<br>禮物 </p>
+</div>
+<div class="me_gift_distribute_msg_season me_gift_distribute_msg2_season">
+	<p>配送中 </p>
+</div>
+<div class="me_gift_distribute_msg_season me_gift_distribute_msg3_season" >
+	<p>收到<br>禮物 </p>
+</div>
+
+
+	<div class="me_gift_distribute_clearfix"></div>
+
+	<div class="me_gift_distribute_statusBar_season">
+			<div class="me_gift_distribute_frame_season">
+
+					<div class="me_gift_distribute_state_left_season">
+
+					</div>
+			</div>
+			<h5 class="me_gift_finish_statement_season">
+				您所寄的禮物已經送達
+			</h5>
+			<div class="me_gift_distribute_state_left_head_season">
+				<img src="images/me_gift_img/boy.png" alt="">
+				<br>
+				<p>小荒先生</p>
+
+			</div>
+			<div class="me_gift_distribute_state_right_head_season">
+				<img src="images/me_gift_img/gift2.png" alt="">
+				<br>
+
+			</div>
+
+
+			<div class="me_gift_distribute_clearfix"></div>
+
+	</div>
+</div>
+<button class="me_gift_btn-close" id="me_gift_btn-close_activity"><img src="images/me_gift_img/x.png" alt=""></button>
+<button class="me_gift_button" id="me_gift_ok">確認</button>
+
+</div>
+
+
+<div id="me_gift_card3" class="me_gift_card3 card">
+	<h2 class="me_gift_title">歷史紀錄</h2>
+
+<table class="me_gift_history_table">
+
+<tr>
+<th>交換對象</th>
+<th>日期</th>
+<th>評分紀錄</th>
+</tr>
+
+<tr>
+<td><img src="images/me_gift_img/girl.png" alt=""> <br> 點點小姐</td>
+<td>2017/07/07</td>
+<td><ul>
+<li class="me_gift_star_li">★</li>
+<li class="me_gift_star_li">★</li>
+<li class="me_gift_star_li">★</li>
+<li class="me_gift_star_li">★</li>
+<li class="me_gift_star_li">★</li>
+
+</ul></td>
+</tr>
+</table>
+	<hr width="70%">
+	<table class="me_gift_history_table">
+
+	<tr>
+		<th>交換對象</th>
+		<th>日期</th>
+		<th>評分紀錄</th>
+	</tr>
+
+	<tr>
+		<td><img src="images/me_gift_img/boy.png" alt=""> <br> 小吳先生</td>
+		<td>2017/07/26</td>
+		<td><ul>
+			<li class="me_gift_star_li">★</li>
+			<li class="me_gift_star_li">★</li>
+			<li class="me_gift_star_li">★</li>
+			<li class="me_gift_star_li">★</li>
+			<li class="me_gift_star_li">★</li>
+
+
+
+		</ul></td>
+	</tr>
+	</table>
+
+<br>
+<a class="me_gift_button" id="me_gift_ok" href="me513notyet.html">OK</a>
+<button class="me_gift_btn-close" id="me_gift_btn-close"><img src="images/me_gift_img/x.png" alt=""></button>
+</div> -->
+
+<!-- report end -->
+
+
+	</div>
+	<!-- 513 stack end -->
+	</div>
+	<!-- 513 light box end -->
+
+
+
+
+
+    <div class="gotop">
+        <img src="images/gotop.png" alt="回到頁首">
+    </div>
+
+    <footer>
+        <p>Copyright © 2017 MATCHES</p>
+    </footer>
+
+
+
+		<!-- <script>
+		var div = document.createElement('div');
+		div.setAttribute('class', 'card-container me_giftstart');
+		div.setAttribute('id', 'stack1');
+		div.innerHTML = document.getElementById('notyet_pair').innerHTML;
+		document.getElementById('me_gift_lightbox').appendChild(div);
+
+		</script> -->
+
+</body>
+</html>

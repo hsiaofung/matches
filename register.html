@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>註冊頁面</title>
+	<link rel="stylesheet" type="text/css" href="css/register_css/register.css">
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="javascript/register_js/register.js"></script>
+	<script src="javascript/register_js/register1.js"></script>
+	<script src="javascript/script.js"></script>
+</head>
+
+<body>
+
+	<header>
+      <nav>
+            <div class="hamburger"></div>
+            <ul>
+                  <li><a href="exchange.html">禮物交友</a></li>
+                  <li><a href="friend.html">社交圈</a></li>
+                  <li><a href="shop.html">造型商城</a></li>
+            </ul>
+            <div class="logo">
+                  <a href="index.html">
+               <img src="images/logo_b.png" alt="LOGO">
+            </a>
+            </div>
+            <ul>
+                  <li><a href="act.html">季節活動</a></li>
+                  <li><a href="talk.html">討論區</a></li>
+            </ul>
+
+            <div class="member">
+                  <div id="login">
+                        <img src="images/defaultmember.png" alt="訪客">
+                        <span>登入</span>
+                  </div>
+            </div>
+            <div class="head_cart">
+                  <img src="images/cart.png" alt="購物車"></a>
+                  <div class="head_cartlist">
+                        <div class="cartlist">
+                              <div class="prodpic"><img src="images/line_body.png"></div>
+                              <div>
+                                    <div class="prodname">條紋上衣</div>
+                                    <div class="prodprice">200 點</div>
+                                    <div class="isgift">送禮: 小小噹</div>
+                              </div>
+                        </div>
+                        <div class="cartlist">
+                              <div class="prodpic"><img src="images/line_body.png"></div>
+                              <div>
+                                    <div class="prodname">條紋上衣</div>
+                                    <div class="prodprice">200 點</div>
+                              </div>
+                        </div>
+                        <div class="cartlist">
+                              <div class="prodpic"><img src="images/redHead_body.png"></div>
+                              <div>
+                                    <div class="prodname">小紅帽上衣</div>
+                                    <div class="prodprice">250 點</div>
+                              </div>
+                        </div>
+                        <div class="gocart"><a href="cart.html">前往結帳</a></div>
+                  </div>
+            </div>
+      </nav>
+
+      <ul class="hbmenu">
+            <li>
+                  <div class="hb_close"></div>
+            </li>
+            <li><a href="exchange.html"><img src="images/exchange.png">禮物交友</a></li>
+            <li><a href="friend.html"><img src="images/friend.png">社交圈</a></li>
+            <li><a href="shop.html"><img src="images/shop.png">造型商城</a></li>
+            <li><a href="act.html"><img src="images/act.png">季節活動</a></li>
+            <li><a href="talk.html"><img src="images/talk.png">討論區</a></li>
+            <li><a href="cart.html"><img src="images/cartrwd.png">購物車</a></li>
+      </ul>
+
+      <div class="loginbox">
+            <div class="login_content">
+                  <div class="login_top">
+                        <div class="login_title">會員登入</div>
+                        <div id="login_close"></div>
+                  </div>
+                  <div class="login_scope">
+                        <span>會員帳號</span><input type="text" name="memId" id="memId"><br>
+                        <span>會員密碼</span><input type="password" name="memPsw" id="memPsw"><br>
+                        <input type="submit" value="登入" class="gologin">
+                        <div>還沒有MATCHES的帳號嗎? 馬上加入我們吧!</div>
+                        <a class="goregister" href="register.html">
+                              <span class="reg">註冊</span>
+                        </a>
+                        </span>
+                  </div>
+            </div>
+</header>
+<div class="headerb"></div>
+
+
+	<div id="register">
+
+	<form>
+		<!-- <div id="header"></div> -->
+		<div id="register_content">
+				<div id="register_content_session1">
+					<div id="register_content_session1_box">
+						<h3>填寫會員資料</h3>
+						<div id="register_content_session1_box_box">
+							<table id="memberRegisterTable">
+								<tr>
+									<th>會員帳號</th>
+									<td><input type="text" name=""></td>
+									<td class="v"><!-- <img src="images/checked.png"> --></td>
+									<th id="addressTh">地址</th>
+									<td id="addressInputTd"><input type="text" name="" id="address_length"></td>
+									<td class="v"><!-- <img src="images/checked.png"> --></td>
+								</tr>
+								<tr>
+									<th>會員暱稱</th>
+									<td><input type="text" name=""></td>
+									<td class="v"><!-- <img src="images/checked.png"> --></td>
+									<th id="hobbyTh">興趣</th>
+									<td id="hobbybox">
+										<input type="checkbox" name="">運動
+										<input type="checkbox" name="">電影
+										<input type="checkbox" name="">音樂
+									</td>
+								</tr>
+								<tr>
+									<th>會員密碼</th>
+									<td><input type="text" name=""></td>
+									<td class="v"><!-- <img src="images/checked.png"> --></td>
+									<td>&nbsp;&nbsp;</td>
+									<td id="hobbybox1">
+											<input type="checkbox" name="">烹飪
+											<input type="checkbox" name="">文學
+											<input type="checkbox" name="">時尚
+									</td>
+								</tr>
+								<tr>
+									<th>密碼確認</th>
+									<td><input type="text" name=""></td>
+									<td class="v"><!-- <img src="images/checked.png"> --></td>
+									<th id="introduceTh">自我介紹</th>
+									<td rowspan="4" id="textarea_box">
+									<textarea id="textarea" maxlength="50"></textarea>
+									</td>
+								</tr>
+								<tr>
+									<th>email</th>
+									<td><input type="text" name=""></td>
+									<td class="v"><!-- <img src="images/checked.png"> --></td>
+								</tr>
+								<tr>
+									<th>電話號碼</th>
+									<td><input type="text" name=""></td>
+									<td class="v"><!-- <img src="images/checked.png"> --></td>
+								</tr>
+								<tr>
+									<th>生日</th>
+									<td><input type="text" name=""></td>
+									<td class="v"><!-- <img src="images/checked.png"> --></td>
+								</tr>
+								<tr id="feedbackTr"><td id="feedback" colspan="6">剩餘<span id="feedbacktext">50</span>字</td></tr>
+
+
+									<tr id="mobile_Tr_address">
+										<th>地址</th>
+										<td><input type="text" name="" id="mobile_address_length"></td>
+									</tr>
+
+									
+									<tr id="mobile_Tr_introduce">
+										<th>自我介紹</th>
+										<td><input type="text" name="" placeholder="限50字"></td>
+									</tr>
+									
+									<tr id="mobile_hobby_Tr">
+										<th id="mobile_hobbyTh">興趣</th>
+										<td id="mobile_hobbybox">
+											<input type="checkbox" name="">運動
+											<input type="checkbox" name="">電影
+											<input type="checkbox" name="">音樂
+											<input type="checkbox" name="">烹飪
+											<input type="checkbox" name="">文學
+											<input type="checkbox" name="">時尚
+										</td>	
+									</tr>
+
+							</table>
+						</div>
+					</div>
+					<a href="#1" id="next">下一步</a>
+				</div>
+				<!-- <a name="1"></a> -->
+				<div id="register_content_session2">
+					<div  id="register_content_session2_box">
+						<h3>打造一個你的專屬角色</h3>
+						<div id="register_content_session2_box_box">
+							<table id="choose_Table">
+								<tr>
+									<td rowspan="2" id="boy_td">
+										<div class="charactor" id="boyborder">
+											<div class="charactor_img" id="charactor_img_boy">
+												<label for="choose_boy" id="img_labelfor_boy">
+													<img src="images/register_img/boy-1.png" id="changeBoy">
+												</label>
+											</div>
+										</div>
+										<input type="radio" name="sex" id="choose_boy" checked>
+										<label for="choose_boy" id="labelfor_boy">我是男生</label>
+									</td>
+									<td rowspan="2">
+										<div class="charactor" id="girlborder">
+											<div class="charactor_img" id="charactor_img_girl">
+												<label for="choose_girl" id="image_labelfor_girl">
+													<img src="images/register_img/girl-1.png" id="changeGirl">
+												</label>
+											</div>
+										</div>
+										<input type="radio" name="sex" id="choose_girl">
+										<label for="choose_girl" id="labelfor_girl">我是女生</label>
+									</td>
+									<td>
+										<div class="four_clothes" id="clothes_top1">
+											<div class="four_clothes_img">
+												<img src="images/register_img/boy-2-1.png" id="clothes_top1_img">
+											</div>
+										</div> 
+									</td>
+									<td>
+										<div class="four_clothes" id="clothes_top2">
+											<div class="four_clothes_img">
+												<img src="images/register_img/boy-3-1.png" id="clothes_top2_img">
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="four_clothes" id="clothes_bot1">
+											<div class="four_clothes_img">
+												<img src="images/register_img/boy-2-2.png" id="clothes_bot1_img">
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="four_clothes" id="clothes_bot2">
+											<div class="four_clothes_img">
+												<img src="images/register_img/boy-3-2.png" id="clothes_bot2_img">
+											</div>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<input type="submit" name="" value="送出" id="register_submit">
+				</div>
+				<!-- <div id="register_content_session3">
+					<p id="">恭喜您成為<span id="matchestext">MATCHES</span>的一員</p>
+					<p id="">立刻帶著全新的角色去認識新朋友吧</p>
+					<div id="three_banner">
+						<div class="three_banner_child">
+							<img src="images/01.png">
+						</div>
+						<div class="three_banner_child">
+							<img src="images/02.png">
+						</div>
+						<div class="three_banner_child">
+							<img src="images/03.png">
+						</div>
+					</div>
+				</div> -->
+		</div>
+	</form><!-- form end; --><!-- 最後把全部用form包住 -->
+		
+	</div><!--register-->
+	<footer>
+        <p>Copyright © 2017 MATCHES</p>
+    </footer>
+</body>
+</html>

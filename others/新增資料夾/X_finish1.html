@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    /*@font-face {
+      font-family: 文鼎圓體H;
+      src: url("../font/文鼎圓體H.OTF") format("opentype");
+    }*/
+
+    body {
+      background: url("images/me_gift_img/indexpng.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      /*background-position: center center;*/
+    }
+    /*.me_gift_finish_lightbox {*/
+
+    button:focus {
+      outline: 0;
+    }
+
+
+    .me_gift_finish_lightbox {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .5);
+      position: fixed;
+      top: 0;
+      left: 0;
+
+      /*display: none;*/
+    }
+
+    .me_gift_finish_content {
+      width:650px;
+      height: 470px;
+      margin: auto;
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right:0;
+      left: 0;
+      /*margin-top: -150px;*/
+      /*margin-left: -300px;*/
+      text-align: center;
+      border-radius: 10px;
+      border: 1px solid #444;
+      overflow: hidden;
+      color: #857474;
+      animation-name: Movewindow;
+      animation-delay:3s;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+
+      animation-fill-mode: forwards;
+    }
+
+
+    .me_gift_finish_btn-close {
+      display: block;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      background-color: #B2DAED;
+      color: #fff;
+      padding: 0;
+      border: none;
+      background: none;
+      text-align: center;
+    }
+
+    .me_gift_finish_title {
+      background-color: #B2DAED;
+      height: 30px;
+
+      font-size: 16px;
+      /*check font size*/
+      text-align: center;
+      line-height: 30px;
+    }
+
+        .me_gift_finish_title2 {
+
+      height: 30px;
+      color: #666;
+      font-size: 16px;
+      /*padding: 10px;*/
+      /*padding-left: 50px;
+      padding-right: 50px;*/
+      margin-top: 15px;
+      /*check font size*/
+      font-size: text-align: center;
+      line-height: 30px;
+    }
+
+
+
+    .me_gift_finish_button {
+      /*background-color: #FFA266 ;*/
+      background-color: #66DBFF;
+      padding-left: 30px;
+      padding-right: 30px;
+      line-height: 30px;
+      font-size: 15px;
+      color:white;
+      border-radius: 30px;
+      border: none;
+      margin-top: 10px;
+      margin-bottom:10px;
+    }
+
+
+    /*finish content*/
+
+    .me_gift_finish_msg{
+
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius:100%;
+        text-align: center;
+  float: left;
+        color:white;
+        margin-left: 10px;
+        margin-right: 10px;
+
+}
+
+    .me_gift_finish_msg1{
+       background-color:#F9C7A3;
+    }
+    .me_gift_finish_msg2{
+       background-color:#F6B284;
+    }
+    .me_gift_finish_msg3{
+       background-color:#F39D67;
+    }
+
+.me_gift_finish_msg:after{
+  content:'';
+  display:block;
+  width: 0px;
+  height: 0px;
+  /*background-color:#f00;*/
+
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -15px;
+  margin: auto;
+}
+
+    .me_gift_finish_msg1:after{
+        border-top: 30px solid #F9C7A3;
+    }
+    .me_gift_finish_msg2:after{
+        border-top: 30px solid #F6B284;
+    }
+    .me_gift_finish_msg3:after{
+        border-top: 30px solid #F39D67;
+    }
+
+    .me_gift_finish_clearfix{
+        clear: both;
+    }
+    .me_gift_finish_frame{
+        width: 450px;
+        height: 20px;
+        background-color: #DCDDDD;
+        margin-top:20px;
+        border-radius:15px;
+        padding-top:5px;
+        /*margin: auto;*/
+    }
+    .me_gift_finish_state_right{
+        width: 50%;
+        height: 15px;
+        background-color: #F39D67;
+        border-radius:15px;
+        margin: auto;
+        float:right;
+
+    }
+    .me_gift_finish_state_left{
+        width: 50%;
+        height: 15px;
+        background-color: #F39D67;
+        border-radius:15px;
+        margin: auto;
+        float:left;
+
+    }
+
+    .me_gift_finish_statement{
+      padding:15px;
+    }
+
+    .me_gift_finish_state_left_head{
+      float: left;
+    }
+    .me_gift_finish_state_right_head{
+      float: right;
+    }
+    .me_gift_finish{
+      width: 450px;
+      margin: auto;
+      margin-top: 30px;
+    }
+    .me_gift_finish_star{
+      margin-top: 20px;
+      float: left;
+      margin-left: 55px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <button class="me_gift_gift" id="me_gift_finish_lightboxButton">點我開啟光箱</button>
+
+
+  <div class="me_gift_finish_lightbox" id="me_gift_finish_lightbox">
+    <div class="me_gift_finish_content">
+      <h2 class="me_gift_finish_title">我的禮物交換進度</h2>
+
+      <!-- <h3 class="me_gift_finish_title2"> 選擇收貨時間</h2> -->
+      <br>
+
+      <!-- finish content  -->
+<div class="me_gift_finish">
+
+    <div class="me_gift_finish_msg me_gift_finish_msg1">
+      <p>配送中 </p>
+    </div>
+    <div class="me_gift_finish_msg me_gift_finish_msg2">
+      <p>已收件 </p>
+    </div>
+    <div class="me_gift_finish_msg me_gift_finish_msg3" >
+      <p>送達 </p>
+    </div>
+    <div class="me_gift_finish_msg me_gift_finish_msg2">
+      <p>已收件 </p>
+    </div>
+    <div class="me_gift_finish_msg me_gift_finish_msg1">
+      <p>配送中 </p>
+    </div>
+
+      <div class="me_gift_finish_clearfix"></div>
+
+      <div class="me_gift_finish_statusBar">
+          <div class="me_gift_finish_frame">
+              <div class="me_gift_finish_state_right">
+
+              </div>
+              <div class="me_gift_finish_state_left">
+
+              </div>
+          </div>
+
+
+          <h5 class="me_gift_finish_statement">
+            已經收到彼此的禮物囉
+          </h5>
+          <div class="clearfix"></div>
+          <div class="me_gift_finish_state_left_head">
+            <img src="images/me_gift_img/boy.png" alt="">
+
+          </div>
+
+          <div class="me_gift_finish_star">
+            <img src="images/me_gift_img/emptyStar.png" alt="">
+          </div>
+
+
+          <div class="me_gift_finish_state_right_head">
+            <img src="images/me_gift_img/girl.png" alt="">
+          </div>
+
+          <div class="me_gift_finish_clearfix"></div>
+
+
+      </div>
+</div>
+
+      <!-- finish content  -->
+
+      <button class="me_gift_finish_button" id="me_gift_ok">給評價</button>
+      <br>
+      <button class="me_gift_finish_button" id="me_gift_report">檢舉</button>
+
+
+        <button class="me_gift_finish_btn-close" id="me_gift_finish_btn-close">X</button>
+
+    </div>
+
+
+
+  </div>
+
+  <script type="text/javascript">
+
+
+
+  function $id(id) {
+    return document.getElementById(id);
+  }
+
+  function showLightBox(){
+    $id("me_gift_finish_lightbox").style.display = "block";
+    // console.log($id("me_gift_finish_lightbox").style )
+  }
+  function hide(){
+    $id("me_gift_finish_lightbox").style.display = "none";
+    // console.log($id("me_gift_finish_lightbox").style )
+  }
+  function hide1(){
+    $id("me_gift_finish_lightbox").style.display = "none";
+    // console.log($id("me_gift_finish_lightbox").style )
+  }
+
+  function init(){
+    $id("me_gift_finish_lightboxButton").onclick = showLightBox;
+    // $id("me_gift_ok_activity").onclick = hide;
+    $id("me_gift_ok").onclick = hide;
+    // $id("me_gift_finish_btn-close_activity").onclick = hide1;
+    $id("me_gift_finish_btn-close").onclick = hide1;
+
+  }
+
+  window.onload=init;
+
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+公版html
+
+<!--(bake modules/header.html)-->
+
+(各頁的code)
+
+<!--(bake modules/gotop.html)-->
+
+<!--(bake modules/footer.html)-->
+
+-----------------------------------------------
+公版css
+
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+
+<link rel="stylesheet" type="text/css" href="css/public.css">
+
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+-----------------------------------------------
+公版javascript
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="javascript/script.js"></script>

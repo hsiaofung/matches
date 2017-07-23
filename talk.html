@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <!-- <link rel="stylesheet" href="css/public.css"> -->
+    <link rel="stylesheet" href="css/talk-main.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+     <link rel="stylesheet" type="text/css" href="css/public.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="libs/gsap/src/minified/TweenMax.min.js"></script>
+    <script type="text/javascript" src="libs/Scrollmagic/scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="libs/Scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+    <script type="text/javascript" src="libs/Scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+    <script type="text/javascript" src="libs/jquery.stellar/src/jquery.stellar.js"></script>
+    <script src="javascript/script.js"></script>
+    <script src="javascript/light_box.js"></script>
+    <script type="text/javascript" src="javascript/talk_js.js"></script>     
+    <title>討論區</title> 
+</head>
+
+<body>
+    <header>
+          <nav>
+                <div class="hamburger"></div>
+                <ul>
+                      <li><a href="exchange.html">禮物交友</a></li>
+                      <li><a href="friend.html">社交圈</a></li>
+                      <li><a href="shop.html">造型商城</a></li>
+                </ul>
+                <div class="logo">
+                      <a href="index.html">
+                   <img src="images/logo_b.png" alt="LOGO">
+                </a>
+                </div>
+                <ul>
+                      <li><a href="act.html">季節活動</a></li>
+                      <li><a href="talk.html">討論區</a></li>
+                </ul>
+    
+                <div class="member">
+                      <div id="login">
+                            <img src="images/defaultmember.png" alt="訪客">
+                            <span>登入</span>
+                      </div>
+                </div>
+                <div class="head_cart">
+                      <img src="images/cart.png" alt="購物車"></a>
+                      <div class="head_cartlist">
+                            <div class="cartlist">
+                                  <div class="prodpic"><img src="images/line_body.png"></div>
+                                  <div>
+                                        <div class="prodname">條紋上衣</div>
+                                        <div class="prodprice">200 點</div>
+                                        <div class="isgift">送禮: 小小噹</div>
+                                  </div>
+                            </div>
+                            <div class="cartlist">
+                                  <div class="prodpic"><img src="images/line_body.png"></div>
+                                  <div>
+                                        <div class="prodname">條紋上衣</div>
+                                        <div class="prodprice">200 點</div>
+                                  </div>
+                            </div>
+                            <div class="cartlist">
+                                  <div class="prodpic"><img src="images/redHead_body.png"></div>
+                                  <div>
+                                        <div class="prodname">小紅帽上衣</div>
+                                        <div class="prodprice">250 點</div>
+                                  </div>
+                            </div>
+                            <div class="gocart"><a href="cart.html">前往結帳</a></div>
+                      </div>
+                </div>
+          </nav>
+    
+          <ul class="hbmenu">
+                <li>
+                      <div class="hb_close"></div>
+                </li>
+                <li><a href="exchange.html"><img src="images/exchange.png">禮物交友</a></li>
+                <li><a href="friend.html"><img src="images/friend.png">社交圈</a></li>
+                <li><a href="shop.html"><img src="images/shop.png">造型商城</a></li>
+                <li><a href="act.html"><img src="images/act.png">季節活動</a></li>
+                <li><a href="talk.html"><img src="images/talk.png">討論區</a></li>
+                <li><a href="cart.html"><img src="images/cartrwd.png">購物車</a></li>
+          </ul>
+    
+          <div class="loginbox">
+                <div class="login_content">
+                      <div class="login_top">
+                            <div class="login_title">會員登入</div>
+                            <div id="login_close"></div>
+                      </div>
+                      <div class="login_scope">
+                            <span>會員帳號</span><input type="text" name="memId" id="memId"><br>
+                            <span>會員密碼</span><input type="password" name="memPsw" id="memPsw"><br>
+                            <input type="submit" value="登入" class="gologin">
+                            <div>還沒有MATCHES的帳號嗎? 馬上加入我們吧!</div>
+                            <a class="goregister" href="register.html">
+                                  <span class="reg">註冊</span>
+                            </a>
+                            </span>
+                      </div>
+                </div>
+    </header>
+    <div class="headerb"></div>
+    <div class="gotop">
+       <img src="images/gotop.png" alt="回到頁首">
+    </div>
+    <div class="wrapper talk-05">
+                    <div class="row r1">
+                        <h1 style="color:#8A7676" class="eyes">討論區</h1>
+                        <h2 style="color:#8A7676" class="content_01">分享你與我相遇的悸動</h2>
+                    </div>
+                    <div class="row r2 ">
+                        <div class="col-16 col-xs-20 text-type">
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="newest">最新文章</a></li>
+                                    <li><a href="#" id="hot">熱門文章</a></li>
+                                    <li><a href="#" id="change">交換禮物</a></li>
+                                    <li><a href="#" id="clothes">飾品分享</a></li>
+                                    <li><a href="#" id="rookie">新手分享</a></li>
+                                    <li><a href="#" id="sport">活動分享</a></li>
+                                </ul>
+                            </nav>
+        
+                            <select id="select-xs">
+                                <option value="">最新文章</option>
+                                <option value="">熱門文章</option>
+                                <option value="">交換禮物</option>
+                                <option value="">飾品分享</option>
+                                <option value="">新手分享</option>
+                                <option value="">活動分享</option>
+                            </select>
+        
+                        </div>
+                        <div class="col-4 col-xs-20 btn-text">
+                            <ul>
+                                <li>
+                                    <a class="btn" id="btn-light-box">
+                                        <i class="fa fa-pencil"></i> 發表文章
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+         <div id="section_01"></div>
+        <div class="waterfall no-js" id="section_02">
+            <div class="item">
+                <div class="type">新手分享</div>
+                <a href="talk_02.html">
+                    <div class="imgBox">
+                        <img src="images/talk/img01.png">
+                    </div>
+                    <h2>我收到禮物了</h2>
+                    <p>
+                        我透過Matches交換禮物，真的超好玩，下一次還要再玩。
+                    </p>
+                </a>
+                <p>
+                    作者:點點小姐<i class="fa fa-thumbs-up"></i><span>60</span>
+                    <i class="fa fa-commenting"></i><span>16</span>
+                </p>
+            </div>
+            <div class="item">
+                <div class="type">交換禮物</div>
+                <a href="#">
+                    <div class="imgBox">
+                        <img src="images/talk/img02.jpg">
+                    </div>
+                    <h2>我交換到五月天限量CD，Ye !</h2>
+                    <p>超讚，我這次換到五月天限量CD。原來也有人和我一樣超愛五月天</p>
+                </a>
+                <p>
+                    作者:小荒先生<i class="fa fa-thumbs-up"></i><span>75</span>
+                    <i class="fa fa-commenting"></i><span>16</span>
+                </p>
+            </div>
+            <div class="item">
+                <div class="type">飾品分享</div>
+                <a href="#">
+                    <div class="imgBox">
+                        <img src="images/talk/img03.png">
+                    </div>
+                    <h2>我買到七夕限定織女裝了</h2>
+                    <p>我想要這個好久了，終於讓我買到了^_^</p>
+                </a>
+                <p>
+                    作者:安娜公主<i class="fa fa-thumbs-up"></i><span>60</span>
+                    <i class="fa fa-commenting"></i><span>16</span>
+                </p>
+            </div>
+            <div class="item">
+                <div class="type">活動分享</div>
+                <a href="#">
+                    <div class="imgBox">
+                        <img src="images/talk/img04.png">
+                    </div>
+                    <h2>七夕快到了</h2>
+                    <p>七夕要到了，Matches要辦七夕情人節交換活動，好想趕快參加喔!</p>
+                </a>
+                <p>
+                    作者:小熊<i class="fa fa-thumbs-up"></i><span>50</span>
+                    <i class="fa fa-commenting"></i><span>100</span>
+                </p>
+            </div>
+            <div class="item">
+                <div class="type">新手分享</div>
+                <a href="#">
+                    <div class="imgBox">
+                        <img src="images/talk/img-share-01.png">
+                    </div>
+                    <h2>交換禮物，怎麼準備才不失禮？</h2>
+                    <p>不知道從何時開始流行的交換禮物，實在是沒閃光的魯蛇一年中最期待的一刻啊！
+                    </p>
+                </a>
+                <p>
+                    作者:小編<i class="fa fa-thumbs-up"></i><span>20</span>
+                    <i class="fa fa-commenting"></i><span>30</span>
+                </p>
+            </div>
+            <div class="item">
+                <div class="type">交換禮物</div>
+                <a href="#">
+                    <div class="imgBox">
+                        <img src="images/talk/img-talk-10.jpg">
+                    </div>
+                    <h2>Afternoon Tea 保溫杯保溫罐</h2>
+                    <p>雖然說我不喜歡收到杯子，但是看到夢幻的保溫杯保溫罐還是會很想要</p>
+                </a>
+                <p>
+                    作者:YuKi<i class="fa fa-thumbs-up"></i><span>120</span>
+                    <i class="fa fa-commenting"></i><span>37</span>
+                </p>
+            </div>
+            <div class="item">
+                <div class="type">飾品分享</div>
+                <a href="#">
+                    <div class="imgBox">
+                        <img src="images/talk/doll/new_girl/girl_head_shopItem/girl_head_shopItem_34.png">
+                    </div>
+                    <h2>俏麗女孩頭飾系列</h2>
+                    <p>Matches的飾品每一款我都覺得超吸睛的，因為很多都很愛做的非常花俏阿~</p>
+                </a>
+                <p>
+                    作者:小米<i class="fa fa-thumbs-up"></i><span>300</span>
+                    <i class="fa fa-commenting"></i><span>150</span>
+                </p>
+            </div>
+            <div class="item">
+                <div class="type">活動分享</div>
+                <a href="#">
+                    <div class="imgBox">
+                        <img src="images/talk/img-sport-05.jpg">
+                    </div>
+                    <h2>12星座心心相印傳祝福</h2>
+                    <p>粉絲們想好要送什麼了嗎？送禮可要送到心坎兒裡，不同星座的人，各有適合的不同禮物喔！</p>
+                </a>
+                <p>
+                    作者:李慕白<i class="fa fa-thumbs-up"></i><span>78</span>
+                    <i class="fa fa-commenting"></i><span>23</span>
+                </p>
+            </div>
+            <div class="item">
+                <div class="type">新手分享</div>
+                <a href="#">
+                    <div class="imgBox">
+                        <img src="images/talk/img-talk-02.jpg">
+                    </div>
+                    <h2>交換禮物抽法其實不公平？數學家教你絕不失敗的玩法</h2>
+                    <p>交換禮物其實有很多種抽法，不同的抽法會影響誰是你／妳的送禮對象。第一種是最常見的方法</p>
+                </a>
+                <p>
+                    作者:阿基米德<i class="fa fa-thumbs-up"></i><span>31</span>
+                    <i class="fa fa-commenting"></i><span>19</span>
+                </p>
+            </div>
+            <div class="item">
+                <div class="type">交換禮物</div>
+                <a href="#">
+                    <div class="imgBox">
+                        <img src="images/talk/img-talk-06.png">
+                    </div>
+                    <h2>泡澡用星空燈　（價位不等，款式不同6百多~1千多都有）</h2>
+                    <p>一邊泡澡一邊享受滿室的星光，光用想像的就覺得好浪漫啊～</p>
+                </a>
+                <p>
+                    作者:513<i class="fa fa-thumbs-up"></i><span>77</span>
+                    <i class="fa fa-commenting"></i><span>124</span>
+                </p>
+            </div>
+            <div class="item">
+                <div class="type">飾品分享</div>
+                <a href="#">
+                    <div class="imgBox">
+                        <!-- <img src="images/talk/img05.png"> -->
+                        <img src="images/talk/doll/new_girl//blueRed_foot.png">
+                    </div>
+                    <h2>個性風服飾</h2>
+                    <p>這件我覺得很實搭唷~前陣子也是常常帶她出門溜搭很有存在感的一件飾品~</p>
+                </a>
+                <p>
+                    作者:嘎文<i class="fa fa-thumbs-up"></i><span>48</span>
+                    <i class="fa fa-commenting"></i><span>72</span>
+                </p>
+            </div>
+            <div class="item">
+                <div class="type">活動分享</div>
+                <a href="#">
+                    <div class="imgBox">
+                        <img src="images/talk/img-sport-01.png">
+                    </div>
+                    <h2>超有梗交換禮物活動分享</h2>
+                    <p>上個月參加了10元交換禮物的活動。我覺得很有趣。</p>
+                </a>
+                <p>
+                    作者:育帆<i class="fa fa-thumbs-up"></i><span>51</span>
+                    <i class="fa fa-commenting"></i><span>46</span>
+                </p>
+            </div>
+            <div class="item">
+                <div class="type">新手分享</div>
+                <a href="#">
+                    <div class="imgBox">
+                        <img src="images/talk/img-talk-09.jpg">
+                    </div>
+                    <h2>貓咪指甲油</h2>
+                    <p>每樣我都好想要啊（腦粉無誤）不過目前這系列也都只能在網拍上才買的到，購入相對會比較困難一點</p>
+                </a>
+                <p>
+                    作者:Paggy<i class="fa fa-thumbs-up"></i><span>88</span>
+                    <i class="fa fa-commenting"></i><span>97</span>
+                </p>
+            </div>
+            <div class="item">
+                <div class="type">交換禮物</div>
+                <a href="#">
+                    <div class="imgBox">
+                        <img src="images/talk/img-talk-13.jpg">
+                    </div>
+                    <h2>Le Creuset 愛心小烤盅  (價位看網拍的佛心，特賣會可以到5百多左右)</h2>
+                    <p>身為一個 LC 粉，覺得耶誕節收到 LC 是個很完美的禮物</p>
+                </a>
+                <p>
+                    作者:Fran<i class="fa fa-thumbs-up"></i><span>60</span>
+                    <i class="fa fa-commenting"></i><span>77</span>
+                </p>
+            </div>
+            <div class="item">
+                <div class="type">飾品分享</div>
+                <a href="#">
+                    <div class="imgBox">
+                        <img src="images/talk/doll/new_boy//pent_31.png">
+                    </div>
+                    <h2>我收到禮物了</h2>
+                    <p>大家猜猜看這款多少摳摳阿~~~340~~沒錯他才需要340點!!!!!!</p>
+                </a>
+                <p>
+                    作者:點點小姐<i class="fa fa-thumbs-up"></i><span>111</span>
+                    <i class="fa fa-commenting"></i><span>19</span>
+                </p>
+            </div>
+            <div class="item">
+                <div class="type">活動分享</div>
+                <a href="#">
+                    <div class="imgBox">
+                        <img src="images/talk/img-sport-06.jpg">
+                    </div>
+                    <h2>生日交換禮物之好好玩啦</h2>
+                    <p>今年特別參加生日的交換禮物活動，當然就要玩一下啦! 我抽到大禮</p>
+                </a>
+                <p>
+                    作者:小歡<i class="fa fa-thumbs-up"></i><span>32</span>
+                    <i class="fa fa-commenting"></i><span>41</span>
+                </p>
+            </div>
+        </div>
+        <!-- end of waterfall -->
+    </div>
+    <!-- end of wrapper talk-05 -->
+    
+    
+        <div class="wrapper talk">
+            <div class="container">
+                
+    <!--==================Talk Header ===================================  -->
+    <div class="row r1">
+                    <h1 style="color:#8A7676">討論區</h1>
+                    <h2 style="color:#8A7676">分享你與我相遇的悸動</h2>
+                </div>
+                <div class="row r2 ">
+                    <div class="col-16 col-xs-20 text-type">
+                        <nav>
+                            <ul>
+                                <li><a href="#" id="newest">最新文章</a></li>
+                                <li><a href="#" id="hot">熱門文章</a></li>
+                                <li><a href="#" id="change">交換禮物</a></li>
+                                <li><a href="#" id="clothes">飾品分享</a></li>
+                                <li><a href="#" id="rookie">新手分享</a></li>
+                                <li><a href="#" id="sport">活動分享</a></li>
+                            </ul>
+                        </nav>
+    
+                        <select id="select-xs">
+                            <option value="">最新文章</option>
+                            <option value="">熱門文章</option>
+                            <option value="">交換禮物</option>
+                            <option value="">飾品分享</option>
+                            <option value="">新手分享</option>
+                            <option value="">活動分享</option>
+                        </select>
+    
+                    </div>
+                    <div class="col-4 col-xs-20 btn-text">
+                        <ul>
+                            <li>
+                                <a class="btn" id="btn-xs-box">
+                                    <i class="fa fa-pencil"></i> 發表文章
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    <!--==================================================================  -->
+                <div class="content">
+                    <div class="row r3">
+                        <div class="col-5 cc1 col-xs-20">
+                            <div class="content">
+                                <div class="type">新手分享</div>
+                                <a href="talk_02.html">
+                                    <div class="imgBox">
+                                        <img src="images/talk/img01.png">
+                                    </div>
+                                    <h2>我收到禮物了</h2>
+                                    <p>
+                                        我透過Matches交換禮物，真的超好玩，下一次還要再玩。
+                                    </p>
+                                </a>
+                                <p>
+                                    作者:點點小姐<i class="fa fa-thumbs-up"></i><span>60</span>
+                                    <i class="fa fa-commenting"></i><span>16</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-5 cc2 col-xs-20">
+                            <div class="content">
+                                <div class="type">交換禮物</div>
+                                <a href="#">
+                                    <div class="imgBox">
+                                        <img src="images/talk/img02.jpg">
+                                    </div>
+                                    <h2>我交換到五月天限量CD，Ye !</h2>
+                                    <p>超讚，我這次換到五月天限量CD。原來也有人和我一樣超愛五月天</p>
+                                </a>
+                                <p>
+                                    作者:小荒先生<i class="fa fa-thumbs-up"></i><span>75</span>
+                                    <i class="fa fa-commenting"></i><span>16</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-5 cc3 col-xs-20">
+                            <div class="content">
+                                <div class="type">飾品分享</div>
+                                <a href="#">
+                                    <div class="imgBox">
+                                        <img src="images/talk/img03.png">
+                                    </div>
+                                    <h2>我買到七夕限定織女裝了</h2>
+                                    <p>我想要這個好久了，終於讓我買到了^_^</p>
+                                </a>
+                                <p>
+                                    作者:安娜公主<i class="fa fa-thumbs-up"></i><span>60</span>
+                                    <i class="fa fa-commenting"></i><span>16</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-5 cc4 col-xs-20">
+                            <div class="content">
+                                <div class="type">活動分享</div>
+                                <a href="#">
+                                    <div class="imgBox">
+                                        <img src="images/talk/img04.png">
+                                    </div>
+                                    <h2>七夕快到了</h2>
+                                    <p>七夕要到了，Matches要辦七夕情人節交換活動，好想趕快參加喔!</p>
+                                </a>
+                                <p>
+                                    作者:小熊<i class="fa fa-thumbs-up"></i><span>50</span>
+                                    <i class="fa fa-commenting"></i><span>100</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row r4">
+                        <div class="col-5 cc1 col-xs-20 ">
+                            <div class="content">
+                                <div class="type">新手分享</div>
+                                <a href="#">
+                                    <div class="imgBox">
+                                        <img src="images/talk/img-share-01.png">
+                                    </div>
+                                    <h2>交換禮物，怎麼準備才不失禮？</h2>
+                                    <p>不知道從何時開始流行的交換禮物，實在是沒閃光的魯蛇一年中最期待的一刻啊！
+    </p>
+                                </a>
+                                <p>
+                                    作者:小編<i class="fa fa-thumbs-up"></i><span>20</span>
+                                    <i class="fa fa-commenting"></i><span>30</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-5 cc2 col-xs-20">
+                            <div class="content">
+                                <div class="type">交換禮物</div>
+                                <a href="#">
+                                    <div class="imgBox">
+                                        <img src="images/talk/img-talk-10.jpg">
+                                    </div>
+                                    <h2>Afternoon Tea 保溫杯保溫罐</h2>
+                                    <p>雖然說我不喜歡收到杯子，但是看到夢幻的保溫杯保溫罐還是會很想要</p>
+                                </a>
+                                <p>
+                                    作者:YuKi<i class="fa fa-thumbs-up"></i><span>120</span>
+                                    <i class="fa fa-commenting"></i><span>37</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-5 cc3 col-xs-20">
+                            <div class="content">
+                                <div class="type">飾品分享</div>
+                                <a href="#">
+                                    <div class="imgBox">
+                                        <img src="images/talk/doll/new_girl/girl_head_shopItem/girl_head_shopItem_34.png">                                    
+                                    </div>
+                                    <h2>俏麗女孩頭飾系列</h2>
+                                    <p>Matches的飾品每一款我都覺得超吸睛的，因為很多都很愛做的非常花俏阿~</p>
+                                </a>
+                                <p>
+                                    作者:小米<i class="fa fa-thumbs-up"></i><span>300</span>
+                                    <i class="fa fa-commenting"></i><span>150</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-5 cc4 col-xs-20">
+                            <div class="content">
+                                <div class="type">活動分享</div>
+                                <a href="#">
+                                    <div class="imgBox">
+                                        <img src="images/talk/img-sport-05.jpg">
+                                    </div>
+                                    <h2>12星座心心相印傳祝福</h2>
+                                    <p>粉絲們想好要送什麼了嗎？送禮可要送到心坎兒裡，不同星座的人，各有適合的不同禮物喔！</p>
+                                </a>
+                                <p>
+                                    作者:李慕白<i class="fa fa-thumbs-up"></i><span>78</span>
+                                    <i class="fa fa-commenting"></i><span>23</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row r5">
+                        <div class="col-5 cc1 col-xs-20">
+                            <div class="content">
+                                <div class="type">新手分享</div>
+                                <a href="#">
+                                    <div class="imgBox">
+                                        <img src="images/talk/img-talk-02.jpg">
+                                    </div>
+                                    <h2>交換禮物抽法其實不公平？數學家教你絕不失敗的玩法</h2>
+                                    <p>交換禮物其實有很多種抽法，不同的抽法會影響誰是你／妳的送禮對象。第一種是最常見的方法</p>
+                                </a>
+                                <p>
+                                    作者:阿基米德<i class="fa fa-thumbs-up"></i><span>31</span>
+                                    <i class="fa fa-commenting"></i><span>19</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-5 cc2 col-xs-20">
+                            <div class="content">
+                                <div class="type">交換禮物</div>
+                                <a href="#">
+                                    <div class="imgBox">
+                                        <img src="images/talk/img-talk-06.png">
+                                    </div>
+                                    <h2>泡澡用星空燈　（價位不等，款式不同6百多~1千多都有）</h2>
+                                    <p>一邊泡澡一邊享受滿室的星光，光用想像的就覺得好浪漫啊～</p>
+                                </a>
+                                <p>
+                                    作者:513<i class="fa fa-thumbs-up"></i><span>77</span>
+                                    <i class="fa fa-commenting"></i><span>124</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-5 cc3 col-xs-20">
+                            <div class="content">
+                                <div class="type">飾品分享</div>
+                                <a href="#">
+                                    <div class="imgBox">
+                                        <!-- <img src="images/talk/img05.png"> -->
+                                        <img src="images/talk/doll/new_girl/blueRed_foot.png">                                    
+                                    </div>
+                                    <h2>個性風服飾</h2>
+                                    <p>這件我覺得很實搭唷~前陣子也是常常帶她出門溜搭很有存在感的一件飾品~</p>
+                                </a>
+                                <p>
+                                    作者:嘎文<i class="fa fa-thumbs-up"></i><span>48</span>
+                                    <i class="fa fa-commenting"></i><span>72</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-5 cc4 col-xs-20">
+                            <div class="content">
+                                <div class="type">活動分享</div>
+                                <a href="#">
+                                    <div class="imgBox">
+                                        <img src="images/talk/img-sport-01.png">
+                                    </div>
+                                    <h2>超有梗交換禮物活動分享</h2>
+                                    <p>上個月參加了10元交換禮物的活動。我覺得很有趣。</p>
+                                </a>
+                                <p>
+                                    作者:育帆<i class="fa fa-thumbs-up"></i><span>51</span>
+                                    <i class="fa fa-commenting"></i><span>46</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row r6">
+                        <div class="col-5 cc1 col-xs-20">
+                            <div class="content">
+                                <div class="type">新手分享</div>
+                                <a href="#">
+                                    <div class="imgBox">
+                                        <img src="images/talk/img-talk-09.jpg">
+                                    </div>
+                                    <h2>貓咪指甲油</h2>
+                                    <p>每樣我都好想要啊（腦粉無誤）不過目前這系列也都只能在網拍上才買的到，購入相對會比較困難一點</p>
+                                </a>
+                                <p>
+                                    作者:Paggy<i class="fa fa-thumbs-up"></i><span>88</span>
+                                    <i class="fa fa-commenting"></i><span>97</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-5 cc2 col-xs-20">
+                            <div class="content">
+                                <div class="type">交換禮物</div>
+                                <a href="#">
+                                    <div class="imgBox">
+                                        <img src="images/talk/img-talk-13.jpg">
+                                    </div>
+                                    <h2>Le Creuset 愛心小烤盅  (價位看網拍的佛心，特賣會可以到5百多左右)</h2>
+                                    <p>身為一個 LC 粉，覺得耶誕節收到 LC 是個很完美的禮物</p>
+                                </a>
+                                <p>
+                                    作者:Fran<i class="fa fa-thumbs-up"></i><span>60</span>
+                                    <i class="fa fa-commenting"></i><span>77</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-5 cc3 col-xs-20">
+                            <div class="content">
+                                <div class="type">飾品分享</div>
+                                <a href="#">
+                                    <div class="imgBox">
+                                        <img src="images/talk/doll/new_boy/pent_31.png">                                    
+                                    </div>
+                                    <h2>我收到禮物了</h2>
+                                    <p>大家猜猜看這款多少摳摳阿~~~340~~沒錯他才需要340點!!!!!!</p>
+                                </a>
+                                <p>
+                                    作者:點點小姐<i class="fa fa-thumbs-up"></i><span>111</span>
+                                    <i class="fa fa-commenting"></i><span>19</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-5 cc4 col-xs-20">
+                            <div class="content">
+                                <div class="type">活動分享</div>
+                                <a href="#">
+                                    <div class="imgBox">
+                                        <img src="images/talk/img-sport-06.jpg">
+                                    </div>
+                                    <h2>生日交換禮物之好好玩啦</h2>
+                                    <p>今年特別參加生日的交換禮物活動，當然就要玩一下啦! 我抽到大禮</p>
+                                </a>
+                                <p>
+                                    作者:小歡<i class="fa fa-thumbs-up"></i><span>32</span>
+                                    <i class="fa fa-commenting"></i><span>41</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of r6 -->
+                </div>
+                <!-- end of content -->
+            </div>
+            
+            <!-- end of container -->        
+    <!--=============== light box ==================  -->
+    
+    <!--=============================================  -->        
+                
+        </div>
+        <!-- end of wrapper -->
+        
+    
+    
+    
+    
+    <div class="lightbox">
+            <div class="wrapper talk-01">
+                <div class="box-01">
+                    <div class="content">
+                        <div class="row r1">
+                            <h1>發表文章</h1></div>
+                        <div class="row r2 ">
+                            <div class="col-4 col-xs-6">
+                                <h2>文章標題</h2></div>
+                            <div class="col-13 col-xs-14">
+                                <input type="text" name="articleTitle">
+                            </div>
+                        </div>
+                        <div class="row r3 ">
+                            <div class="col-4 col-xs-6">
+                                <h2>文章分類</h2></div>
+                            <div class="col-13 col-xs-14">
+                                <select name="catalog" id="">
+                                    <option value="op1">交換禮物</option>
+                                    <option value="op2">飾品分享</option>
+                                    <option value="op3">活動分享</option>
+                                    <option value="op4">新手分享</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row r4 ">
+                            <div class="row rr1">
+                                <h2 id="t01">文章圖片</h2>
+                            </div>
+                            <div class="row rr2">
+                                <div class="col-4 col-xs-6">
+                                    <div id="btn-left">
+                                        <a href="#"><img src="images/talk01/left.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="col-5 col-img col-xs-6">
+                                    <!-- <input type="button" value="上傳圖片"> -->
+                                    <div id="imgUpLoad">
+                                        <a href="#"><img id="img-01" src="images/talk01/imgUpLoad.png"></a>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-xs-6">
+                                    <div id="btn-right">
+                                        <a href="#"><img src="images/talk01/right.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row r5 ">
+                            <div class="col-4 col-xs-6">
+                                <h2>文章內容</h2></div>
+                            <div class="col-13 col-xs-14">
+                                <!-- <textarea rows="5" cols="35" style="resize:none;"></textarea> -->
+                                <textarea style="resize:none;"></textarea>
+                            </div>
+                        </div>
+                        <div class="row r6">
+                            <!-- <input id="btn-cancle" type="button" value="取消">
+                    <input type="button" value="確認送出"></div> -->
+                            <ul>
+                                <li><a class="btn" href="#">取消</a></li>
+                                <li><a class="btn" href="#">確認送出</a></li>
+                            </ul>
+                            <a href="#" class="btn-close">
+                                <img src="images/talk01/btnClose.png" alt="">
+                            </a>
+                        </div><!-- end of row r6  -->
+                    </div><!-- end of content -->
+                </div><!-- end of box-1 -->
+                </div><!-- end of wrapper talk-01 -->
+                </div><!-- end of light box -->
+    <footer>
+       <p>Copyright © 2017 MATCHES</p>
+    </footer>
+    <script>
+    function waterfall_1() {
+        // 'use strict';
+
+        var items = document.querySelectorAll('.item');
+        // [].forEach.call(items, function(item) {
+        //     // hex grayscale: #888 ~ #eee
+        //     var bgc = "#000".replace(/0/g, Math.floor(Math.random() * 6 + 8).toString(16));
+
+        //     item.style.height = ((item.clientHeight * (Math.random() * 0.8 + 0.6)) * 10 << 0) * 0.1 + 'px';
+        //     item.style.backgroundColor = bgc;
+        // });
+        for (i = 0; i < items.length; i++) {
+            var bgc = "#000".replace(/0/g, Math.floor(Math.random() * 6 + 8).toString(16));
+            // items[i].style.height = ((items[i].clientHeight * (Math.random() * 0.8 + 0.6)) * 10 << 0) * 0.1 + 'px';
+            items[i].style.backgroundColor = bgc;
+        }
+        var waterfall = document.querySelector('.waterfall');
+        waterfall.className = waterfall.className.replace('no-js', '');
+    }
+
+
+
+    function init() {
+
+        waterfall_1();
+    }
+    //window.onload=init;
+    window.onload = function() {
+        var items = document.querySelectorAll('.item');
+        for (i = 0; i < items.length; i++) {
+            // var bgc = "#000".replace(/0/g, Math.floor(Math.random() * 6 + 8).toString(16));
+            // items[i].style.height = ((items[i].clientHeight * (Math.random() * 0.8 + 0.6)) * 10 << 0) * 0.1 + 'px';
+            // items[i].style.backgroundColor = bgc;
+        }
+        var waterfall = document.querySelector('.waterfall');
+        waterfall.className = waterfall.className.replace('no-js', '');
+    }
+    </script>
+</body>
+
+</html>

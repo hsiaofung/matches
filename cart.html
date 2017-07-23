@@ -1,0 +1,381 @@
+<?php
+ob_start();
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="javascript/script.js"></script>
+	<script src="javascript/cart.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" href="css/public.css">
+	<!-- 公版 -->
+	
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!-- 公版OVER -->
+	<link rel="stylesheet" href="css/cart.css">
+
+	<style>
+		@font-face{
+			font-family: "文鼎圓體";
+			src: url('font/文鼎圓體M.OTF') format("opentype");
+		}
+		@font-face{
+			font-family: "GOTHAMRND";
+			src: url('font/GOTHAMRND-MEDIUM.OTF') format("opentype");
+		}
+	</style>
+
+	<title>購物車</title>
+	
+
+</head>
+<body>
+
+	<!-- head -->
+<header>
+      <nav>
+            <div class="hamburger"></div>
+            <ul>
+                  <li><a href="exchange.html">禮物交友</a></li>
+                  <li><a href="friend.html">社交圈</a></li>
+                  <li><a href="shop.html">造型商城</a></li>
+            </ul>
+            <div class="logo">
+                  <a href="index.html">
+               <img src="images/logo_b.png" alt="LOGO">
+            </a>
+            </div>
+            <ul>
+                  <li><a href="act.html">季節活動</a></li>
+                  <li><a href="talk.html">討論區</a></li>
+            </ul>
+
+            <div class="member">
+                  <div id="login">
+                        <img src="images/defaultmember.png" alt="訪客">
+                        <span>登入</span>
+                  </div>
+            </div>
+            <div class="head_cart">
+                  <img src="images/cart.png" alt="購物車"></a>
+                  <div class="head_cartlist">
+                        <div class="cartlist">
+                              <div class="prodpic"><img src="images/line_body.png"></div>
+                              <div>
+                                    <div class="prodname">條紋上衣</div>
+                                    <div class="prodprice">200 點</div>
+                                    <div class="isgift">送禮: 小小噹</div>
+                              </div>
+                        </div>
+                        <div class="cartlist">
+                              <div class="prodpic"><img src="images/line_body.png"></div>
+                              <div>
+                                    <div class="prodname">條紋上衣</div>
+                                    <div class="prodprice">200 點</div>
+                              </div>
+                        </div>
+                        <div class="cartlist">
+                              <div class="prodpic"><img src="images/redHead_body.png"></div>
+                              <div>
+                                    <div class="prodname">小紅帽上衣</div>
+                                    <div class="prodprice">250 點</div>
+                              </div>
+                        </div>
+                        <div class="gocart"><a href="cart.html">前往結帳</a></div>
+                  </div>
+            </div>
+      </nav>
+
+      <ul class="hbmenu">
+            <li>
+                  <div class="hb_close"></div>
+            </li>
+            <li><a href="exchange.html"><img src="images/exchange.png">禮物交友</a></li>
+            <li><a href="friend.html"><img src="images/friend.png">社交圈</a></li>
+            <li><a href="shop.html"><img src="images/shop.png">造型商城</a></li>
+            <li><a href="act.html"><img src="images/act.png">季節活動</a></li>
+            <li><a href="talk.html"><img src="images/talk.png">討論區</a></li>
+            <li><a href="cart.html"><img src="images/cartrwd.png">購物車</a></li>
+      </ul>
+
+      <div class="loginbox">
+            <div class="login_content">
+                  <div class="login_top">
+                        <div class="login_title">會員登入</div>
+                        <div id="login_close"></div>
+                  </div>
+                  <div class="login_scope">
+                        <span>會員帳號</span><input type="text" name="memId" id="memId"><br>
+                        <span>會員密碼</span><input type="password" name="memPsw" id="memPsw"><br>
+                        <input type="submit" value="登入" class="gologin">
+                        <div>還沒有MATCHES的帳號嗎? 馬上加入我們吧!</div>
+                        <a class="goregister" href="register.html">
+                              <span class="reg">註冊</span>
+                        </a>
+                        </span>
+                  </div>
+            </div>
+</header>
+<div class="headerb"></div>
+	<!-- head over -->
+
+
+	<div class="carts">
+		<div class="cart_container">
+			<h2>購物車</h2>
+			<div class="cart_picBtn">
+				<div id="cart_backToShop"><a href="shop.html" title="返回商城"><img src="images/cart_image/backToShop.png" alt="返回商城">返回商城</a></div>
+				<input type="checkbox" id="cart_notesShow">
+				<div class="cart_bk"></div>
+				<div id="cart_notes"><label for="cart_notesShow"><img src="images/cart_image/notes.png" alt="購物須知">購物須知</label></div>
+				<div class="cart_notesShow">
+					<label for="cart_notesShow"><div class="cart_lightBoxTop"></label>
+						<h3>購物須知</h3>
+						<label for="cart_notesShow"><div class="cart_closex"></div></label>
+					</div>
+					<div class="cart_lightBoxContent">
+					<div class="cart_lBS cart_scroll">
+						<h4>購物流程</h4>
+						<p>瀏覽選購商品 → 登入 → 選擇送禮對象 → 加入購物車 → 結帳</p>
+						<br>
+						<h4>付款方式</h4>
+						<p>造型商城內之商品以紅利扣點方式進行結帳，點按結帳後即時從會員帳號內扣除紅利點數，MATCHES並無提供其他付款方式</p>
+						<br>
+						<h4>關於紅利點數</h4>
+						<p>紅利是MATCHES發送給會員的免費點數，會員可透過參與MATCHES指定之活動及參與討論區話題免費取得。紅利僅限在MATCHES造型商城使用，紅利並不等同於現金，亦非會員之資產。會員了解並同意不會要求將紅利轉換成現金，亦不會將其以任何形式轉讓給第三人，或作為流通之財產。</p>
+						<p>依據「MATCHES服務條款」，會員有保管個人帳號密碼之責任。任何經由輸入正確帳號與密碼抵用紅利之消費行為，均視為該會員之行為。若遇會員未盡帳號密碼保管之責，造成任何紅利被第三人盜(使)用之損失，或因不可歸責於MATCHES系統或因不可抗力之因素導致紅利資料流失時，MATCHES不負任何賠償或補償之責。</p>
+						<p>以紅利兌換本網站提供之商品或服務，一經兌換成功，將即時自帳戶中扣除紅利，紅利兌換所提供之商品，恕無法辦理取消訂單、退貨或要求退還紅利點數。</p>
+						<label for="cart_notesShow"><div class="cart_close">確定</div></label>
+					</div>
+						
+					</div>
+				</div>	
+			</div>
+
+			<div class="cart_list">
+				<div class="cart_toolBar">
+					購物清單列表
+				</div>
+
+
+
+<!-- 				<?php
+				if(isset($_SESSION["products"]) == true){
+					$total = 0;
+					foreach ($_SESSION["products"] as $psn => $prodRow){
+						$total += prodRow["price"];
+				?>
+
+				<form action="cart_update.php">
+					<input type="hidden" name="psn" value="<?php echo $psn; ?>">
+					<div class="cart_item">
+						<div class="cart_box">
+							<?php
+							if(prodRow["sex"] == 1){
+							echo "<div class="cart_bg cart_w">";
+							}else{
+							echo "<div class="cart_bg cart_m">";
+							}
+							?>
+							<img src="images/<?php echo $prodRow["image"];?>" title="<?php echo $prodRow["pname"]; ?>" alt="<?php echo $prodRow["pname"]; ?>">
+							</div>
+							<div class="cart_itemList">
+								<ul>
+									<li><?php echo $prodRow["pname"]; ?></li>
+									<li><?php echo $prodRow["price"]; ?></li>
+									//送禮
+									<li></li>
+								</ul>
+							</div>
+							<button name="cart_del"><img src="cart_image/del.png" alt="刪除"></button>
+						</div>
+					</div>
+				</form>
+				<?php
+
+					}	//end of foreach
+				}else{
+				?>
+				<div class="cart_round">
+					<img src="images/cart_image/none.png">
+				</div>
+				}
+				?> -->
+
+
+
+
+				<div class="cart_item">
+					<div class="cart_itemInside cart_scroll">
+						<div class="cart_box">
+							<div class="cart_bg cart_w"><img src="images/cart_image/new_girl/alice_body.png" alt="愛麗絲洋裝-上衣"></div>
+							<div class="cart_itemList">
+								<ul>
+									<li>愛麗絲洋裝-上衣</li>
+									<li>500點</li>
+									<li>贈送對象：alice</li>
+								</ul>
+							</div>
+							<button class="cart_del"><img src="images/cart_image/del.png" alt="刪除"></button>
+						</div>
+
+						<div class="cart_box">
+							<div class="cart_bg cart_w"><img src="images/cart_image/new_girl/girl_head_shopItem/girl_head_shopItem_28.png" alt="白兔耳朵"></div>
+							<div class="cart_itemList">
+								<ul>
+									<li>白兔耳朵</li>
+									<li>500點</li>
+									<li>贈送對象：alice</li>
+								</ul>
+							</div>
+							<button class="cart_del"><img src="images/cart_image/del.png" alt="刪除"></button>
+						</div>
+
+						<div class="cart_box">
+							<div class="cart_bg cart_m"><img src="images/cart_image/new_boy/pent_26.png" alt="黑色西裝"></div>
+							<div class="cart_itemList">
+								<ul>
+									<li>黑色西裝</li>
+									<li>500點</li>
+									<li></li>
+								</ul>
+							</div>
+							<button class="cart_del"><img src="images/cart_image/del.png" alt="刪除"></button>
+						</div>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			<div class="cart_list cart_yellow">	
+				<div class="cart_moneyShow">
+					<img src="images/cart_image/money.png" alt="">
+					<p>目前持有點數</p>
+					<span>10000</span>
+					<div class="cart_btn"><a href="talk.html">賺取紅利點</a></div>
+				</div>
+			</div>	
+			<div class="cart_list cart_yellow">	
+				<div class="cart_total">
+					<img src="images/cart_image/cart.png" alt=""><br>
+					<div class="cart_inside">
+						<div class="cart_count">
+							持有點數
+							<div id="own">10000</div>
+						</div>
+						<div class="cart_count">
+							消費點數
+							<div id="use">1500</div>
+						</div>
+						<div class="cart_count">
+							剩餘點數
+							<div id="use">1500</div>
+						</div>
+					</div>
+					<div class="cart_btn cart_btnInline"><a href="shop.html">繼續購物</a></div>
+					<div class="cart_btn cart_btnInline" id="cart_billBtn"><!-- <a href="cart_toDB.php"> -->我要結帳</a></div>
+				</div>
+			</div>
+
+
+			<!-- 結帳成功 -->
+			<div class="cart_bill">
+				<div class="cart_noticeBox">
+					<div class="cart_noticeTop">
+						<div class="cart_noticeClosex"></div>
+					</div>
+					<div class="cart_noticeContent">
+						結帳成功！<br>前往個人頁面確認商品
+						<div class="cart_btn"><a href="me.html" title="前往個人頁">前往個人頁</a></div>
+					</div>
+				</div>
+			</div>
+			<!-- 結帳成功end -->
+
+			
+			<div class="clearfix"></div>
+
+			<div class="cart_list">
+				<div class="cart_toolBar">推薦商品</div>
+				<div class="cart_item">
+					
+						<div class="cart_proBox">
+							
+							<ul>
+								<li>
+									<div class="cart_bgL cart_m"><img src="images/cart_image/new_boy/cloth_34.png" alt=""></div>
+								</li>
+								<li>紅條紋長襪</li>
+								<li>
+									<div class="cart_btn cart_add">加入購物車</div>
+								</li>
+							</ul>
+						</div>
+						<div class="cart_proBox">
+							<ul>
+								<li>
+									<div class="cart_bgL cart_m"><img src="images/cart_image/new_boy/boy_head_shopItem/boy_head_shop_item_40.png" alt=""></div>
+								</li>
+								<li>狸貓耳朵</li>
+								<li>
+									<div class="cart_btn cart_add">加入購物車</div>
+								</li>
+							</ul>
+							
+						</div>
+						<div class="cart_proBox">
+							<ul>
+								<li>
+									<div class="cart_bgL cart_m"><img src="images/cart_image/new_boy/cloth_44.png" alt=""></div>
+								</li>
+								<li>黑色西裝褲</li>
+								<li>
+									<div class="cart_btn cart_add">加入購物車</div>
+								</li>
+							</ul>
+							
+						</div>
+						<div class="cart_proBox">
+							<ul>
+								<li>
+									<div class="cart_bgL cart_m"><img src="images/cart_image/new_boy/boy_head_shopItem/boy_head_shop_item_32.png" alt=""></div>
+								</li>
+								<li>粗框墨鏡</li>
+								<li>
+									<div class="cart_btn cart_add">加入購物車</div>
+								</li>
+							</ul>
+							
+						</div>
+					
+					<div class="clearfix"></div>
+				</div>
+			</div>
+
+		</div>	
+	</div>
+	
+
+	<!-- gotop -->
+	<div class="gotop">
+	   <img src="images/gotop.png" alt="回到頁首">
+	</div>
+	<!-- gotop over -->
+
+
+	<!-- footer -->
+	<footer>
+	   <p>Copyright © 2017 MATCHES</p>
+	</footer>
+
+	<!-- footer OVER -->
+</body>
+</html>

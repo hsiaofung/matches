@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+  text-align: center;
+}
+.content{
+  margin-left: 450px;
+  margin-top: 200px;
+}
+#bar{
+	width:300px;
+	height:25px;
+	border:1px solid black;
+	position:relative;
+}
+#slider{
+	width:0%;
+	height:100%;
+	background-color:green;
+	top:0px;
+	left:0px;
+	position:absolute;
+	cursor:pointer;
+}
+#info{
+	width:300px;
+	height:25px;
+	border:1px solid black;
+}
+
+#mark {
+  width: 30px;
+  position: absolute;
+  left:440px;
+  top:160px;
+  z-index: 2;
+  /*left: 0;*/
+}
+</style>
+
+<script type="text/javascript">
+var bar, slider;
+function init(){
+
+	bar = document.getElementById('bar');
+	slider = document.getElementById('slider');
+	info = document.getElementById('info');
+  mark = document.getElementById('mark');
+	bar.addEventListener('mousedown', startSlide, false);
+	bar.addEventListener('mouseup', stopSlide, false);
+}
+function startSlide(event){
+	var set_perc = ((((event.clientX - bar.offsetLeft) / bar.offsetWidth)).toFixed(2));
+  console.log('x :',event.clientX);
+  console.log('y :',event.clientY);
+  console.log('bar.offsetLeft :',bar.offsetLeft);
+
+  console.log('set_perc :',set_perc);
+
+	info.innerHTML = 'start' + set_perc + '%';
+	bar.addEventListener('mousemove', moveSlide, false);
+	slider.style.width = (set_perc * 100) + '%';
+  var str = "'"+event.clientX //+"px'";
+  console.log(event.clientX);
+  var modify = event.clientX-15;
+  mark.style.position = 'absolute';
+  mark.style.left = modify+'px';
+}
+function moveSlide(event){
+	var set_perc = ((((event.clientX - bar.offsetLeft) / bar.offsetWidth)).toFixed(2));
+	info.innerHTML = 'moving : ' + set_perc + '%';
+	slider.style.width = (set_perc * 100) + '%';
+  var modify = event.clientX-15;
+  mark.style.left = modify+'px';
+}
+function stopSlide(event){
+	var set_perc = ((((event.clientX - bar.offsetLeft) / bar.offsetWidth)).toFixed(2));
+	info.innerHTML = 'done : ' + set_perc + '%';
+	bar.removeEventListener('mousemove', moveSlide, false);
+	slider.style.width = (set_perc * 100) + '%';
+}
+</script>
+
+</head>
+<body onload='init()'>
+
+<div class="content">
+
+<img class="mark" id="mark" src="../images/exchange_images/progressbarmark.png" alt="">
+
+  <div id='bar'>
+  <div id='slider'>
+
+  </div>
+  </div>
+  <br />
+
+  <div id='info'>info</div>
+</div>
+
+</body>
+</html>

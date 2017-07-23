@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+<link rel="stylesheet" href="css/public.css">
+
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    /*@font-face {
+      font-family: 文鼎圓體H;
+      src: url("../font/文鼎圓體H.OTF") format("opentype");
+    }*/
+
+    body {
+      background: url("images/me_gift_img/indexpng.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      /*background-position: center center;*/
+    }
+    /*.me_gift_noteyet_lightbox {*/
+
+    button:focus {
+      outline: 0;
+    }
+
+
+    .me_gift_noteyet_lightbox {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .5);
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: none;
+    }
+
+    .me_gift_notyet_content {
+      width:650px;
+      height: 470px;
+      margin: auto;
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right:0;
+      left: 0;
+      /*margin-top: -150px;*/
+      /*margin-left: -300px;*/
+      text-align: center;
+      border-radius: 10px;
+      border: 1px solid #444;
+      overflow: hidden;
+      color: #857474;
+      animation-name: Movewindow;
+      animation-delay:3s;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+
+      animation-fill-mode: forwards;
+    }
+    .me_gift_notyet_content2 {
+      width:650px;
+      height: 470px;
+      margin: auto;
+      background-color: #fff;
+      position: absolute;
+      top: 100px;
+      bottom: 0;
+      right:100px;
+      left: 0;
+      /*margin-top: -150px;*/
+      /*margin-left: -300px;*/
+      text-align: center;
+      border-radius: 10px;
+      border: 1px solid #444;
+      overflow: hidden;
+      color: #857474;
+      animation-name: Movewindow;
+      animation-delay:3s;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+
+      animation-fill-mode: forwards;
+    }
+
+    .me_gift_notyet_btn-close {
+      display: block;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      background-color: #B2DAED;
+      color: #fff;
+      padding: 0;
+      border: none;
+      background: none;
+      text-align: center;
+    }
+
+    .me_gift_notyet_title {
+      background-color: #B2DAED;
+      height: 50px;
+
+      font-size: 16px;
+      /*check font size*/
+      text-align: center;
+      line-height: 50px;
+    }
+
+    .me_gift_notyet_title2 {
+
+      height: 30px;
+      color: #666666;
+      font-size: 16px;
+      /*padding: 10px;*/
+      padding-left: 50px;
+      padding-right: 50px;
+
+      /*check font size*/
+      font-size: text-align: center;
+      line-height: 30px;
+    }
+
+    .me_gift_notyet_img {
+      width: 100px;
+      margin: 15px;
+    }
+
+    .me_gift_notyet_button {
+      /*background-color: #FFA266 ;*/
+      background-color: #66DBFF;
+      padding-left: 30px;
+      padding-right: 30px;
+      line-height: 30px;
+      font-size: 15px;
+      color:white;
+      border-radius: 30px;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <button class="me_gift_gift" id="me_gift_noteyet_lightboxButton">點我開啟光箱</button>
+
+
+  <div class="me_gift_noteyet_lightbox" id="me_gift_noteyet_lightbox">
+    <div class="me_gift_notyet_content">
+      <h2 class="me_gift_notyet_title">我的禮物交換進度</h2>
+      <img class="me_gift_notyet_img" src="images/me_gift_img/gift2.png" alt="">
+      <h3 class="me_gift_notyet_title2"> 目前沒有進行中的交換禮物活動喔</h2>
+      <br>
+      <button class="me_gift_notyet_button" id="me_gift_ok">確認</button>
+
+        <button class="me_gift_notyet_btn-close" id="me_gift_notyet_btn-close">X</button>
+
+    </div>
+
+
+    <div class="me_gift_notyet_content2">
+      <h2 class="me_gift_notyet_title">我的禮物交換進度</h2>
+      <img class="me_gift_notyet_img" src="images/me_gift_img/gift2.png" alt="">
+      <h3 class="me_gift_notyet_title2"> 目前沒有報名的季節活動喔</h2>
+      <br>
+      <button class="me_gift_notyet_button" id="me_gift_ok_activity">確認</button>
+      <button class="me_gift_notyet_btn-close" id="me_gift_notyet_btn-close_activity">X</button>
+
+    </div>
+  </div>
+
+  <script type="text/javascript">
+
+
+
+  function $id(id) {
+    return document.getElementById(id);
+  }
+
+  function init(){
+    $id("me_gift_noteyet_lightboxButton").onclick = showLightBox;
+    $id("me_gift_ok_activity").onclick = hide;
+    $id("me_gift_ok").onclick = hide;
+    $id("me_gift_notyet_btn-close_activity").onclick = hide1;
+    $id("me_gift_notyet_btn-close").onclick = hide1;
+
+  }
+  function showLightBox(){
+    $id("me_gift_noteyet_lightbox").style.display = "block";
+    // console.log($id("me_gift_noteyet_lightbox").style )
+  }
+  function hide(){
+    $id("me_gift_noteyet_lightbox").style.display = "none";
+    // console.log($id("me_gift_noteyet_lightbox").style )
+  }
+  function hide1(){
+    $id("me_gift_noteyet_lightbox").style.display = "none";
+    // console.log($id("me_gift_noteyet_lightbox").style )
+  }
+
+
+  window.onload=init;
+
+  </script>
+
+
+</body>
+
+</html>
