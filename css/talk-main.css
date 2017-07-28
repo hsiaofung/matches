@@ -1434,21 +1434,23 @@
   .talk-05 {
     background: #C2E4EC; }
     .talk-05 .btn {
-      display: inline-block;
-      text-decoration: none;
-      color: #fff;
-      background-color: #FFA266;
-      border-radius: 20px;
-      padding: 10px 20px;
-      font-size: 20px;
-      border: 1px solid #FFA266;
       text-align: center;
-      transition: all 0.3s ease-out; }
+      padding: 8px 20px;
+      position: relative;
+      text-decoration: none;
+      color: white;
+      background-color: #FFA266;
+      border-radius: 40px;
+      box-shadow: 0 2px 2px #F99158, 0 2px 1px 1px rgba(0, 0, 0, 0.1);
+      transition: all 0.15s ease-in-out;
+      top: 0;
+      cursor: pointer; }
       .talk-05 .btn:hover {
-        background-color: #fff;
-        color: #FFA266; }
-      .talk-05 .btn:hover i {
-        color: #FFA266; }
+        background-color: #FCAD6D;
+        box-shadow: 0 2px 0 #FFA071, 0 2px 1px 1px rgba(0, 0, 0, 0.1); }
+      .talk-05 .btn:active {
+        box-shadow: none;
+        top: 1px; }
     .talk-05 nav ul {
       text-align: center;
       padding-left: 30px; }
@@ -1518,6 +1520,9 @@
       background-color: #B2DEEB;
       padding: 10px 0px 10px 41px;
       margin-bottom: 50px; }
+      .talk-05 .r2 .btn-text {
+        text-align: left;
+        line-height: 50px; }
     .talk-05 .no-js .item {
       visibility: hidden;
       background-color: transparent; }
@@ -1654,21 +1659,25 @@
   .talk-04 h4 {
     font-size: 15.9999px; }
   .talk-04 .btn {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    background-color: #66DBFF;
-    border-radius: 20px;
-    padding: 10px 12px;
-    font-size: 20px;
-    border: 1px solid #66DBFF;
     text-align: center;
-    transition: all 0.3s ease-out;
+    padding: 8px 10px;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    background-color: #66DBFF;
+    border-radius: 40px;
+    box-shadow: 0 2px 2px #65B1C9, 0 2px 1px 1px rgba(0, 0, 0, 0.1);
+    transition: all 0.15s ease-in-out;
+    top: 0;
+    cursor: pointer;
     line-height: 1em;
     font-size: 15px; }
     .talk-04 .btn:hover {
-      background-color: #fff;
-      color: #66DBFF; }
+      background-color: #76E2F4;
+      box-shadow: 0 2px 0 #55D2F9, 0 2px 1px 1px rgba(0, 0, 0, 0.1); }
+    .talk-04 .btn:active {
+      box-shadow: none;
+      top: 1px; }
   .talk-04 .row {
     width: 100%;
     max-width: 100%;
@@ -1754,7 +1763,8 @@
         box-shadow: 1px 1px 3px #ccc; }
         .talk-04 .r2 .content .rr2 .col-4 {
           background: none;
-          box-shadow: none; }
+          box-shadow: none;
+          padding-top: 15px; }
       .talk-04 .r2 .content .rr3 {
         padding-left: 13px;
         padding-right: 25px;
@@ -1763,7 +1773,8 @@
         box-shadow: 1px 1px 3px #ccc; }
         .talk-04 .r2 .content .rr3 .col-4 {
           background: none;
-          box-shadow: none; }
+          box-shadow: none;
+          padding-top: 15px; }
       .talk-04 .r2 .content .rr4 {
         padding-left: 13px;
         padding-right: 25px;
@@ -1772,7 +1783,8 @@
         box-shadow: 1px 1px 3px #ccc; }
         .talk-04 .r2 .content .rr4 .col-4 {
           background: none;
-          box-shadow: none; }
+          box-shadow: none;
+          padding-top: 15px; }
       .talk-04 .r2 .content .row {
         background: #fff;
         border-radius: 10px;
@@ -1819,7 +1831,7 @@
     font-size: 17px;
     padding: 32.447px 15px;
     line-height: 2em; }
-  .talk-04 a {
+  .talk-04 .memInfo a {
     margin-left: 30px; }
 
   .talk {
@@ -2140,40 +2152,67 @@
       text-align: left;
       padding-right: 30px;
       line-height: 1.8em; }
+    .talk-02 .r2 .btn {
+      text-align: center;
+      padding: 8px 20px;
+      position: relative;
+      text-decoration: none;
+      color: white;
+      background-color: #FFA266;
+      border-radius: 40px;
+      box-shadow: 0 2px 2px #F99158, 0 2px 1px 1px rgba(0, 0, 0, 0.1);
+      transition: all 0.15s ease-in-out;
+      top: 0;
+      cursor: pointer; }
+      .talk-02 .r2 .btn:hover {
+        background-color: #FCAD6D;
+        box-shadow: 0 2px 0 #FFA071, 0 2px 1px 1px rgba(0, 0, 0, 0.1); }
+      .talk-02 .r2 .btn:active {
+        box-shadow: none;
+        top: 1px; }
+    .talk-02 .r2 .btn-text {
+      text-align: left;
+      line-height: 50px; }
+      .talk-02 .r2 .btn-text i {
+        font-size: 15px; }
     .talk-02 .r1 {
       padding-bottom: 20px; }
-    .talk-02 .btn {
-      display: inline-block;
+    .talk-02 .r8 .btn {
+      text-align: center;
+      padding: 8px 40px;
+      position: relative;
       text-decoration: none;
-      color: #fff;
+      color: white;
       background-color: #FFA266;
-      border-radius: 20px;
-      padding: 8px 20px;
-      font-size: 20px;
-      border: 1px solid #FFA266;
-      text-align: center;
-      transition: all 0.3s ease-out;
-      width: 120px; }
-      .talk-02 .btn:hover {
-        background-color: #fff;
-        color: #FFA266; }
+      border-radius: 40px;
+      box-shadow: 0 2px 2px #F99158, 0 2px 1px 1px rgba(0, 0, 0, 0.1);
+      transition: all 0.15s ease-in-out;
+      top: 0;
+      cursor: pointer; }
+      .talk-02 .r8 .btn:hover {
+        background-color: #FCAD6D;
+        box-shadow: 0 2px 0 #FFA071, 0 2px 1px 1px rgba(0, 0, 0, 0.1); }
+      .talk-02 .r8 .btn:active {
+        box-shadow: none;
+        top: 1px; }
     .talk-02 .btn-f {
-      display: inline-block;
-      text-decoration: none;
-      color: #fff;
-      background-color: #70C8E9;
-      border-radius: 20px;
-      padding: 0px 16px;
-      font-size: 20px;
-      border: 1px solid #70C8E9;
       text-align: center;
-      transition: all 0.3s ease-out;
-      font-size: 15px;
-      padding: 0px 16px;
-      margin-top: 7px; }
+      padding: 8px 20px;
+      position: relative;
+      text-decoration: none;
+      color: white;
+      background-color: #66DBFF;
+      border-radius: 40px;
+      box-shadow: 0 2px 2px #65B1C9, 0 2px 1px 1px rgba(0, 0, 0, 0.1);
+      transition: all 0.15s ease-in-out;
+      top: 0;
+      cursor: pointer; }
       .talk-02 .btn-f:hover {
-        background-color: #fff;
-        color: #70C8E9; }
+        background-color: #76E2F4;
+        box-shadow: 0 2px 0 #55D2F9, 0 2px 1px 1px rgba(0, 0, 0, 0.1); }
+      .talk-02 .btn-f:active {
+        box-shadow: none;
+        top: 1px; }
     .talk-02 .container {
       width: 100%;
       max-width: 100vw;
@@ -2449,20 +2488,41 @@
       display: block;
       clear: both; }
   .talk-01 .btn {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    background-color: #66DBFF;
-    border-radius: 20px;
-    padding: 8px 40px;
-    font-size: 20px;
-    border: 1px solid #66DBFF;
     text-align: center;
-    transition: all 0.3s ease-out;
-    width: 90px; }
+    padding: 8px 20px;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    background-color: #66DBFF;
+    border-radius: 40px;
+    box-shadow: 0 2px 2px #65B1C9, 0 2px 1px 1px rgba(0, 0, 0, 0.1);
+    transition: all 0.15s ease-in-out;
+    top: 0;
+    cursor: pointer; }
     .talk-01 .btn:hover {
-      background-color: #fff;
-      color: #66DBFF; }
+      background-color: #76E2F4;
+      box-shadow: 0 2px 0 #55D2F9, 0 2px 1px 1px rgba(0, 0, 0, 0.1); }
+    .talk-01 .btn:active {
+      box-shadow: none;
+      top: 1px; }
+  .talk-01 li:nth-child(1) .btn {
+    text-align: center;
+    padding: 8px 35px;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    background-color: #66DBFF;
+    border-radius: 40px;
+    box-shadow: 0 2px 2px #65B1C9, 0 2px 1px 1px rgba(0, 0, 0, 0.1);
+    transition: all 0.15s ease-in-out;
+    top: 0;
+    cursor: pointer; }
+    .talk-01 li:nth-child(1) .btn:hover {
+      background-color: #76E2F4;
+      box-shadow: 0 2px 0 #55D2F9, 0 2px 1px 1px rgba(0, 0, 0, 0.1); }
+    .talk-01 li:nth-child(1) .btn:active {
+      box-shadow: none;
+      top: 1px; }
   .talk-01 .r1 {
     padding-bottom: 0;
     padding-top: 0;
